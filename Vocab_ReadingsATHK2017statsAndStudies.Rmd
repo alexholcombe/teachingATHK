@@ -1,0 +1,68 @@
+---
+title: "Vocab, readings: Alex's ATHK Stats and Studies lectures and tutorials"
+date: "lectures 26 Apr to 2 May, 2017. More material will be added to this document as the lectures proceed."
+output: html_document
+---
+
+## Important Readings
+
+* `Vocab_ReadingsATHK2017statsAndStudies` (this document!). To find some definitions of the terms, open `Vocab_ReadingsATHK2017statsAndStudies.Rmd` and you'll see definitions in the comments, indicated by `<!--- comment text -->`. 
+Quiz yourself with the version that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
+
+* Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
+
+* [Explanation](http://isps.yale.edu/node/16697) of random assignment
+
+* [What is a confounding variable?](http://www.statisticshowto.com/design-of-experiments/confounding-variable/)
+
+<!-- Critical Thinking, by Paul and Elder -->
+
+## Not-so-important Readings
+
+* *r-squared* http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
+
+* https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this class.
+
+# Vocabulary
+
+* Correlation, used in this class to mean linear correlation.
+* Observational study.
+<!-- Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups) -->
+* Quasi / natural experiment
+* Random assignment ([explainer](http://isps.yale.edu/node/16697))
+* r
+* r-squared and shared variance
+* Proportion of variance explained, shared variance
+<!-- Squaring r gives the proportion of variance explained by the line. "Shared variance" is a synonym.-->
+
+### Variables
+* IV, DV
+<!-- Independent variable, dependent variable. -->
+* Explanatory variable
+* Extraneous variable
+<!-- When one compares two groups, one is seeking to determine the effect of an explanatory variable or variables. But extraneous variables are variables that also differ between the two groups. They may be confounds. -->
+* Confound or confounding variables
+<!-- Confounds are sometimes known as omitted variable in the context of observational studies and in the context of a statistical model like a regression. In experiment design, you might be interested in the effect of videogames on agression. You recruit a group of videogamers and another group of non-gamers and assess their agression level (somehow). You find that the videogamers are more agressive. Does this mean that videogaming causes agression? No, because you might have a confounding variable like age. Videogamers tend to be younger so your videogaming group may be younger than your non-gaming group. And, aggression levels decrease with age (and this was true even before videogames was invented).
+http://www.statisticshowto.com/design-of-experiments/confounding-variable/
+-->
+* Omitted variable
+<!-- This term is used in the context of observational studies, where Bruce used it to refer to a problematic variable that in an experimental study would be referred to as
+a "confound"-->
+* "Controlling for" a variable 
+
+<!--This was in Bruce and Alex's lectures and means a confound that you try to compensate for using statistics, to reveal the causal relationship between IV and DV without contamination by the confound. Usually happens in observational studies but can sometimes happen in experiments.
+Also explained in https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/-->
+
+* Controlled variable  
+
+<!--In the Evidence tutorial, we used this to mean a variable that you ensure does not differ between the two groups in a simple experiment-->
+
+
+### Other terms
+* Spurious correlation
+* Causal model
+<!-- Correlation between X and Y that one might think is due to X causing Y, or Y causing X, but isn't -->
+* Contingency table
+* Residual
+* Nonlinear model
+
