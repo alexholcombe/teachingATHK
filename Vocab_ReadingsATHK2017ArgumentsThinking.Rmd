@@ -6,7 +6,7 @@ output: html_document
 
 ## Important Readings
 
-* To find some definitions of the terms in the Vocabulary section, open the  [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017ArgumentsThinking.Rmd) and you'll see definitions in the comments, indicated by `<!--- comment text -->`. 
+* To find some definitions of the terms in the Vocabulary section, open the  [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017ArgumentsThinking.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", something like `<!--- comment text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * *The power of critical thinking* by Vaughn, Chapter 1, http://opac.library.usyd.edu.au/search/r?SEARCH=ATHK1001
