@@ -6,7 +6,7 @@ output: html_document
 
 ## Important Readings
 
-* To find some definitions of the terms in this document, open [`Vocab_ReadingsATHK2017statsAndStudies.Rmd`](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, indicated by `<!--- comment text -->`. 
+* To find some definitions of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, indicated by `<!--- comment text -->`. 
 Quiz yourself with the version that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
@@ -19,7 +19,7 @@ Quiz yourself with the version that doesn't show the definition, and subsequentl
 
 ## Not-so-important Readings
 
-* *r-squared* http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
+* [r-squared](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)
 
 * https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this class.
 
