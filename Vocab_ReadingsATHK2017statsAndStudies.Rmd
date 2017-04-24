@@ -1,12 +1,12 @@
 ---
 title: "Vocab, readings: Alex's ATHK Stats and Studies lectures and tutorials"
 date: "lectures 26 Apr to 2 May, 2017. More material will be added to this document as the lectures proceed."
-output: github_document
+output: html_document
 ---
 
 ## Important Readings
 
-* `Vocab_ReadingsATHK2017statsAndStudies` (this document!). To find some definitions of the terms, open `Vocab_ReadingsATHK2017statsAndStudies.Rmd` and you'll see definitions in the comments, indicated by `<!--- comment text -->`. 
+* To find some definitions of the terms in this document, open [`Vocab_ReadingsATHK2017statsAndStudies.Rmd`](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, indicated by `<!--- comment text -->`. 
 Quiz yourself with the version that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
