@@ -1,7 +1,7 @@
 ---
 title: "Vocab, readings: Alex's ATHK Stats and Studies lectures and tutorials"
 date: "lectures 26 Apr to 2 May, 2017. More material will be added to this document as the lectures proceed."
-output: html_document
+output: github_document
 ---
 
 ## Important Readings
