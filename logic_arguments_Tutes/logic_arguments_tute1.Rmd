@@ -1,11 +1,8 @@
 ---
 title: "ATHK1001 Logic and Arguments tutorial 1 of 2"
+output: word_document
 date: "weeks of 8 May, 2017"
-output: html_document
 ---
-<!-- ALEX for 2017: number the questions, make it shorter or indicate what parts are optional
-Student machines have youtube blocked, says Bruce.
--->
 
 <!-- TUTORS: there are explanations and additional examples of the topics below in the lecture slides.
 * You should have the lecture slides at the ready to go back through, when it's clear some students don't understand something.
@@ -28,7 +25,10 @@ Tutorial 2. Real-world syllogisms, Deduction versus Induction, Strong, Cogent, a
 A **necessary** condition for something (X) means that X cannot be true unless the condition is true.
 
 A **sufficient** condition for X means that if the condition is true, then X is true.
+
 ![](NecessarySufficientMovieIcon.png) [movie](https://www.youtube.com/watch?v=fq_DwgmIadw)
+
+*****
 
 <!--Watch the video https://www.youtube.com/watch?v=fq_DwgmIadw -->
 Example A:  
@@ -36,11 +36,9 @@ A table's having four sides is a **necessary**, but not a **sufficient**, condit
 
 Example B: Being a square is **sufficient**, but not **necessary**, for having four sides.
 
-*****
 
 Example C: For winning the OzLotto lottery, a ticket is a **necessary** but not **sufficient** condition for winning.
 
-*****
 
 1. For humans to live, air is:
 
@@ -55,7 +53,8 @@ C) Necessary and sufficient
 A) Necessary but not sufficient.
 B) Sufficient but not necessary.
 C) Necessary and sufficient.
-<!--It's sufficient but not necessary. You can have a ticket without having won - there are other situations (losing) besides winning in which you also have a ticket. -->
+<!--It sounds backwards in time and that can be confusing, but doesn't affect the logic.
+It's sufficient but not necessary. You can have a ticket without having won - there are other situations (losing) besides winning in which you also have a ticket. -->
 
 *****
 
@@ -137,13 +136,16 @@ Here is how the government phrases the restriction:  ![](no_under_18.png)
 
 > It is against the law to supply alcohol to a person under 18.  
 
-Consider the implications of the above sentence: 
+13. Rewrite the statement as an *if, then* sentence: ________________________________________________________
+<!--If a person is under 18, it is illegal to supply them alcohol -->
 
-13. You supply a person alcohol. Is the condition of that person being under 18 **sufficient** to make what you did illegal?
+Consider the implications of the  sentence: 
+
+14. Is a person being under 18 **sufficient** to make supplying them alcohol illegal?
  __________________  
 <!--yes-->
-14. You supply a person alcohol. Is the condition of that person being under 18 **necessary** for what you did to be illegal? __________________  
-<!--no. There might be other people for whom it is illegal to supply alchol. The statement doesn't speak to that.-->
+15. Is a person being under 18 **necessary** to make supplying them alcohol illegal? __________________  
+<!--no. There might be other people for whom it is illegal to supply alcohol, like an already-very-drunk person. The statement doesn't speak to that.-->
 
 This could be rewritten, in more familiar if-then form as  
 
@@ -153,23 +155,21 @@ This could be rewritten, in more familiar if-then form as
 
 Below are some statements.  Rewrite each one in the form of **If A, then B**. Then, indicate whether the first part (A) is **necessary** as well as **sufficient** for B.
 
-15. Smoking ice (methamphetamine) seems great if you don’t consider the consequences. 
+16. Smoking ice (methamphetamine) seems great if you don’t consider the consequences. 
 <!-- If you don't consider the consequences, smoking ice seems great.
 Not considering the consequences is a sufficient condition for smoking ice seeming great-->
+<BR><BR>
 
-16. You can drive a car if you don’t speed.
+17. You can drive a car if you don’t speed.
 <!--If you don't speed, you can drive a car. 
 Not speeding is a sufficient condition for driving a car. (in actual fact, there are other restrictions on driving, so this is not true in the real world)
 -->
+<BR>
 
-17. There’s no rest for the wicked.  
+18. There’s no rest for the wicked.  
 <!-- If one is wicked, they get no rest. 
 Being wicked is sufficient for getting no rest.
 Notice it does not imply that being wicked is sufficient for getting no rest. There might be other types that get no rest -->
-
-18. If you don't have time to complete these, do the rest at home.
-<!-- Not having time to complete these is sufficient for doing the rest at home.
-Not having time to complete these is not necessary for doing the rest at home. You might do the rest at home because you had time, but wanted to do them again, or do the rest at home because you had time, but decided to daydream instead -->
 
 19. All convicts have their fingerprints taken.  
 <!-- If one is a convict, one gets one's fingerprints taken.
@@ -198,10 +198,13 @@ For example, recall
 
 Go back through two of the other **If, then** statements above and below write about what is necessarily true.  
 <BR><BR>
-21. _________________________________________________________________________________________  
+
+21. _________________________________________________________________________________________ 
 <BR><BR>
+
 22. _________________________________________________________________________________________  
 <BR><BR>
+
 23. _________________________________________________________________________________________  
 
 
@@ -347,7 +350,9 @@ Write Timon's statement as a syllogism with two premises and a conclusion. This 
 
 40. Premise: __________________________________________________________________________
 <BR><BR><BR>
+
 Premise: __________________________________________________________________________________
+
 <BR><BR><BR>
 Conclusion: ___________________________________________________________________________  
 

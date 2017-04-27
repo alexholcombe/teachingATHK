@@ -1,6 +1,6 @@
 ---
 title: "ATHK1001 Evidence tutorial"
-output: html_document
+output: word_document
 date: "week of 1 May, 2017"
 ---
 <!-- TUTORS: Students should work on some of these in groups, 
@@ -11,10 +11,9 @@ and may want to google things
 
 Understand: IV vs DV, Confound, Controlled variable
 
-IV vs DVs. [1-min video](https://www.youtube.com/watch?v=rU7l5FkIHus) 
+IV vs DVs. 
 
-Confounds.  ![](familyCircusCorrelatn.jpg)
-<!--Old video is wrong in that doesnt' draw exercise as the mediating variable https://www.youtube.com/watch?v=B7QdNYLp_E0 -->
+Confounds.  
 
 ### Study elements
 
@@ -31,6 +30,8 @@ Controlled variable (in an experiment) | Varies, but is not different for the di
 <BR>
 
 As you go through the examples below, fill out the three right columns of the table.
+
+![](familyCircusCorrelatn.jpg)
 
 ### Confounds  
 
@@ -224,6 +225,7 @@ Some graphs of airline fatalities (between a few hundred and a few thousand per 
 
 Also see http://www.meretrix.com/~harry/flying/notes/safetyvsdriving.html
 -->
+
 ### Remember
 
 * Experiment versus quasi-experiment versus simple correlation

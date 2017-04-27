@@ -1,0 +1,15 @@
+### “Controlling for” in an observational study versus "control" in an experiment
+
+In an observational study, **“controlling for”** a variable (also "adjusting for" and "taking into account") is used to describe how in multivariate regression, a variable’s effect is examined and discounted to reveal the effect of the variable of interest. It’s not literally control, because it’s a statistical trick, not actual manipulation of the variable. It is necessary because in an observational study, it's impossible to ensure that the data points with the different levels of the X variable do not also differ on some other factor Z.
+
+For example, if one wants to look at the effect on cancer rates (Y) of different amounts of fast food consumption (X), it’s impossible to ensure that the people who ate lots of fast food and the people who didn’t were equivalent on other factors (Zs) such as amount of exercise, gender, race, alcohol intake, etc. These alternative factors may be responsible for any difference in obesity between fast food abstainers and fast food frequenters. So we have to use the statistical trick of “controlling for”. But this has problems, as described in Alex's lectures 2 and 3.
+
+In an experiment, we literally do **control** a variable. In rats for example, we could manipulate the proportion of fast food in their diet.
+
+But in addition to explicit control, experiments also rely on **randomization**. The reason for randomization is to balance extraneous variables between the different values of the controlled variable. For example, in the case of the rat fast food study, the study design might be to give some rats no fast food in their diet and give other rats only fast food. How should we decide which rats to give the fast food to?
+
+A naive approach would be to order, say, 10 batches of 10 rats and give the first five batches that we receive the fast food and following that, do the study on the remaining five batches with no fast food. *Do you see any problem with this?*
+
+A first problem is that the first batches of rats might conceivably be different from the last batches of rats. It is conceivable that the first batches of rats were exposed to more carcinogens prior to their arrival to your laboratory than were the last batches of rats. For example, the rat breeder might have started cleaning the rat cages with a somewhat carcinogenic cleaner, after shipping the first batches of rats. That would be a confounding variable. A confounding variable might also occur due to you conducting the study with the no fast food rats after you conducted the study with the first, fast food rats. Maybe it is getting more toward summer as the study goes on, and the later (fast food) rats will then be exposed more to the ultraviolet rays of the sun (if you have a window in your laboratory), which can cause cancer.
+
+To address this, experimenters use **randomization**. The rats are randomly assigned to the fast food feeding and no fast food groups. This, on average, will balance the extraneous variables, such as carcinogen exposure, across the two groups.
