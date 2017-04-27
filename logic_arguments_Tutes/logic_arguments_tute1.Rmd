@@ -61,13 +61,13 @@ C) Necessary and sufficient.
 
 **If, then statements** frequently are critical ingredients to arguments. Be sure you understand how they relate to **necessary** and **sufficient**:
 
-> If you have a NSW driver's license, you can enrol to vote in NSW.
+> If you have a full NSW driver's license, you can enrol to vote in NSW.
 
 According to the above, 
 
-3. is having a NSW driver's license **sufficient** to vote in NSW?  _________________  
+3. is having a full NSW driver's license **sufficient** to vote in NSW?  _________________  
 
-4. is having a NSW driver's license **necessary** to vote in NSW?  _________________
+4. is having a full NSW driver's license **necessary** to vote in NSW?  _________________
 
 <!-- If then statements don't necessarily mean that the condition is necessary.
 In fact, you can also vote if you don't have a driver's license but do have a "a NSW photo card" issued by RTA
@@ -76,11 +76,11 @@ Thus, an if statement does not mean that the condition after the if must be nece
 
 To indicate that a driver's license is *necessary* as well as sufficient, you'd have to add to the statement, yielding something like:  
 
-> Only if you have a NSW driver's license, you can enrol to vote in NSW. And the driver's license is enough; you don't need anything else.  
+> Only if you have a full NSW driver's license, you can enrol to vote in NSW. And the driver's license is enough; you don't need anything else.  
 
 The first sentence of the above indicates the **necessary** part; "only" signifying that a driver's license is necessary, with no other ID allowable. And the second sentence indicates the **sufficient** part.  We can make this shorter by writing something like: 
 
-> If (and only if) you have a NSW driver's license, you can enrol to vote in NSW.  
+> If (and only if) you have a full NSW driver's license, you can enrol to vote in NSW.  
 
 When people talk informally, "if and only if" is sometimes what they mean by "if". But not always, and unfortunately we can be certain of what the consequences of their claim is only if we know whether they meant "if and only if". For the purposes of this tutorial, we will assume that sentences mean no more than they say: "if" means something is **sufficient** but does not mean that it is **necessary**.
 
@@ -352,6 +352,6 @@ Premise: _______________________________________________________________________
 Conclusion: ___________________________________________________________________________  
 
 <!-- Premise: I have forgot all men.
-Premise: Flavius art (is) a man.
+Premise: Flavius art (archaic English for "is") a man.
 Conclusion: I have forgot you.
 -->

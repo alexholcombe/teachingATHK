@@ -190,7 +190,10 @@ Describe the kind of evidence that would be relevant to the numbered statements 
 <!--Tell the students to assume that it is true that red cars get more tickets.
 Alternative explanation: People who drive red cars may drive more quickly and/or break more laws.
 In other words, 
-		- selection bias, omitted variable, 
+		- selection bias, omitted variable
+		
+Experiment to address the issue: conduct a "sting" on the highway patrol. Unbeknownst to them, shut down the road where they are sitting waiting for speeders. Then send several cars driving by them with professional drivers, with some red. See whether they are more likely to give tickets to the red cars.
+Note that while this experiment avoids the confound of red car drivers being more likely to break the law, this experiment assesses only whether it is really the redness causing the tickets, not whether it's happening because of greater noticing - the causal mechanism in the statement. So ideally an experiment would somehow measure noticing.
 -->
 2. Crystal meth (ice) is the drug of choice on the streets today.
 <!--Crystal meth.  How much police haul in each year.
@@ -213,7 +216,7 @@ Alternatively,
 - Males may drive faster on average. In a sense that may make them "worse drivers" but if you somehow forced females to drive at the same speed, possibly they'd have *even more* accidents.
 - Males may drive more dangerous vehicles (perhaps trucks and sports cars somehow encourage accidents regardless of sex of the driver?
 -->
-5. Driving a car is much more dangerous than flying in a commercial airliner
+5. Driving a car is more dangerous than flying in a commercial airliner.
 <!-- 	Number of people who die per year in auto accidents is much larger than number who die in an airliner.
 But, that's not the relevant number. Instead, some *rate* of accidents is more relevant, because there are many more car trips than airline trips.
 It is irrational to fear flying a significant distance, if you are willing to drive that same distance without such trepidations, because your risk of injury or death is 10 to 40 times greater in an automobile than in an airliner, in the safer areas of the world. He found that over the fifteen years between 1975 and 1994, the death risk per flight was one in seven million. Barnett, judges the actual risk of one person being involved in a fatal airline accident, to be once every 19,000 years, provided he flew on an airliner once each day of those 19,000 years. He bases that estimate on what actually happened in the domestic U.S., during the 1990s. http://anxieties.com/flying-howsafe.php#.Vtd9ZJN97UI  http://airlinesafety.com/faq/FearFlying.htm
