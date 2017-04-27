@@ -173,12 +173,12 @@ How might you determine which theory is correct?
 You will see several statements. For each, write down: 
 
 (@) What kind of evidence would be relevant to evaluate each claim.
-(@) An experiment would be important to settle the issue.
-(@) An experiment is possible / feasible / impossible.
-(@) Whether the most straightforward relevant evidence would be a correlation or some other sort of evidence.
 (@) Whether it's a correlational study or an experiment that you're thinking of, write down two specific variables you'd examine the link between.
-(@) Any major confounds?
-(@) What can be done to address the confounds?  
+(@) Major confounds likely to be involved, if any?
+(@) What can be done to address the confounds? 
+(@) An experiment to address the issue (even if practically impossible to conduct).
+(@) Whether the above experiment is possible and feasible or impossible.
+ 
     
 <!-- end of list -->
 *** 
