@@ -23,6 +23,8 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this class.
 
+* TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
+
 # Vocabulary
 
 * Correlation, used in this class to mean linear correlation.
@@ -60,8 +62,8 @@ Also explained in https://alexholcombe.wordpress.com/2016/02/03/problems-with-co
 
 ### Other terms
 * Spurious correlation
-* Causal model
 <!-- Correlation between X and Y that one might think is due to X causing Y, or Y causing X, but isn't -->
+* Causal model
 * Contingency table
 * Residual
 * Nonlinear model

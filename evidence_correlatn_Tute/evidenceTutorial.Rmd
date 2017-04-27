@@ -1,7 +1,7 @@
 ---
 title: "ATHK1001 Evidence tutorial"
-date: "week of 1 May, 2017"
 output: html_document
+date: "week of 1 May, 2017"
 ---
 <!-- TUTORS: Students should work on some of these in groups, 
 and may want to google things
@@ -192,21 +192,11 @@ Alternative explanation: People who drive red cars may drive more quickly and/or
 In other words, 
 		- selection bias, omitted variable, 
 -->
-1. Driving a car is much more dangerous than flying in a commercial airliner
-<!-- 	Number of people who die per year in auto accidents is much larger than number who die in an airliner.
-But, that's not the relevant number. Instead, some *rate* of accidents is more relevant, because there are many more car trips than airline trips.
-It is irrational to fear flying a significant distance, if you are willing to drive that same distance without such trepidations, because your risk of injury or death is 10 to 40 times greater in an automobile than in an airliner, in the safer areas of the world. He found that over the fifteen years between 1975 and 1994, the death risk per flight was one in seven million. Barnett, judges the actual risk of one person being involved in a fatal airline accident, to be once every 19,000 years, provided he flew on an airliner once each day of those 19,000 years. He bases that estimate on what actually happened in the domestic U.S., during the 1990s. http://anxieties.com/flying-howsafe.php#.Vtd9ZJN97UI  http://airlinesafety.com/faq/FearFlying.htm
-Some graphs of airline fatalities (between a few hundred and a few thousand per year): http://edition.cnn.com/interactive/2014/07/travel/aviation-data/
-
-flying airliners (2004): 19.7 fatalities per million hours
-driving: .588 fatalities per million hours
-On this basis, flying has 21 times the number of fatal accidents and 33.5 times the number of fatalities per hour of operation. http://www.meretrix.com/~harry/flying/notes/safetyvsdriving.html
--->
-3. Crystal meth (ice) is the drug of choice on the streets today.
+2. Crystal meth (ice) is the drug of choice on the streets today.
 <!--Crystal meth.  How much police haul in each year.
 Poll on the streets. But will the people polled lie? Maybe they are biased to not admit meth is their favorite.
 The drug they buy may not be their top preference, because the drug bought is affected by availability, not just preference.  So maybe should ask them which they’d get if they could, the "drug of choice".-->
-4. Humanities classes at the University of Sydney are marked more leniently than science classes.
+3. Humanities classes at the University of Sydney are marked more leniently than science classes.
 <!-- Useful to go through controlled experiment scenario:
 - Randomly assign students to a humanities or science class. This is gold standard evidence for establishing causality
 - Don't let the lecturers know this experiment is going on, to avoid them changing what they do.
@@ -216,26 +206,33 @@ The drug they buy may not be their top preference, because the drug bought is af
 - Does average class size of humanities and science classes differ? That could be a confound, where the results of the experiment cause yield the result that humanities classes are easier, but the actual cause may not be the humanity of it but rather the smaller sizes of the classes.
 - Class criticising argument as a group
 -->
-5. Background: Male drivers have significantly more accidents than female drivers. As a result, insurance companies in many countries charge males more. Statement to evaluate: Males are worse drivers than females.
+4. Background: Male drivers have significantly more accidents than female drivers. As a result, insurance companies in many countries charge males more. Statement to evaluate: Males are worse drivers than females.
 <!--Being male rather than female causes accidents. In other words, males are worse drivers
 Alternatively, 
 - Males may drive more miles. The background does not indicate whether males have more accidents per mile driven or simply more accidents in total.
 - Males may drive faster on average. In a sense that may make them "worse drivers" but if you somehow forced females to drive at the same speed, possibly they'd have *even more* accidents.
 - Males may drive more dangerous vehicles (perhaps trucks and sports cars somehow encourage accidents regardless of sex of the driver?
 -->
+5. Driving a car is much more dangerous than flying in a commercial airliner
+<!-- 	Number of people who die per year in auto accidents is much larger than number who die in an airliner.
+But, that's not the relevant number. Instead, some *rate* of accidents is more relevant, because there are many more car trips than airline trips.
+It is irrational to fear flying a significant distance, if you are willing to drive that same distance without such trepidations, because your risk of injury or death is 10 to 40 times greater in an automobile than in an airliner, in the safer areas of the world. He found that over the fifteen years between 1975 and 1994, the death risk per flight was one in seven million. Barnett, judges the actual risk of one person being involved in a fatal airline accident, to be once every 19,000 years, provided he flew on an airliner once each day of those 19,000 years. He bases that estimate on what actually happened in the domestic U.S., during the 1990s. http://anxieties.com/flying-howsafe.php#.Vtd9ZJN97UI  http://airlinesafety.com/faq/FearFlying.htm
+Some graphs of airline fatalities (between a few hundred and a few thousand per year): http://edition.cnn.com/interactive/2014/07/travel/aviation-data/
 
+Also see http://www.meretrix.com/~harry/flying/notes/safetyvsdriving.html
+-->
 ### Remember
 
 * Experiment versus quasi-experiment versus simple correlation
 * Quasi-experiments are sometimes referred to as natural experiments
 * Only a controlled experiment can definitively establish causality
 
-<!-- Extraneous variable
+<!-- IGNORE EVERYTHING BELOW
 
+Extraneous variable
 General term for a variable that changes concomitantly with the IV.
 
 Nuisance variable
-
 Variable that causes DV scores to be more variable
 
 ### Confounds versus noise-adding nuisances
