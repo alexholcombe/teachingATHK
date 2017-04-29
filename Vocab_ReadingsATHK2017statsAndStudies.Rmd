@@ -11,7 +11,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
 
-*  [Alex's explanation]((https://alexholcombe.github.io/teachingATHK/controllingForVsControl.html) of random assignment and its relation to "controlling for" in regression, and someone else's [explanation of random assignment](http://isps.yale.edu/node/16697).
+*  [Alex's explanation](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) of random assignment and its relation to "controlling for" in regression, and someone else's [explanation of random assignment](http://isps.yale.edu/node/16697).
 
 * [What is a confounding variable?](http://www.statisticshowto.com/design-of-experiments/confounding-variable/)
 
