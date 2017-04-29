@@ -14,7 +14,9 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * [*Introduction to Logic and Critical Thinking*](http://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=457) by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
 
-* [Denying the antecedent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/77/Denying-the-Antecedent) by Bo Bennett
+* Common logic mistake of [affirming the consequent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/14/Affirming-the-Consequent)
+
+* Common logic mistake of [denying the antecedent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/77/Denying-the-Antecedent) 
 
 * *Think Critically* by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, http://opac.library.usyd.edu.au/search/r?SEARCH=ATHK1001
 
@@ -83,7 +85,7 @@ Therefore, Socrates is mortal."
 <!-- No true Scotsman. An "ad hoc rescue" of a refuted generalization attempt-->
 
 * Confirmation bias
-* Soldier mind
+* Soldier mind or motivated cognition
 * My-side bias
 <!-- Confirmation bias, soldier mind, and my-side bias are practically synonyms -->
 
