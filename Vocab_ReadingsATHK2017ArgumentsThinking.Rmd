@@ -85,10 +85,10 @@ Therefore, Socrates is mortal."
 <!-- No true Scotsman. An "ad hoc rescue" of a refuted generalization attempt-->
 
 * Confirmation bias
-* Soldier mind or motivated cognition
+* Soldier mind 
 * My-side bias
 <!-- Confirmation bias, soldier mind, and my-side bias are practically synonyms -->
-
+* [Motivated cognition](https://alexholcombe.github.io/teachingATHK/readings/motivatedCognition.html)
 More to come
 
 
