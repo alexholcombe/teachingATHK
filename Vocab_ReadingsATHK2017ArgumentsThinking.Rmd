@@ -89,6 +89,7 @@ Therefore, Socrates is mortal."
 * My-side bias
 <!-- Confirmation bias, soldier mind, and my-side bias are practically synonyms -->
 * [Motivated cognition](https://alexholcombe.github.io/teachingATHK/readings/motivatedCognition.html)
+
 More to come
 
 
