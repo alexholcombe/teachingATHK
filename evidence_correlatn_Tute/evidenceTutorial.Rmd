@@ -1,6 +1,6 @@
 ---
 title: "ATHK1001 Evidence tutorial"
-output: word_document
+output: html_document
 date: "week of 1 May, 2017"
 ---
 <!-- TUTORS: Students should work on some of these in groups, 
@@ -20,9 +20,8 @@ Confounds.
 Term | Definition | Murder - ice cream relationship | Self-quiz - exam relationship | Liberals - Darks relationship |
 ------------- | ------------- | ------------- | ------------- | ------------- |
 Dependent variable (DV) | The behavior or outcome that is measured. It is expected to change as a result of changes in the IV. |  | | |
-Independent variable (IV) | Variable with two or more levels chosen by the researcher. Changes in the IV are expected to be related to changes in the DV. |  | | |
+Explanatory variable (IV) | Changes in the explanatory variable are expected to be related to changes in the DV. |  | | |
 Confound (Bruce mentioned "omitted variables" in the context of linear regression, which can act like a confound) | Variable that changes with the IV. The DV could be affected by both the IV and/or the confound, so we cannot conclude that the IV was affected by the DV. |  | | |
-Controlled variable (in an experiment) | Varies, but is not different for the different levels of the IV. Any effects it has will "cancel out". |  | | |
 
 <!--The word "confound" is usually used for experimental studies, while "omitted variable" is usually used for non-experimental (e.g., correlational) studies -->
 
