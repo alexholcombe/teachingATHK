@@ -10,11 +10,11 @@ To many modern English speakers, this use of the word "control" is not intuitive
 
 That meaning of "control" [survived in modern English usage](https://forum.wordreference.com/threads/passport-control.2188162/) in the "Passport Control" facilities at airports, where passports are checked, not controlled. So, when you hear "control experiment", it may help to think "Passport Control". The control experiment is a check that the independent variable is responsible for the outcome you are interested in.
 
-## The independent variable of an experiment is controlled
+## The independent variable of an experiment is *controlled*
 
 In an experiment, the independent variable is literally (in the modern English sense) controlled by the experimenter. That is, it is manipulated. If there are two groups in the experiment, that leads to what you can call the "experimental group" and the "control group".
 
-## “Controlling for” in an observational study
+## *Controlling for* in an observational study
 
 In an observational study, **“controlling for”** a variable (also "adjusting for" and "taking into account") is used to describe how in multivariate regression, a variable’s effect is examined and discounted to reveal the effect of the variable of interest. It’s not literally control, because it’s a statistical trick, not actual manipulation of the variable. It is necessary because in an observational study, it's impossible to ensure that the data points with the different levels of the X variable do not also differ on some other factor Z.
 
@@ -30,7 +30,7 @@ A first problem is that the first batches of rats might conceivably be different
 
 To address this, experimenters use **randomization**. The rats are randomly assigned to the fast food feeding and no fast food groups. This, on average, will roughly equate the extraneous variables, such as carcinogen exposure, across the two groups.
 
-## "Controlled variables" that are neither the independent variable nor the above category of variables statistically "controlled for"
+## *Controlled variables* that are neither the independent variable nor the above category of variables statistically *controlled for*
 
 The term "controlled variables" is often used for quantities that a scientist wants to be constant in the two groups. For the fast-food experiment on rats, a good researcher will ensure that before the experiment commenced, both groups of rats had the same diet.
 If you did not, one of the possible explanations of a difference in cancer rate would be difference in amount of carcinogens ingested before the experiment began. Similarly, during the actual experiment, amount of UV light exposure should "be controlled" - both groups of rats should get the same amount of exposure to sunlight.
