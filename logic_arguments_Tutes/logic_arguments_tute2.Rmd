@@ -231,24 +231,24 @@ Conclusion: therefore, we must do *it* now.
 <!-- It is a deductive argument made up of two premises and a conclusion -->  
 
 *****  
->Most claims that Donald Trump makes about himself are false. Donald Trump said, "I have normal-sized fingers". Therefore Donald Trump does not have normal-sized fingers.
+>Almost all things that Donald Trump says about himself are false. Donald Trump said, "I have normal-sized fingers". Therefore Donald Trump does not have normal-sized fingers.
 
 25. Do the above sentences form a syllogism? _________________
 <!-- No, because they are not deductive. They are inductive. They form an inductive argument.-->
 <!-- The first Clinton argument is a syllogism. The second one isn't because it relies on probabilistic support, indicated by "Most".-->
 
 *****  
-### Valid is to Strong as Sound is to Cogent  
+### Valid is to Strong as Cogent is to Strong  
 
-For *inductive* arguments, the term for logically consistent is **strong** rather than **valid**- "valid" is used only for deductive arguments. 
-The counterpart to the term *sound* (in deduction, used for both the premises being true and the argument logically consistent) is "cogent" for induction. 
-For an inductive argument to be cogent, both the premises must be true and the argument must be strong.
+For *inductive* arguments, the term for logically consistent is **cogent** rather than **valid**- "valid" is used only for deductive arguments. 
+The counterpart to the term *sound* (in deduction, used for both the premises being true and the argument logically consistent) is "strong" for induction. 
+For an inductive argument to be strong, both the premises must be true and the argument must be cogent.
 
-26. Returning to the Trump argument, is it *strong*? ____________
+26. Returning to the Trump argument, is it *cogent*? ____________
 <!-- Yes -->
-27. Is it *cogent*? ___________
-<!-- Not sure -->
-<!-- The Trump argument is cogent and good if the premises are true. But possibly the first premise is not true.  -->
+27. Is it *strong*? ___________
+<!-- Not sure 
+ The Trump argument is cogent and good if the premises are true. But possibly the first premise is not true.  -->
 
 *****
 
@@ -259,9 +259,9 @@ When science presents evidence, it almost never proves something (certainty), in
 
 28. Is the above an *inductive* or a *deductive* argument? ______________________
 
-29. Is the above *strong*? ____________
+29. Is the above *cogent*? ____________
 <!-- Yes -->
-30. Is it *cogent*? ___________
+30. Is it *strong*? ___________
 <!-- Yes  -->
 
 *****
@@ -270,26 +270,22 @@ When science presents evidence, it almost never proves something (certainty), in
 The doctor reports that your PSA level is 4.5 ng/mL.
 It is very likely that you have prostate cancer.
 
-31. Is the conclusion **strong**? _________________  
+31. Is the conclusion **cogent**? _________________  
 <!-- No, because the premises haven't said whether there are other ways that you can have an elevated PSA level.
 If there are other ways and they are sufficiently common, then the conclusion is false. 
 Making this mistake is analogous, in induction, to the fallacy of affirming the consequent in deduction.
 In Bruce's lectures he referred to humans' tendency to neglect the base rate of something. Here, people tend to neglect the possibility that the base rate of people even without cancer having >4.5 ng/mL might be high.
 -->
 <BR>
-32. Is the conclusion cogent? __________________
-<!--No, because it isn't strong. To be cogent, the argument must be strong AND the premises must be true. 
-<!-- Tell the students that not only is the argument unsound, but also the conclusion happens to be false.
+32. Is the conclusion **strong**? __________________
+<!--No, because it isn't cogent. To be strong, the argument must be cogent AND the premises must be true. 
+<!-- You could the students that not only is the argument not cogent, but also the conclusion happens to be false.
 Only about one in three men who have an elevated PSA level are found to have cancer (specifically, that subsequent biopsy finds malignancy).
 Like many other medical tests, the PSA test is unreliable.
 This is a big issue in medicine, such as whether regular screening should be recommended for breast cancer and prostate cancer. The false alarm rate can be high enough that the number of lives saved may be very small relative to the expense of the multiple tests done and the unnecessary surgeries that sometimes occur, which are themselves dangerous.
--->
-
-<!--http://www.uptodate.com/contents/screening-for-prostate-cancer -->
+http://www.uptodate.com/contents/screening-for-prostate-cancer -->
 
 *****
-
-<!--## Argument or explanation? -->
 
 ### Deduction, induction, and informal writing
 
@@ -312,13 +308,11 @@ Therefore, the battery is dead -->
 
 <BR><BR>
 
-There are other explanations of the car being silent, so the argument is not sound.
+The premise that silence upon turning the key means the battery is dead is false - there are other possibilities, like that the battery is not connected. Because the premise is false, the argument is not sound, although it is valid. 
 
-However while the argument as stated is deductive, in the real world few cause->effect relationships are not 1-to-1. For example, while the battery being dead is one cause of a car being silent, there are other possible causes. 
+The argument about the car above, as stated, is deductive. However, the writer of the argument probably is aware that other things (like a disconnected battery) could explain the problem, but simply thinks they are much more unlikely than the possibility that the battery is dead. In other words, the writer may actually be reasoning inductively. Language is often used very messily. Humans!
 
-The writer of the argument probably is aware of there being other possible causes of the car being silent, but simply thinks they are much more unlikely than the possibility that the battery is dead. In other words, the writer may actually be reasoning inductively. Language is often used very messily. Humans!
-
-Rewrite the argument to make it clear it is inductive:
+Rewrite the argument to make it clearly inductive:
 <!-- If turning the key in the ignition yields silence, **very likely** the car battery is dead.
 Turning the key in my car's ignition yields silence.
 Therefore, the battery very likely is dead -->
@@ -330,10 +324,10 @@ Therefore, the battery very likely is dead -->
 41. Conclusion: ____________________________________________________________________________________
 <BR><BR>
 
-42. Is the argument strong? NO / YES 
+42. Is the argument cogent? NO / YES 
 <!--Yes, the logic follows -->
-43. Do you think the argument is cogent? NO / YES
-<!--Yes, from what I know about cars-->
+43. Do you think the argument is strong? NO / YES
+<!--Yes, as far as I know about cars-->
 
 *****
 
@@ -348,9 +342,12 @@ The interests of all, whether high or low, are equal. The members of the working
 
   a. The interests of all, whether high or low, are equal. 
   b. The members of the working classes are citizens by nature and have the same rights as the rich. 
-  c. Public administration must duly and solicitously provide for the welfare and comfort of the working classes.   d. The law of justice will be violated which ordains that each man shall have his due. 
+  c. Public administration must duly and solicitously provide for the welfare and comfort of the working classes.   
+  d. Otherwise that law of justice will be violated which ordains that each man shall have his due. 
 
-<!--C  The indicator word “therefore” identifies the conclusion. The rest of the choices are premises. -->  
+<!--C  The indicator word “therefore” identifies the conclusion. The rest of the choices are premises.
+The "otherwise" phrase is stated last but is nevertheless a premise that contributes to the conclusion, C
+-->  
 
 *****
 
@@ -361,7 +358,10 @@ While the 19th-century British idealists read Hegel as an arch-metaphysician of 
   c. Hegel can be interpreted in wildly contrary ways. 
   d. Hegel’s works are so obscurely written as to be worthless. 
 
-<!--D. The word “since” is the indicator word showing a premise, and immediately preceding the “since” is the conclusion. The first sentence supports this conclusion by pointing out how Hegel is interpreted in varying ways.-->
+<!--D. The word “since” is the indicator word showing a premise, "shows" is an indicator word that helps signal the conclusion. The first sentence supports this conclusion by pointing out how Hegel is interpreted in varying ways.
+“Since” helps signal that the last phrase is not a conclusion but rather is a premise.
+"Hegel can be interpreted in wildly contrary ways", option C, is an intermediate conclusion from some of the premises that then leads to the final conclusion".
+-->
   
 *****
 
@@ -371,15 +371,7 @@ Circle the main conclusion.
 
 <!-- "You need to rewrite this whole story".   The indicator word “because” is the best clue to the overall point of the passage. -->
 
-***
-
-We need to bring our oldest, the teenager, to the phone store, since he can give us helpful advice about shopping for the best phone. And if he’s coming with us, then we can’t leave the baby at home with his young siblings. And both parents have to come to the store, since one of us is the authorized name on the account and has to be there to give permission for any changes to the account, and the other is the one shopping for a new phone. So the baby has to come to the phone store too.
-
-Circle the main conclusion.
-<!--  there are subconclusions, but arguably the final conclusion is marked by the indicator “so.”, 
-The baby has to come to the phone store.-->
-  
-***
+*****
 
 ### Begging the question or circularity
 
@@ -400,7 +392,7 @@ Why is this statement circular?
 
 **Beth**: Huh?
 
-Lily is asking **why** she's all over the news, but in real-world conversation it can be easy to forget or mistake the original question, as Beth has perhaps done.
+Lily is asking why Kim Kardashian gets so much coverage, but Beth answers by essentially re-stating that Kim Kardashian gets lots of coverage. As Beth did here, in real-world conversation it can be easy to forget or mistake the original question.
 
 ***
 
@@ -410,24 +402,30 @@ Lily is asking **why** she's all over the news, but in real-world conversation i
 **Mark**: The speed limit should be 110 kph on interstate highways.
 Because the motorways were designed for high speed traffic, it is safe to drive at 110 kph.
 
-**Jess**: In America, the accident rate dropped when the speed limit was reduced to 55 mph (89 kph) in the late 1970's, and it has increased substantially since the speed limit was returned to 65 mph (105 kph).
+**Jess**: In America, the accident rate dropped when the speed limit was reduced to 55 mph (89 kph) in the late 1970's, and it has increased since the speed limit was returned to 65 mph (105 kph).
 
 **Mark**: Many people will drive at 110 kph whether or not the legal limit is 100 kph.
 
-Did Jess effectively rebut Mark's claims, assuming that Jess's statement was factually correct?  
-<!-- Rebutted the claim of safety. Although she didn't say how much exactly the accident rate dropped and increased. Maybe the rate in both cases is low enough to be considered safe?-->
+Did Jess rebut Mark's claims, assuming that Jess's statement was factually correct?  
+<!-- Jess did provide a decent rebuttal of Mark's claim.  However, she didn't say how much exactly the accident rate dropped and increased. Possibly, the rate in both cases is low enough to be considered "safe". Jess and Mark ought to have a discussion of what they consider safe.-->
 
 <BR>
 _________________________________________________________________________
 
 <BR>
-Did Mark effectively rebut Jess' point?  
+Did Mark rebut Jess' point?  
 <BR> _________________________________________________________________________  
+<!-- No, Mark did not say anything that addressed Jess' claim that a higher speed limit is not safe. -->
 <BR>
 Did Mark effectively defend his initial claim?  
-<!--Well he makes what may be a valid point, and at first you may think, he scored!
-But when you examine the connection to his initial claim, you realize his position has become a bit fraught.
-Initially he was making one argument for raising the speed limit, and now he is making a completely different one. And it's not clear at this point whether it is a good one.
+<!--Mark made what may be a valid point, and at first you may think, he scored!
+But when you examine the connection to his initial claim, you realize he is not talking about his initial claim anymore, which was that it is safe to drive at 110 kph.
+
+Initially he was making an argument based on safety for raising the speed limit. Jess provided a rebuttal of that, but Mark has not defended his initial claim.
+
+Now Mark is making a completely different argument And it's not clear at this point whether it is a good one.
+That is, it is dubious that many people ignoring the speed limit is a good argument for having a low speed limit.
+
 Ask the class their reaction to his new argument.
 -->
 <BR>
@@ -459,7 +457,9 @@ ________________________________________________________________________________
 <BR>
 <!--By giving a new reason. 
 Does this mean that his first justification was not a good one,
-and he shouldn't have given it?-->
+and he shouldn't have given it?
+He hasn't provided anything to dispute Isabel's counter-point, which might mean Isabel has dispelled his point.
+-->
 
 <BR>
 What do you think Isabel might say next? 
@@ -474,10 +474,12 @@ That is, Isabel could say something like,
 <BR><BR>
 
 What do you think of Chen's position?
-<!--There isn't enough here to fairly evaluate Chen's full position.
-Unfortunately, this is as far as people in a real-world argument usually get.-->
+<!--There might not be enough here to fairly evaluate Chen's full position.
+Unfortunately, this is as far as people in a real-world argument usually get.
+Maybe Chen has some good reasons why taxes shouldn't be changed in other areas.
+-->
 <BR>
 ___________________________________________________________________________________
 
 <BR>
-This is about as far as most arguments get in the media. In a debate on television, people usually only get to say two or three things to each other. But it’s impossible to settle most issues in such a short time. If we want to be sure we know the truth about something, we need patience and dedication to the issue.
+This is about as far as most arguments get in the media. In a debate on television, people usually only get to say two or three things to each other. But it’s impossible for a person to give all the reasons for their position in such a short time. If we want to fairly evaluate someone's position, we need patience and dedication to the issue.

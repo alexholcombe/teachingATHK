@@ -30,7 +30,7 @@ A first problem is that the first batches of rats might conceivably be different
 
 To address this, experimenters use **randomization**. The rats are randomly assigned to the fast food feeding and no fast food groups. This, on average, will roughly equate the extraneous variables, such as carcinogen exposure, across the two groups.
 
-## *Controlled variables* that are neither the independent variable nor the above category of variables statistically *controlled for*
+## *Controlled variables* that are neither the independent variable nor the above category of variables statistically controlled for
 
 The term "controlled variables" is often used for quantities that a scientist wants to be constant in the two groups. For the fast-food experiment on rats, a good researcher will ensure that before the experiment commenced, both groups of rats had the same diet.
 If you did not, one of the possible explanations of a difference in cancer rate would be difference in amount of carcinogens ingested before the experiment began. Similarly, during the actual experiment, amount of UV light exposure should "be controlled" - both groups of rats should get the same amount of exposure to sunlight.

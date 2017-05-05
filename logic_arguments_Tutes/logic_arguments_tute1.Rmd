@@ -1,6 +1,6 @@
 ---
 title: "ATHK1001 Logic and Arguments tutorial 1 of 2"
-output: word_document
+output: html_document
 date: "weeks of 8 May, 2017"
 ---
 
