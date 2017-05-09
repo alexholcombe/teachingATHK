@@ -74,23 +74,20 @@ Therefore, Socrates is mortal."
 
 <!-- Dissensus  -->
 
-## Fallacies vocab
+## Vocab
 
 * Appeal to authority
 * Straw man
     * ![Straw man](imagesForRmd/strawMan.jpg)
-
+* Fallacy of the single cause. 
+<!-- This is related to the fallacy of denying the antecedent  -->
 * Moving the goalposts
 * [No true Scotsman](https://en.wikipedia.org/wiki/No_true_Scotsman)
 <!-- No true Scotsman. An "ad hoc rescue" of a refuted generalization attempt-->
-
+* [Overwhelming exception](https://en.wikipedia.org/wiki/Overwhelming_exception) Ali G [example](https://www.youtube.com/watch?v=SZ6k8tddDxg#t=02m01s)
 * Confirmation bias
 * Soldier mind 
 * My-side bias
 <!-- Confirmation bias, soldier mind, and my-side bias are practically synonyms -->
 * [Motivated cognition](https://alexholcombe.github.io/teachingATHK/readings/motivatedCognition.html)
 
-More to come
-
-
-***
