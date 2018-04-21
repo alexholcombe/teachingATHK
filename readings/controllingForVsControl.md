@@ -1,6 +1,10 @@
 # Ways the word "control" is used in research and experiment design
 
-The word can mean different things even when the term used sounds almost the same.
+The word "control"  means different things when it appears in different terms, specifically "control group", "controlled" variables, and "controlling for" a variable!
+
+## The independent variable of an experiment is *controlled* in the ordinary modern English sense
+
+In an experiment, the independent variable is literally controlled by the experimenter. That is, it is manipulated. This is the use of the word in science that makes the most sense to the average person. If there are two groups in the experiment, manipulating a variable often leads to what you can call an "experimental group" (e.g., with a drug being tested on people) and the "control group" (a comparison group of people who don't receive the drug).
 
 ## Control groups
 
@@ -10,9 +14,6 @@ To many modern English speakers, this use of the word "control" is not intuitive
 
 That meaning of "control" [survived in modern English usage](https://forum.wordreference.com/threads/passport-control.2188162/) in the "Passport Control" facilities at airports, where passports are checked, not controlled. So, when you hear "control group", it may help to think "Passport Control". The  control group is included as a a check that the factor you are interested in is responsible for the outcome of interest in the experimental group.
 
-## The independent variable of an experiment is *controlled*
-
-In an experiment, the independent variable is literally (in the modern English sense) controlled by the experimenter. That is, it is manipulated. If there are two groups in the experiment, that leads to what you can call the "experimental group" and the "control group".
 
 ## *Controlling for* in an observational study
 
