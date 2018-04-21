@@ -1,6 +1,6 @@
 ---
 title: "Vocab, readings: Alex's ATHK Stats and Studies lectures and tutorials"
-date: "lectures 24 Apr to 17 May, 2018. This document may be edited as the lectures proceed."
+date: "lectures starting 24 Apr, 2018. This document may be edited as the lectures proceed."
 output: html_document
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: "Vocab, readings: Alex's ATHK Arguments and Thinking lectures and tutorials"
-date: "4th lecture through to 18 May, 2017. More material may be added to this document as the lectures proceed."
+date: "Alex's 4th lecture through to 17 May, 2018. More material may be added to this document as the lectures proceed."
 output: html_document
 ---
 
 ## Important Readings
 
-* To find some definitions of the terms in the Vocabulary section, open the  [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017ArgumentsThinking.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", something like `<!--- comment text -->`. 
+* To find some definitions of the terms in the Vocabulary section, open   [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017ArgumentsThinking.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", something like `<!--- comment text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * *The power of critical thinking* by Vaughn, Chapter 1, http://opac.library.usyd.edu.au/search/r?SEARCH=ATHK1001
