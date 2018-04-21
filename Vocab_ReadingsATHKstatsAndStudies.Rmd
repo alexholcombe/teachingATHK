@@ -1,12 +1,12 @@
 ---
 title: "Vocab, readings: Alex's ATHK Stats and Studies lectures and tutorials"
-date: "lectures 26 Apr to 2 May, 2017. More material will be added to this document as the lectures proceed."
+date: "lectures 24 Apr to 17 May, 2018. This document may be edited as the lectures proceed."
 output: html_document
 ---
 
 ## Important Readings
 
-* To find some definitions of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, and you'll see definitions in the comments, embedded in "\<!-- \-->", something like `<!--- comment text -->`. 
+* To find definitions of some of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- comment text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
@@ -31,7 +31,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 # Vocabulary
 
-* Correlation, used in this class to mean linear correlation.
+* Correlation, used in this class to refer only to linear correlation.
 * Observational study.
 <!-- Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups) -->
 * Quasi / natural experiment
@@ -48,7 +48,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 * Extraneous variable
 <!-- When one compares two groups, one is seeking to determine the effect of an explanatory variable or variables. But extraneous variables are variables that also differ between the two groups. They may be confounds. -->
 * Confound or confounding variables
-<!-- Confounds are sometimes known as omitted variable in the context of observational studies and in the context of a statistical model like a regression. In experiment design, you might be interested in the effect of videogames on agression. You recruit a group of videogamers and another group of non-gamers and assess their agression level (somehow). You find that the videogamers are more agressive. Does this mean that videogaming causes agression? No, because you might have a confounding variable like age. Videogamers tend to be younger so your videogaming group may be younger than your non-gaming group. And, aggression levels decrease with age (and this was true even before videogames was invented).
+<!-- Confounds are sometimes known as omitted variables in the context of observational studies or in the context of a statistical model like a regression. In experiment design, you might be interested in the effect of videogames on agression. You recruit a group of videogamers and another group of non-gamers and assess their agression level (somehow). You find that the videogamers are more agressive. Does this mean that videogaming causes agression? No, because you might have a confounding variable like age. Videogamers tend to be younger so your videogaming group may be younger than your non-gaming group. And, aggression levels decrease with age (and this was true even before videogames was invented), meaning that perhaps the only reason gamers are more violent is because they are younger. 
 http://www.statisticshowto.com/design-of-experiments/confounding-variable/
 -->
 * Omitted variable
