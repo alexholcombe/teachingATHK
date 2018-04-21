@@ -6,9 +6,9 @@ The word can mean different things even when the term used sounds almost the sam
 
 A control group is the group in an experiment that does not receive treatment by the researchers and is then used as a benchmark to measure how the other tested subjects do.
 
-To many modern English speakers, this use of the word "control" is not intuitive. The term "control group" dates from an old meaning of the word "control", to check, which is still the predominant meaning in languages such as German.
+To many modern English speakers, this use of the word "control" is not intuitive. The term "control group" dates from an old meaning of the word "control", to check, which is still the predominant meaning for cognate words in languages such as German.
 
-That meaning of "control" [survived in modern English usage](https://forum.wordreference.com/threads/passport-control.2188162/) in the "Passport Control" facilities at airports, where passports are checked, not controlled. So, when you hear "control experiment", it may help to think "Passport Control". The control experiment is a check that the independent variable is responsible for the outcome you are interested in.
+That meaning of "control" [survived in modern English usage](https://forum.wordreference.com/threads/passport-control.2188162/) in the "Passport Control" facilities at airports, where passports are checked, not controlled. So, when you hear "control group", it may help to think "Passport Control". The  control group is included as a a check that the factor you are interested in is responsible for the outcome of interest in the experimental group.
 
 ## The independent variable of an experiment is *controlled*
 
@@ -18,11 +18,11 @@ In an experiment, the independent variable is literally (in the modern English s
 
 In an observational study, **“controlling for”** a variable (also "adjusting for" and "taking into account") is used to describe how in multivariate regression, a variable’s effect is examined and discounted to reveal the effect of the variable of interest. It’s not literally control, because it’s a statistical trick, not actual manipulation of the variable. It is necessary because in an observational study, it's impossible to ensure that the data points with the different levels of the X variable do not also differ on some other factor Z.
 
-For example, if one wants to look at the effect on cancer rates (Y) of different amounts of fast food consumption (X), it’s impossible to ensure that the people who ate lots of fast food and the people who didn’t were equivalent on other factors (Zs) such as amount of exercise, gender, race, alcohol intake, etc. These alternative factors may be responsible for any difference in obesity between fast food abstainers and fast food frequenters. So we have to use the statistical trick of “controlling for”. But this has problems, as described in Alex's lectures 2 and 3.
+For example, if one wants to look at the effect on cancer rates (Y) of different amounts of fast food consumption (X), it’s impossible to ensure that the people who ate lots of fast food and the people who didn’t were equivalent on other factors (Zs) such as amount of exercise, gender, race, alcohol intake, etc. These alternative factors may be responsible for any difference in obesity between fast food abstainers and fast food frequenters. So we have to use the statistical trick of “controlling for”. But this has problems, as described in Alex's lectures.
 
 In an experiment, we literally do **control** a variable. In rats for example, we could manipulate the proportion of fast food in their diet. If the two groups of rats were completely identical, that's all that's needed.
 
-But because the rats are not all identical  no two rats are identical, not even clones), experiments also rely on **randomization**. The reason for randomization is to balance extraneous variables between the different values of the controlled variable. For example, in the case of the rat fast food study, the study design might be to give some rats no fast food in their diet and give other rats only fast food. But how should we decide *which* rats to give the fast food to?
+But because the rats are not all identical (no two rats are identical, not even clones), experiments also rely on **randomization**. The reason for randomization is to balance extraneous variables between the different values of the controlled variable. For example, in the case of the rat fast food study, the study design might be to give some rats no fast food in their diet and give other rats only fast food. But how should we decide *which* rats to give the fast food to?
 
 A naive approach would be to order, say, 10 batches of 10 rats and give the first five batches that we receive the fast food and following that, do the study on the remaining five batches with no fast food. *Can you recognise a problem with this?*
 
