@@ -1,5 +1,5 @@
 ---
-title: "Vocab, readings: Alex's ATHK Arguments and Thinking lectures and tutorials"
+title: "Vocab, readings for Alex's ATHK Arguments and Thinking lectures and tutorials"
 date: "Alex's 4th lecture through to 17 May, 2018. More material may be added to this document as the lectures proceed."
 output: html_document
 ---
