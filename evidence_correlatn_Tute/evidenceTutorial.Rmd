@@ -1,40 +1,70 @@
 ---
 title: "ATHK1001 Evidence tutorial"
-output: html_document
-date: "week of 1 May, 2017"
+output:
+  word_document: default
+  html_document: default
+date: "week of 30 April, 2018"
 ---
-<!-- TUTORS: Students should work on some of these in groups, 
-and may want to google things
+<!-- TUTORS: Students could work on these in pairs, and may want to google things
 -->
 
 ### Learning Outcomes
+Understand the following:
 
-Understand: IV vs DV, Confound, Controlled variable
+An **explanatory variable** is one that may explain differences in a dependent variable (DV). For example, a predictor variable in regression analysis is an explanatory variable.
 
-IV vs DVs. 
+**Spurious correlation** - correlation between X and Y that one might think is due to X causing Y or Y causing X, but isn't 
 
-Confounds.  
+Gain experience recognising and thinking of **Confounds** or **confounding variables**.  
 
 ### Study elements
 
-Term | Definition | Murder - ice cream relationship | Self-quiz - exam relationship | Liberals - Darks relationship |
-------------- | ------------- | ------------- | ------------- | ------------- |
-Dependent variable (DV) | The behavior or outcome that is measured. It is expected to change as a result of changes in the IV. |  | | |
-Explanatory variable (IV) | Changes in the explanatory variable are expected to be related to changes in the DV. |  | | |
-Confound (Bruce mentioned "omitted variables" in the context of linear regression, which can act like a confound) | Variable that changes with the IV. The DV could be affected by both the IV and/or the confound, so we cannot conclude that the IV was affected by the DV. |  | | |
+Term | Definition | Seat belt - airplane | Murder - ice cream relationship | Self-quiz - exam relationship | Liberals - Darks relationship |
+----------- | ----------- | ------------- | ------------- | ------------- | ------------- |
+Outcome measure or dependent variable (DV)  | The behavior or outcome that is measured. It is expected to change as a result of changes in the IV. |  | | | |
+Explanatory variable | Changes in the explanatory variable may be related to changes in the DV. |  | | | |
+Confound (Bruce mentioned "omitted variables" in the context of linear regression, which can act like a confound) | Variable that changes with the explanatory variable. The DV could be affected by both the explanatory variable and/or the confound, so we cannot conclude that the DV was affected by (**was caused by**) the explanatory variable. |  | | | |
 
-<!--The word "confound" is usually used for experimental studies, while "omitted variable" is usually used for non-experimental (e.g., correlational) studies -->
+<!--STUDENTS The word "confound" is usually used for experimental studies, while "omitted variable" is usually used for non-experimental (e.g., correlational) studies STUDENTS-->
 
-<!--The confound usually becomes the "controlled variable" because you design the experiment to control for it-->
 <BR>
 
 As you go through the examples below, fill out the three right columns of the table.
+<BR><BR>
 
-![](familyCircusCorrelatn.jpg)
+![](familyCircusCorrelatn.jpg) <BR><BR>
 
-### Confounds  
+The boy in the cartoon has noticed a correlation. According to the line of thinking articulated by the boy, what is the outcome measure?
+____________________________________________ <!--STUDENTS bumpiness STUDENTS-->
 
-Over the year, murder rates and ice cream sales are highly positively correlated. That is, as murder rates rise, so does the sale of ice cream. 
+What is the explanatory variable, in his line of thinking?
+____________________________________________ <!--STUDENTS Turning on the seatbelt STUDENTS-->
+
+
+Like any correlation between one variable (X) and another (Y), there are three possible explanations:  
+
+1. X causes Y
+1. Y causes X
+1. A third factor is involved. 
+
+<BR><BR>
+
+Which explanation is most plausible? _______________________________
+
+<BR><BR>
+
+Under the third-factor explanation, what could the third factor be and what might its relationship be to the other variables? 
+
+<BR>
+._________________________________________________________________  <BR>
+
+<BR>
+.________________________________________________________________
+
+***
+
+As shown in the graph below (made-up data), murder rates and ice cream sales are highly positively correlated. That is, days with higher murder rates also have higher sales of ice cream. 
+
 ![](ice-cream-chart.jpg)
 
 Like any correlation between one variable (X) and another (Y), there are three possible explanations:  
@@ -49,17 +79,18 @@ Which explanation is most plausible? _______________________________
 
 <BR><BR>
 
-Under the third-factor explanation, what could the third factor be and what might its relationship to the others? 
+Under the third-factor explanation, what could the third factor be and what might its relationship be to the other variables? 
 
 <BR>
 ._________________________________________________________________  <BR>
-<BR>
-________________________________________________________________
 
 <BR>
-<!-- * There is a third variable — a **confound** — which causes the increase in BOTH ice cream sales AND murder rates.
+.________________________________________________________________
+
+<BR>
+<!--STUDENTS * There is a third variable — a **confound** — which causes the increase in BOTH ice cream sales AND murder rates.
      + temperature 
--->
+STUDENTS-->
 
 How could we test this explanation? ________________________________________________________________  
 
@@ -91,13 +122,37 @@ ________________________________________________________________
 
 ***
 
-**Confound**: Consider a relationship between two variables, X and Y, with higher levels of X associated with higher level of Y. A confounding variable is an extraneous variable that is statistically related to (or correlated with) the X. This means that as X changes, the confounding variable changes along with it. 
+**Confound**: Consider a relationship between two variables, X and Y, with higher levels of X associated with higher level of Y. A confounding variable is an extraneous variable that is statistically related to (or correlated with) the X. This means that as X changes, the confounding variable changes along with it. Above, the confounds came up when you were asked about a **third factor** (not all third factors are confounds).
 
-Above, we referred to the confound as a **third factor**.
+### Experiments to infer causation
+
+For the school science fair, a year 6 student is interested in the effect of ultraviolet (UV) light on plant growth. 
+
+![](dataCollectionScienceProj.jpg) She gets a packet of pea plant seeds and distributes them randomly among fifty pots. She puts twenty-five of the pots under an ultraviolet light and twenty-five under a broad-spectrum halogen bulb, and a month later finds that all twenty-five of the ultraviolet pots' plants are higher.
+
+What is the dependent variable? ____________________________
+
+What is the explanatory variable? ____________________________
+
+Is this study an experiment or a correlational study? ____________________________
+
+<!-- DELETE THIS NEXT YEAR-->
+Can you think of any third factor that might explain the difference in plant height?  _________________________________
+
+<BR><BR>
+
+### Correlation and causation  
 
 ***
 
-### Correlation and causation  
+In perfect experiments, there is no variable that systematically changes with the explanatory variable besides the explanatory variable (and its effects) itself. This is why experiments provide the most secure way to determine whether an explanatory variable is truly affecting the dependent variable.
+
+The explanatory variable in an experiment is called the **independent variable**, because if the experiment is done perfectly, there is no confounding variable that changes with it.
+
+While an ideal experiment will not have a confound, there may still be third factors, e.g. the seeds that happened to end up in the UV light pots may have been stronger in some way. This is why statistics (p-values) should be calculated, to assess whether the difference in height could have occurred due to random factors.
+
+***
+
 
 <!-- Evidence for these things can come from a simple correlation, a quasi-experiment (better), or a fully randomised experiment (best)
 Be impressed if the students think of quasi-experiments.
@@ -107,20 +162,21 @@ Be impressed if the students think of quasi-experiments.
 
 A lecturer finds that online self-quiz completion rate is highly positively correlated with final exam mark. 
 
-On the basis of this evidence, the lecturer says to the students, "You should complete the self-quiz because it will significantly improve your chances of getting a good exam grade."
+On the basis of this evidence, the lecturer says to the students, "You should complete the self-quiz because it will  improve your chances of getting a good exam grade."
 
 Describe a plausible alternative explanation of the evidence   _____________________________________________________________________________________________________
 
 <BR><BR>
 
-<!-- Students who are motivated enough to do the self-quiz are also motivated enough to study for the exam. **Motivation** may be a confound.
+<!--STUDENTS Students who are motivated enough to do the self-quiz are also motivated enough to study for the exam. **Motivation** may be a confound.
 There may not be any significant benefit of completing the self-quiz. Instead, the correlations may be entirely (or nearly entirely) caused by motivation.
--->
+STUDENTS-->
 
 On your alternative explanation, what causes what? ____________________________________________________
-<!--Motivation causes more self-quiz completions.
+<!--STUDENTS Motivation causes more self-quiz completions.
 Motivation causes more studying, which causes higher exam marks.
--->
+STUDENTS-->
+
 <BR><BR> 
 How might you determine which theory is correct?
 
@@ -148,7 +204,7 @@ The Liberals conclude that they work harder than the Dark Alternatives, are smar
 <BR><BR>
 
 Describe a plausible alternative explanation of the evidence ____________________________________________________
-<!--Maybe Liberals take courses that are easier. Maybe Liberals cheat more. Maybe tutors or lecturers discriminate against Dark Alternatives -->
+<!--STUDENTS Maybe Liberals take courses that are easier. Maybe Liberals cheat more. Maybe tutors or lecturers discriminate against Dark Alternatives STUDENTS-->
 
 <BR><BR>  
 On your alternative explanation, what causes what? ____________________________________________________
@@ -195,11 +251,12 @@ In other words,
 Experiment to address the issue: conduct a "sting" on the highway patrol. Unbeknownst to them, shut down the road where they are sitting waiting for speeders. Then send several cars driving by them with professional drivers, with some red. See whether they are more likely to give tickets to the red cars.
 Note that while this experiment avoids the confound of red car drivers being more likely to break the law, this experiment assesses only whether it is really the redness causing the tickets, not whether it's happening because of greater noticing - the causal mechanism in the statement. So ideally an experiment would somehow measure noticing.
 -->
-2. Crystal meth (ice) is the drug of choice on the streets today.
+
+<!--2. Crystal meth (ice) is the drug of choice on the streets today.-->
 <!--Crystal meth.  How much police haul in each year.
 Poll on the streets. But will the people polled lie? Maybe they are biased to not admit meth is their favorite.
 The drug they buy may not be their top preference, because the drug bought is affected by availability, not just preference.  So maybe should ask them which they’d get if they could, the "drug of choice".-->
-3. Humanities classes at the University of Sydney are marked more leniently than science classes.
+2. Humanities classes at the University of Sydney are marked more leniently than science classes.
 <!-- Useful to go through controlled experiment scenario:
 - Randomly assign students to a humanities or science class. This is gold standard evidence for establishing causality
 - Don't let the lecturers know this experiment is going on, to avoid them changing what they do.
@@ -209,14 +266,17 @@ The drug they buy may not be their top preference, because the drug bought is af
 - Does average class size of humanities and science classes differ? That could be a confound, where the results of the experiment cause yield the result that humanities classes are easier, but the actual cause may not be the humanity of it but rather the smaller sizes of the classes.
 - Class criticising argument as a group
 -->
-4. Background: Male drivers have significantly more accidents than female drivers. As a result, insurance companies in many countries charge males more. Statement to evaluate: Males are worse drivers than females.
+3. Background: Male drivers have significantly more accidents than female drivers. As a result, insurance companies in many countries charge males more. Statement to evaluate: Males are worse drivers than females.
 <!--Being male rather than female causes accidents. In other words, males are worse drivers
 Alternatively, 
 - Males may drive more miles. The background does not indicate whether males have more accidents per mile driven or simply more accidents in total.
 - Males may drive faster on average. In a sense that may make them "worse drivers" but if you somehow forced females to drive at the same speed, possibly they'd have *even more* accidents.
 - Males may drive more dangerous vehicles (perhaps trucks and sports cars somehow encourage accidents regardless of sex of the driver?
 -->
-5. Driving a car is more dangerous than flying in a commercial airliner.
+
+
+<!--
+5. Driving a car is more dangerous than flying in a commercial airliner. -->
 <!-- 	Number of people who die per year in auto accidents is much larger than number who die in an airliner.
 But, that's not the relevant number. Instead, some *rate* of accidents is more relevant, because there are many more car trips than airline trips.
 It is irrational to fear flying a significant distance, if you are willing to drive that same distance without such trepidations, because your risk of injury or death is 10 to 40 times greater in an automobile than in an airliner, in the safer areas of the world. He found that over the fifteen years between 1975 and 1994, the death risk per flight was one in seven million. Barnett, judges the actual risk of one person being involved in a fatal airline accident, to be once every 19,000 years, provided he flew on an airliner once each day of those 19,000 years. He bases that estimate on what actually happened in the domestic U.S., during the 1990s. http://anxieties.com/flying-howsafe.php#.Vtd9ZJN97UI  http://airlinesafety.com/faq/FearFlying.htm
@@ -225,13 +285,15 @@ Some graphs of airline fatalities (between a few hundred and a few thousand per 
 Also see http://www.meretrix.com/~harry/flying/notes/safetyvsdriving.html
 -->
 
+
+<!-- IGNORE EVERYTHING BELOW
+
 ### Remember
 
 * Experiment versus quasi-experiment versus simple correlation
 * Quasi-experiments are sometimes referred to as natural experiments
 * Only a controlled experiment can definitively establish causality
 
-<!-- IGNORE EVERYTHING BELOW
 
 Extraneous variable
 General term for a variable that changes concomitantly with the IV.
