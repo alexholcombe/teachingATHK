@@ -9,7 +9,7 @@ output: html_document
 * To find some definitions of the terms in the Vocabulary section, open   [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017ArgumentsThinking.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", something like `<!--- comment text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
-* *The power of critical thinking* by Vaughn, Chapter 1, available in the "Ungrouped Readings" folder of Canvas
+* *The power of critical thinking* by Vaughn, Chapter 1, available from the eReserve link at left of Canvas
 (or Chapters 2 and 3 of Bassham et al.'s *Critical Thinking*)
 
 * [*Introduction to Logic and Critical Thinking*](http://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=457) by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
@@ -18,7 +18,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * Common logic mistake associated with [denying the antecedent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/77/Denying-the-Antecedent) 
 
-* *Think Critically* by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, available in the "Ungrouped Readings" folder of Canvas
+* *Think Critically* by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, available from the eReserve link at left of Canvas
 
 
 <!-- Critical Thinking, by Paul and Elder -->
