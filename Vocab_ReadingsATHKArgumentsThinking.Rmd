@@ -33,6 +33,8 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * *Critical thinking* by Bassham et al., Chapter 3. Basic logical concepts: deduction and induction.
 
+* *Critical thinking* by Bassham et al., Chapter on inductive reasoning (which is chapter 11 if you have the 4th edition)
+
 # Vocabulary
 
 * Enthymeme
