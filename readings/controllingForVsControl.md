@@ -10,10 +10,9 @@ In an experiment, the independent variable is literally controlled by the experi
 
 A control group is the group in an experiment that does not receive treatment by the researchers and is then used as a benchmark to measure how the other tested subjects do.
 
-To many modern English speakers, this use of the word "control" is not intuitive. The term "control group" dates from an old meaning of the word "control", to check, which is still the predominant meaning for cognate words in languages such as German.
+To many modern English speakers, this use of the word "control" is not intuitive. The terms “Control group” and "control condition" date from an old meaning of the word “control”, to check – still the predominant meaning for cognates in languages such as German.
 
-That meaning of "control" [survived in modern English usage](https://forum.wordreference.com/threads/passport-control.2188162/) in the "Passport Control" facilities at airports, where passports are checked, not controlled. So, when you hear "control group", it may help to think "Passport Control". The  control group is included as a a check that the factor you are interested in is responsible for the outcome of interest in the experimental group.
-
+That meaning of “control” [survived in modern English](https://forum.wordreference.com/threads/passport-control.2188162/) in the “Passport Control” lines at airports, where passports are checked, not controlled. So, when you hear “control group”, it may help to think “Passport Control”. The control group is a check that the factor you are interested in is responsible for the outcome in the experimental group.
 
 ## *Controlling for* in an observational study
 
