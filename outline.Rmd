@@ -16,7 +16,7 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
     * Know the term "spurious correlation" 
 * Where does data come from?  
 * Correlation examples for review
-  * When linear correlation is not appropriate: COVID-19
+  * [When linear correlation is not appropriate: COVID-19](https://alexholcombe.github.io/teachingATHK/correlation_COVID19.html)
 
 * Contingency tables, dichotomous variables
 * Three causal models
