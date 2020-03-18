@@ -1,8 +1,25 @@
 ---
-title: "Vocab, readings for Alex's ATHK Arguments and Thinking lectures and tutorials"
-date: "Alex's 4th lecture through to 17 May, 2018. More material may be added to this document as the lectures proceed."
+title: "Vocab, readings for lectures Weeks 8 to 13 and associated tutorials"
+date: "21 April lecture through to 28 May, 2020. This will be updated as the lectures proceed."
 output: html_document
 ---
+
+
+
+Arguments (fix ArgumentsIntro)
+* Most arguments are people just trying to win - to get what they want. Persuasion.
+* But sometimes you don't just want to win, you actually want to learn and find things out.
+Good reasons
+
+Week 9 tutorial:
+
+Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity)
+
+Week 10 tutorial:
+Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.
+
+Week 11 tutorial: Arguments in the wild.
+Identifying conclusions and premises in real-world text and conversations.
 
 ## Important Readings
 
@@ -11,8 +28,14 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * *The power of critical thinking* by Vaughn, Chapter 1, available from the eReserve link at left of Canvas
 (or Chapters 2 and 3 of Bassham et al.'s *Critical Thinking*)
+  * Why it matters - makes the case for how critical thinking will help you in life
+  * Distinguish between statements (AKA claims) and non-statements
+  * Understand the basic concepts of reasons, arguments, inference, premises, and conclusion
+  * Use indicator words to help pinpoint premises and conclusions
+  * Distinguish between passages that do and do not contain an argument
+  * Identify arguments in various contexts and distinguish between arguments and superflous material, arguments and explanations, and premises and conclusions
 
-* [*Introduction to Logic and Critical Thinking*](http://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=457) by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
+* [*Introduction to Logic and Critical Thinking*](https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking) by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
 
 * Common logic mistake associated with [affirming the consequent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/14/Affirming-the-Consequent)
 
@@ -37,6 +60,10 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 # Vocabulary
 
+* Confound, confounding factor, or confound variable <!-- Bruce: "Confounding factor is one that varies with both variables being considered and thus obscures their true relationship". Alex: In an experiment, a confound is something that is different for the different levels of the independent variable. Because it may affect the outcome variable, we don't know whether it is the confound or the independent variable causing any difference in the outcome variable. -->
+
+One that varies with the variable whose effect one is interested in and thus obscures their true relationship
+
 * Enthymeme
 
 <!-- From Greek "in-mind", because the full argument in the mind is not stated. Usually a condensed syllogism where one premise is not explicitly stated.
@@ -49,10 +76,15 @@ Therefore, Socrates is mortal."
 
 <!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text -->
 
+* [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
 
 * Necessary versus sufficient
 
-* Syllogisms
+* Syllogism form
+
+* Redundant argument
+
+* Casting an argument
 
 * Validity
 
