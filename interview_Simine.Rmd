@@ -1,0 +1,44 @@
+---
+title: "interview_Simine"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+most easily done using Canvas Studio recorder (either using a webcam or screen capture on your computer, or even your smartphone). It’s also really easy to automatically add closed captions and correct any mistakes it makes.
+
+## Topics and questions
+
+* Correlation and causation
+  * What kind of studies are done in your field to try to establish causation?
+    * Tell us about the kinds of confounds that occur
+  * What kind of correlational studies are done in your field?
+    * Do they involve scatterplots with one quantitative variable on the horizontal axis and another on the vertical, and a linear regression?
+  * In the media do you see a lot of unwarranted causal claims about your subject?
+  * In actual scientific papers do you see a lot of unwarranted causal claims about your subject?
+
+* Overconfidence explained by regression to the mean
+  * Example of sport versus something vaguer
+  * People give same answer regardless of skill level, but because high confidence the incompetent people are the most wrong?
+  * Does personality research find that some people are confident and others are unconfident?
+    * Women less confident?
+
+Simine, you're famous for your critical thinking about the reliability of claims that people make in your field.
+
+* Who and what to believe
+  * What is your experience of the proportion of claims in popular books and media that are well-justified?
+    * Do you think that's different from, say, physics?
+    * Why do scientists overstate their conclusions?
+    * Why do journalists 
+  * If you were to give some advice to first-year undergraduates about what in the news and on the internet they should believe and what they shouldn't believe, what would you say?
+
+* Argument from authority
+    * Bias: Incentive, and circumstantial ad hominem
+    * Track record
+    * Experts
+    * Expertise: area of expertise
+      * Success bias p.10 of Mercier - Makes sense in small-scale societies
+      
+* Post hoc ergo propter hoc - clap sound
