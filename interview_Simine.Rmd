@@ -20,6 +20,7 @@ most easily done using Canvas Studio recorder (either using a webcam or screen c
   * In actual scientific papers do you see a lot of unwarranted causal claims about your subject?
 
 * Overconfidence explained by regression to the mean
+  * They were previously taught "As sample size increases, the sample is more likely to be representative of population (law of large numbers)." Some cricketers had high score at first.
   * Example of sport versus something vaguer
   * People give same answer regardless of skill level, but because high confidence the incompetent people are the most wrong?
   * Does personality research find that some people are confident and others are unconfident?

@@ -31,17 +31,35 @@ Lectures 2 and 3 and 4: Confounds
 
 * Post hoc ergo propter hoc (After this therefore because of this) fallacy
 * Explanatory, Outcome, and Nuisance variables
+  * Recall IV and DV. Bruce slide:
+```{r, echo=FALSE, out.width = "220px"}
+knitr::include_graphics("imagesForRmd/Bruce_IV_DV_slide.png")
+```
   * [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
     * Is not different, on average, for the different levels of the variable we are interested in
   * [Confound](https://www.students4bestevidence.net/blog/2018/10/01/a-beginners-guide-to-confounding/) variables
     * Different for the different levels of the variable we are interested in.
+    * Bruce slide:
+```{r, echo=FALSE, out.width = "220px"}
+knitr::include_graphics("imagesForRmd/BruceConfoundsSlide.png")
+```
   * Can you distinguish between confounds and nuisance variables?
+  * Random assignment
+    * Bruce slide:
+```{r, echo=FALSE, out.width = "220px"}
+knitr::include_graphics("imagesForRmd/BruceRandomizedControlledExperiments.png")
+```
 * Recognizing correlational studies in the news
 * Statistical adjustment - [controlling for]((https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html)) confounds
   * 
 * Statistics won't cut it
 * Epidemiology confounds
 * Randomisation and control group
+  * Bruce slide
+```{r, echo=FALSE, out.width = "200px"}
+knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
+```
+
 * Expectancy effect
 * Experimentation effect
 
@@ -125,8 +143,12 @@ Relative versus absolute risk
   
 We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
 
-Week 8: Arguments
-
+###  Arguments <!-- Week 8? -->
+* Most arguments are people just trying to win - to get what they want. Persuasion.
+* But sometimes you don't just want to win, you actually want to learn and find things out.
+* We need to know good reasons for believing things. Ideally,
+  * Assumptions are true
+  * Logic must be airtight (inescapable)
 * Syllogism
   * Suppositionally inescapable, inescapable, suppositionally strong, strong
 * Real-world arguments and Casting an argument
@@ -254,7 +276,7 @@ Kahan has shown that evoking curiousity can help. Use it on yourself, too - I'm 
     *  Ideally people would learn from their mistakes. But often humans show the knew-it-all-along effect.
     
   * ADD Media bias - section 5.3 of Manley
-  * ADD Research media bias - publication bias and file drawer problem - section 5.3 of Manley
+  * ADD Research media bias - publication bias (Bruce slide #130) and file drawer problem - section 5.3 of Manley
   * The internet
     * No gatekeeper or vetting (p. 256 of Lyons & Ward) +1
       * Unvetted sites can look just as slick as vetted sites, not true in the old days
@@ -328,6 +350,7 @@ Eventually, the canvassers tried eliciting more emotional experiences. They urge
 
 
 Survivorship
+* Bruce's slide #132
 * Famous people are usually very good, but also very lucky
 * "Failure to look for what is missing is a common shortcoming" https://youarenotsosmart.com/2013/05/23/survivorship-bias/ covers Wald, 
 * Heuristic: Chesterton's fence, as selection bias?

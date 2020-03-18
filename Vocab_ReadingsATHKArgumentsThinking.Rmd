@@ -1,15 +1,8 @@
 ---
-title: "Vocab, readings for lectures Weeks 8 to 13 and associated tutorials"
-date: "21 April lecture through to 28 May, 2020. This will be updated as the lectures proceed."
+title: "Vocab, readings for Alex's arguments and fallacies lectures, and associated tutorials"
+date: "This will be updated as the lectures proceed."
 output: html_document
 ---
-
-
-
-Arguments (fix ArgumentsIntro)
-* Most arguments are people just trying to win - to get what they want. Persuasion.
-* But sometimes you don't just want to win, you actually want to learn and find things out.
-Good reasons
 
 Week 9 tutorial:
 
@@ -107,8 +100,6 @@ Therefore, Socrates is mortal."
 * Confabulation
 
 <!-- Dissensus  -->
-
-## Vocab
 
 * Appeal to authority
 * Straw man
