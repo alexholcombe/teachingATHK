@@ -17,7 +17,7 @@ library(dslabs)
 
 ```
 
-```{r murders}
+```{r murders ,echo=FALSE, message=FALSE}
 
 data("murders")
 library(tidyverse)
@@ -29,14 +29,21 @@ r <- murders %>%
   mutate(rate = tot/pop*10^6) %>% .$rate
 
 ds_theme_set()
-murders %>% ggplot(aes(x = population/10^6, y = total, label = abb)) +
-  geom_abline(intercept = log10(r), lty=2, col="darkgrey") +
+mm<- murders %>% ggplot(aes(x = population/10^6, y = total, label = abb)) +
+  #geom_abline(intercept = log10(r), lty=2, col="darkgrey") +
   geom_point(size = 3) +
-  ##geom_text_repel() +
-  scale_x_log10() +
-  scale_y_log10() +
-  xlab("Populations in millions (log scale)") +
-  ylab("Total number of murders (log scale)") +
-  ggtitle("US Gun Murders in 2010") #+
-  #scale_color_discrete(name="Region") 
+  geom_text_repel() +
+  #scale_x_log10() +
+  #scale_y_log10() +
+  xlab("Population in millions") +
+  ylab("Murders") +
+  ggtitle("US Gun Murders in 2010") +
+  scale_color_discrete(name="Region") 
+
+murdercor<-cor.test(as.numeric(murders$population/10^6),murders$total) 
+ggsave("imagesForRmd/MurdersNoR.png")
+mm<- mm + geom_smooth(method='lm', fill=NA) + 
+  annotate("text",x=30,y=600,size=6, label=paste0("r = ",round(murdercor$estimate,2)), parse=FALSE) 
+show(mm)
+ggsave("imagesForRmd/Murders.png",plot=mm)
 ```
