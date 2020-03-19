@@ -1,0 +1,25 @@
+---
+title: "Intro and organizational stuff"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I'm lecturing from Week 7 to Week 13. My lecture series is divided into two parts:
+
+* Stats and Studies
+* Arguments and Thinking
+
+## Where to find stuff
+
+* [Outline](https://alexholcombe.github.io/teachingATHK/outline.html)
+That's an outline of nearly all the topics of my lectures, with some links for *some* of the readings.
+
+* Vocab_Readings documents
+More readings are listed in the Vocab_Readings documents. There are two:
+  * [Vocab_ReadingsATHKstatsAndStudies](https://alexholcombe.github.io/teachingATHK/Vocab_ReadingsATHKstatsAndStudies.html)
+  * [Vocab_ReadingsATHKArgumentsThinking](https://alexholcombe.github.io/teachingATHK/Vocab_ReadingsATHKArgumentsThinking.html)
+  
+<!--This will not be the final word on organisation, we've never taught an online course before!-->

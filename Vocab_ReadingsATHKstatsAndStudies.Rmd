@@ -11,9 +11,11 @@ output: html_document
 * To find definitions of some of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- comment text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
+* [Planet Money podcast](https://www.npr.org/transcripts/178635250) on causation and correlation. Study questions:
+  * Why did women take hormone replacement therapy?
+  * What kind of study was done to better assess the effect of hormone replacement therapy?
+    * Why was this study better than the first evidence that led hormone replacement therapy to originally start?
 * Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
-
-* To understand how regression can "control for" an extraneous variable, read *Naked Statistics* Chapter 11 and the “Highly correlated explanatory variables” in Ch.12.
 
 *  [Alex on the ways the word "control" is used](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) and random assignment.
 
@@ -24,6 +26,8 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 <!-- Critical Thinking, by Paul and Elder -->
 
 ## Not-so-important Readings
+
+* To understand how regression can "control for" an extraneous variable, read *Naked Statistics* Chapter 11 and the “Highly correlated explanatory variables” in Ch.12.
 
 * [r-squared](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)
 

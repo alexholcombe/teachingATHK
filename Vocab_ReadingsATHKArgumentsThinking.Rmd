@@ -30,6 +30,10 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * [*Introduction to Logic and Critical Thinking*](https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking) by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
 
+Instead of "valid" and "sound" for describing deductive arguments, in this class we use the terms "suppositionally inescapable" and "inescapable" because they are easier to understand. On quizzes and tests, you will only be tested on these terms.
+
+Instead of "strong" and "cogent" for describing *inductive* arguments, in this class we use the terms "suppositionally solid" and "solid" because they are easier to understand. On quizzes and tests, you will only be tested on these terms.
+
 * Common logic mistake associated with [affirming the consequent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/14/Affirming-the-Consequent)
 
 * Common logic mistake associated with [denying the antecedent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/77/Denying-the-Antecedent) 
@@ -79,7 +83,7 @@ Therefore, Socrates is mortal."
 
 * Casting an argument
 
-* Validity
+* Suppositionally inescapable (also known as "valid")
 
 * Soundness
 

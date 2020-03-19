@@ -8,14 +8,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
-* Intro `r statsStudies=5`
+* Intro `r statsStudies=5` video
 
+<!-- Correlation and causation video -->
+<!-- Confound or nuisance variable? video -->
 * Correlation and causation intro
   * Learning objectives:
     * Understand and apply three causal models to explaining correlations
     * Know the term "spurious correlation" 
-* Where does data come from?  
-* Correlation examples for review
+* Where does data come from?
+* Understanding correlation more deeply
+  * Correlation of X with Y same as Y with X
+  * Correlation not affected by changes in units
   * [When linear correlation is not appropriate: COVID-19](https://alexholcombe.github.io/teachingATHK/correlation_COVID19.html)
 
 * Contingency tables, dichotomous variables
@@ -150,7 +154,7 @@ We're going to go back and forth between bare-bones examples and arguments from 
   * Assumptions are true
   * Logic must be airtight (inescapable)
 * Syllogism
-  * Suppositionally inescapable, inescapable, suppositionally strong, strong
+  * Suppositionally inescapable, inescapable, suppositionally solid, solid
 * Real-world arguments and Casting an argument
   * Socrative poll about vegetarianism
 * Implicit premise
@@ -176,6 +180,9 @@ We're going to go back and forth between bare-bones examples and arguments from 
 Week 9: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
 
 * Informal fallacies
+* Post hoc ergo propter hoc, again
+  * [Video](https://www.youtube.com/watch?v=5A7hSaoRv0g) combining this fallacy with deductive and inductive logic. Good way to bring previous bits of the class together!
+
 * Ad hominem: 
 
 Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
