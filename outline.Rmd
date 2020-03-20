@@ -28,13 +28,10 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 * Causal model can be at any level of detail
 * Is there a third factor?
   * Relationship between pirates and high average temperature is confounded by time. 
-* Contingency tables, dichotomous variables and correlation
-  
 
 <!--Slide #45-->
-Lectures 2 and 3 and 4: Confounds
+Lectures 2 and 3 and 4
 
-* Post hoc ergo propter hoc (After this therefore because of this) fallacy
 * Explanatory, Outcome, and Nuisance variables
   * Recall IV and DV. Bruce slide:
 ```{r, echo=FALSE, out.width = "220px"}
@@ -54,6 +51,14 @@ knitr::include_graphics("imagesForRmd/BruceConfoundsSlide.png")
 ```{r, echo=FALSE, out.width = "220px"}
 knitr::include_graphics("imagesForRmd/BruceRandomizedControlledExperiments.png")
 ```
+    * Bruce slide:
+```{r, echo=FALSE, out.width = "220px"}
+knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
+```    
+
+* Post hoc ergo propter hoc (After this therefore because of this) fallacy
+* Contingency tables, dichotomous variables and correlation
+
 * Recognizing correlational studies in the news
 * Statistical adjustment - [controlling for]((https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html)) confounds
   * 

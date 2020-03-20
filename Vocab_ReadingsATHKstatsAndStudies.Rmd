@@ -4,18 +4,19 @@ date: "lectures starting 7 Apr, 2020. This document may be updated as the lectur
 output: html_document
 ---
 
-[Khan Academy](https://www.khanacademy.org/math/probability/scatterplots-a1/creating-interpreting-scatterplots/v/correlation-and-causality) on correlation and causality.
-
 ## Important Readings
 
-* To find definitions of some of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHK2017statsAndStudies.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- comment text -->`. 
+* To find definitions of some of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKstatsAndStudies.Rmd) and you'll see some definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- definition text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * [Planet Money podcast](https://www.npr.org/transcripts/178635250) on causation and correlation. Study questions:
   * Why did women take hormone replacement therapy?
   * What kind of study was done to better assess the effect of hormone replacement therapy?
     * Why was this study better than the first evidence that led hormone replacement therapy to originally start?
-* Chapter 4, Correlation, of *Naked Statistics* (already assigned by Bruce)
+* Chapter 4, Correlation, of *Naked Statistics* (already recommended by Bruce)
+
+* [Khan Academy](https://www.khanacademy.org/math/probability/scatterplots-a1/creating-interpreting-scatterplots/v/correlation-and-causality) on correlation and causality. Study questions:
+  * Khan talks about an article that suggests that eating breakfast prevents obesity. He also suggests alternative causal models. Name one.
 
 *  [Alex on the ways the word "control" is used](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) and random assignment.
 
@@ -48,8 +49,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 <!-- Squaring r gives the proportion of variance explained by the line. "Shared variance" is a synonym.-->
 
 ### Variables
-* IV, DV
-<!-- Independent variable, dependent variable. -->
+* IV, DV <!-- Independent variable, dependent variable. -->
 * Explanatory variable
 * Extraneous variable
 <!-- When one compares two groups, one is seeking to determine the effect of an explanatory variable or variables. But extraneous variables are variables that also differ between the two groups. They may be confounds. -->
@@ -66,9 +66,7 @@ a "confound"-->
 Also explained in https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/-->
 
 * Controlled variable  
-
-<!--In the Evidence tutorial, we used this to mean a variable that you ensure does not differ between the two groups in a simple experiment-->
-
+<!--In the Evidence tutorial, we used this to mean a variable that you ensure does not differ between the two groups in a simple experiment. This is in distinction to the independent variable, which is a variable you do want to differ between the two groups-->
 
 ### Other terms
 * Spurious correlation
