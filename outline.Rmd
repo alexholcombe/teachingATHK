@@ -19,15 +19,16 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 * Where does data come from?
 * Understanding correlation more deeply
   * Correlation of X with Y same as Y with X
-  * Correlation not affected by changes in units
+  * Measurement and correlation
+    * Correlation not affected by changes in units
   * [When linear correlation is not appropriate: COVID-19](https://alexholcombe.github.io/teachingATHK/correlation_COVID19.html)
 
-* Contingency tables, dichotomous variables
 * Three causal models
   * X causes Y, Y causes X, a third variable causes both
 * Causal model can be at any level of detail
 * Is there a third factor?
   * Relationship between pirates and high average temperature is confounded by time. 
+* Contingency tables, dichotomous variables and correlation
   
 
 <!--Slide #45-->
