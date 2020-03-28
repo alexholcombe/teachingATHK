@@ -10,8 +10,8 @@
 
 
 
-<meta name="progressive" content="false" />
-<meta name="allow-skip" content="false" />
+<meta name="progressive" content="true" />
+<meta name="allow-skip" content="true" />
 
 <title>COVID-19 questions</title>
 
@@ -116,37 +116,41 @@ $(document).ready(function () {
 
 <div class="topics">
 
-<div id="section-causal-reasoning-about-covid-19-transmission" class="section level3">
-<h3>Causal reasoning about COVID-19 transmission</h3>
+<div id="section-causal-reasoning-about-covid-19-transmission" class="section level2">
+<h2>Causal reasoning about COVID-19 transmission</h2>
+<div id="section-q" class="section level3">
+<h3>Q</h3>
 <div class="figure">
 <img src="images/masksNoMasksExplainsIt.png" alt="https://twitter.com/jperla/status/1243349875015553024" width="1000px" />
 <p class="caption">
 <a href="https://twitter.com/jperla/status/1243349875015553024" class="uri">https://twitter.com/jperla/status/1243349875015553024</a>
 </p>
 </div>
-<p><img src="imagesForRmd/maskNoMasksReactions.png" width="400px" /></p>
-<p>But, with an exponentially-growing pandemic, we don’t have time to wait for strong evidence.</p>
-</div>
-<div id="section-quiz" class="section level3">
-<h3>Quiz</h3>
-<p><em>You can include any number of single or multiple choice questions as a quiz. Use the <code>question</code> function to define a question and the <code>quiz</code> function for grouping multiple questions together.</em></p>
-<p>Some questions to verify that you understand the purposes of various base and recommended R packages:</p>
-<p><div class="panel-heading tutorial-quiz-title">Quiz</div><div class="panel panel-default">
-<div data-label="quiz-1" class="tutorial-question panel-body">
-<div id="quiz-1-answer_container" class="shiny-html-output"></div>
-<div id="quiz-1-message_container" class="shiny-html-output"></div>
-<div id="quiz-1-action_button_container" class="shiny-html-output"></div>
+<div class="panel panel-default">
+<div data-label="ideaimage" class="tutorial-question panel-body">
+<div id="ideaimage-answer_container" class="shiny-html-output"></div>
+<div id="ideaimage-message_container" class="shiny-html-output"></div>
+<div id="ideaimage-action_button_container" class="shiny-html-output"></div>
 <script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
-</div><div class="panel panel-default">
-<div data-label="quiz-2" class="tutorial-question panel-body">
-<div id="quiz-2-answer_container" class="shiny-html-output"></div>
-<div id="quiz-2-message_container" class="shiny-html-output"></div>
-<div id="quiz-2-action_button_container" class="shiny-html-output"></div>
+</div>
+</div>
+</div>
+<div id="section-install-rstudio" class="section level2">
+<h2>Install RStudio</h2>
+<div id="section-how-to-install-rstudio" class="section level3">
+<h3>How to install RStudio</h3>
+<p>RStudio is an Integrated Development Environment for R. What does that mean? Well, if you think of R as a language, which it is, you can think of RStudio as a program that helps you write and work in the language. RStudio makes programming in R much easier and I suggest that you use it!</p>
+<div class="panel panel-default">
+<div data-label="ideaimage2" class="tutorial-question panel-body">
+<div id="ideaimage2-answer_container" class="shiny-html-output"></div>
+<div id="ideaimage2-message_container" class="shiny-html-output"></div>
+<div id="ideaimage2-action_button_container" class="shiny-html-output"></div>
 <script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
 </div>
-</div></p>
-
+</div>
+<p><img src="images/maskNoMasksReactions.png" width="400px" /></p>
+But, with an exponentially-growing pandemic, we don’t have time to wait for strong evidence. 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
@@ -163,11 +167,11 @@ session$onSessionEnded(function() {
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-1", question = structure("What idea do you think the creator of this image wished to encourage?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_6715dd1",     option = "Masks prevent COVID-19 cases from growing exponentially.",     value = "Masks prevent COVID-19 cases from growing exponentially.",     label = structure("Masks prevent COVID-19 cases from growing exponentially.", html = TRUE, class = c("html",     "character")), correct = FALSE, message = structure("jump", html = TRUE, class = c("html",     "character"))), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1d2750", option = "COVID-19 cases encourage mask wearing.",     value = "COVID-19 cases encourage mask wearing.", label = structure("COVID-19 cases encourage mask wearing.", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f31ff49",     option = "Wearing a mask slows the rate of infections.",     value = "Wearing a mask slows the rate of infections.", label = structure("Wearing a mask slows the rate of infections.", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_dfa263f",     option = "Masks are an important dependent variable", value = "Masks are an important dependent variable",     label = structure("Masks are an important dependent variable", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "quiz-1-answer", question = "quiz-1"), loading = structure("<strong>Loading:<\u002fstrong> \nWhat idea do you think the creator of this image wished to encourage?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = TRUE,     seed = 1326749681.38218, options = list()), class = c("learnr_radio", "tutorial_question")))
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ideaimage", question = structure("What idea do you think the creator of this image wished to encourage?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_1450f1e",     option = "Masks prevent COVID-19 cases from growing exponentially.",     value = "Masks prevent COVID-19 cases from growing exponentially.",     label = structure("Masks prevent COVID-19 cases from growing exponentially.", html = TRUE, class = c("html",     "character")), correct = FALSE, message = structure("jump", html = TRUE, class = c("html",     "character"))), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_db59679", option = "COVID-19 cases encourage mask wearing.",     value = "COVID-19 cases encourage mask wearing.", label = structure("COVID-19 cases encourage mask wearing.", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8087",     option = "Wearing a mask slows the rate of infections.",     value = "Wearing a mask slows the rate of infections.", label = structure("Wearing a mask slows the rate of infections.", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1abf54",     option = "Masks are an important dependent variable", value = "Masks are an important dependent variable",     label = structure("Masks are an important dependent variable", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ideaimage-answer", question = "ideaimage"), loading = structure("<strong>Loading:<\u002fstrong> \nWhat idea do you think the creator of this image wished to encourage?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = TRUE,     seed = 1722708473.1978, options = list()), class = c("learnr_radio", "tutorial_question")))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", label = "quiz-2", question = structure("Which of the R packages listed below are used to create plots?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_cc88aee",     option = "lattice", value = "lattice", label = structure("lattice", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1574cc5",     option = "tools", value = "tools", label = structure("tools", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_521ad2f",     option = "stats", value = "stats", label = structure("stats", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_af2cd66",     option = "grid", value = "grid", label = structure("grid", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "quiz-2-answer", question = "quiz-2"), loading = structure("<strong>Loading:<\u002fstrong> \nWhich of the R packages listed below are used to create plots?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = FALSE,     seed = 521148995.257321, options = list()), class = c("learnr_checkbox", "tutorial_question")))
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ideaimage2", question = structure("What idea do you think the creator of this image wished to encourage?", html = TRUE, class = c("html", "character")), answers = list(structure(list(id = "lnr_ans_1202e7b",     option = "Masks prevent COVID-19 cases from growing exponentially.",     value = "Masks prevent COVID-19 cases from growing exponentially.",     label = structure("Masks prevent COVID-19 cases from growing exponentially.", html = TRUE, class = c("html",     "character")), correct = FALSE, message = structure("jump", html = TRUE, class = c("html",     "character"))), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_345067d", option = "COVID-19 cases encourage mask wearing.",     value = "COVID-19 cases encourage mask wearing.", label = structure("COVID-19 cases encourage mask wearing.", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_502b12c",     option = "Wearing a mask slows the rate of infections.",     value = "Wearing a mask slows the rate of infections.", label = structure("Wearing a mask slows the rate of infections.", html = TRUE, class = c("html",     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer")), structure(list(id = "lnr_ans_29dd05f",     option = "Masks are an important dependent variable", value = "Masks are an important dependent variable",     label = structure("Masks are an important dependent variable", html = TRUE, class = c("html",     "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", "character")), try_again = structure("Try Again", html = TRUE, class = c("html", "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", "character")), message = NULL, post_message = NULL), ids = list(    answer = "ideaimage2-answer", question = "ideaimage2"), loading = structure("<strong>Loading:<\u002fstrong> \nWhat idea do you think the creator of this image wished to encourage?\n<br/><br/><br/>", html = TRUE, class = c("html", "character")), random_answer_order = FALSE, allow_retry = TRUE,     seed = 1870281197.12908, options = list()), class = c("learnr_radio", "tutorial_question")))
 </script>
  <!--html_preserve-->
 <script type="application/shiny-prerendered" data-context="dependencies">
@@ -179,6 +183,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", lab
 {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39]}},"value":[{"type":"character","attributes":{},"value":["backports","base","checkmate","compiler","datasets","digest","ellipsis","evaluate","fastmap","graphics","grDevices","highr","htmltools","htmlwidgets","httpuv","jsonlite","knitr","later","learnr","magrittr","markdown","methods","mime","promises","R6","Rcpp","rlang","rmarkdown","rprojroot","shiny","stats","stringi","stringr","tools","utils","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.1.2","3.5.1","1.9.4","3.5.1","3.5.1","0.6.18","0.3.0","0.13","1.0.1","3.5.1","3.5.1","0.8","0.4.0","1.5.1","1.5.2","1.6","1.22","1.0.0","0.10.1","1.5","0.9","3.5.1","0.6","1.1.0","2.4.0","1.0.1","0.4.2","1.12","1.3-2","1.4.0","3.5.1","1.4.3","1.4.0","3.5.1","3.5.1","2.1.2","0.9","1.8-4","2.2.0"]}]}]}
 </script>
 <!--/html_preserve-->
+</div>
 </div>
 
 </div> <!-- topics -->
