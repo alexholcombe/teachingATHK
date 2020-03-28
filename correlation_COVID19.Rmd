@@ -9,12 +9,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
-NSW<-data.frame( cases= c(22,25,28,36,40,47,60,64,77,91,111,133,170,209,267,307,353,436,533,669,818) ) #19 March
+NSW<-data.frame( cases= c(22,25,28,36,40,47,60,64,77,91,111,133,170,209,267,307,353,436,533,669,818,1029,1219,1405,1617) ) #19 March
 #NSW$increase = c(0, 6, 8, 4, 7, 13, 4, 12, 14, 20, 14, 22, 37))  
 NSW$date <- seq(as.Date("2020/3/4"), by = "day", length.out = length(NSW$cases))
 require(ggplot2)
 NSWcor<-cor.test(as.numeric(NSW$date),NSW$cases) 
-g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA)
+g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +   annotate("text",x=as.Date("2020/3/25"),y=900, label=">100 cases\n from\n Ruby\n Princess",size=1.7)
+
 show(g)
 ```
 
@@ -64,3 +65,17 @@ ggplot(flatLine,aes(x,y))+
     annotate("text",x=3,y=4.5, label=paste0("r=",round(flatCor$estimate,2)), parse=FALSE)
 ```
 -->
+
+## Causal reasoning about COVID-19 transmission
+
+Consider this 
+```{r, echo=FALSE, out.width = "400px"}
+knitr::include_graphics("imagesForRmd/masksNoMasksExplainsIt.png")
+``` 
+https://twitter.com/jperla/status/1243349875015553024
+
+```{r, echo=FALSE, out.width = "400px"}
+knitr::include_graphics("imagesForRmd/maskNoMasksReactions.png")
+``` 
+
+But, with an exponentially-growing pandemic, we don't have time to wait for strong evidence.

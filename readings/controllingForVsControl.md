@@ -32,5 +32,5 @@ To address this, experimenters use **randomization**. The rats are randomly assi
 
 ## *Controlled variables* that are neither the independent variable nor the above category of variables statistically controlled for
 
-The term "controlled variables" is often used for quantities that a scientist wants to be constant in the two groups. For the fast-food experiment on rats, a good researcher will ensure that before the experiment commenced, both groups of rats had the same diet.
+The term "controlled variables" is often used for quantities that a scientist wants to be constant in the two groups. This is also called matching. For the fast-food experiment on rats, a good researcher will ensure that before the experiment commenced, both groups of rats had the same diet.
 If you did not, one of the possible explanations of a difference in cancer rate would be difference in amount of carcinogens ingested before the experiment began. Similarly, during the actual experiment, amount of UV light exposure should "be controlled" - both groups of rats should get the same amount of exposure to sunlight.

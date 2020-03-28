@@ -23,9 +23,13 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * [What is a confounding variable?](http://www.statisticshowto.com/design-of-experiments/confounding-variable/)
 
+* [Comic book](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis".
+
 <!-- Critical Thinking, by Paul and Elder -->
 
 ## Not-so-important Readings
+
+* [John Oliver video starting at 1:46](https://youtu.be/0Rnq1NpHdmw?t=105) on p-hacking
 
 * Chapter 4, Correlation, of *Naked Statistics* (already recommended by Bruce)
 

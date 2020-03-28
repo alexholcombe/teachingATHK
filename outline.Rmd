@@ -68,12 +68,29 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
   * Contingency tables
   * Later you will see the link to arguments and logic
 
-* Recognizing correlational studies in the news
-* Statistical adjustment - [controlling for]((https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html)) confounds
-  * 
-* Statistics won't cut it
-* Epidemiology confounds
-* Expectancy effect
+* 4 kinds of control
+  * Statistical adjustment - [controlling for](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) confounds
+  * A controlled variable - matching
+* Causal phrases verus correlational phrases, see "Distinguish correlational and causal.." Canvas video
+```{r, echo=FALSE, out.width = "160px"}
+knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
+```    
+  * Recognizing correlational studies in the news
+  * Controlling for in regression and multicollinearity
+
+* Epidemiology
+  * Smoking has a big effect
+  * Nutrition effects are small
+  * Many false positives, which we'll explain later
+  
+* Expectancy effects
+  * Experimenter
+  * Participant
+  * Addressing expectancy effects
+```{r, echo=FALSE, out.width = "160px"}
+knitr::include_graphics("imagesForRmd/blindingEffectFromPSYC1.png")
+```     
+  
 * Experimentation effect
 
 Base rates, probabilities, and correlations   <!-- TENTATIVELY TRYING OUT IN DECKSET? -->
@@ -82,8 +99,7 @@ Base rates, probabilities, and correlations   <!-- TENTATIVELY TRYING OUT IN DEC
 * Probabilities versus frequencies
   * When you hear a probability, think of 100 or 1000 cases
 * Correlations seemingly implied by rates <!-- (Ch. 7 of Manley)-->
-* Risk
-   * Relative versus absolute risk 
+  * Which bits of the contingency table are given by a particular statement?
 
 
 Is there a correlation between being male and liking avocados?
@@ -148,7 +164,8 @@ In risky financial markets this can get people into a lot of trouble.
 E.g., most people lose their money in futures markets
 But the spectacular profits that can be gained draw in people who believe they will be the ones to win.
 Awareness of our biases and heuristics could improve our thinking.
-
+* Risk
+   * Relative versus absolute risk 
 Relative versus absolute risk
   Relatively risky https://twitter.com/justsaysrisks
 
@@ -228,6 +245,9 @@ Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
     * Track record
     * Experts
     * Expertise: area of expertise
+```{r, echo=FALSE, out.width = "210px"}
+knitr::include_graphics("imagesForRmd/brainSurgeonNotExpertPreventDementia.png")
+```
       * Success bias p.10 of Mercier - Makes sense in small-scale societies
     * Multiple independent experts
     * Wikipedia (pp.263-5 of Lyons & Ward)
@@ -296,6 +316,14 @@ Kahan has shown that evoking curiousity can help. Use it on yourself, too - I'm 
     *  Ideally people would learn from their mistakes. But often humans show the knew-it-all-along effect.
     
   * ADD Media bias - section 5.3 of Manley
+    * Incentive to make research more meaningful than it is
+      * Just says in mice
+      * Causation in headline when it's an observational study
+        * Look back at Distinguishing correlational and causal statements video for an example
+        * [Example](https://www.belfasttelegraph.co.uk/life/health/from-learning-an-instrument-to-a-mediterranean-diet-how-you-can-stave-off-dementia-39068893.html)
+```{r, echo=FALSE, out.width = "220px"}
+knitr::include_graphics("imagesForRmd/causalDementiaFromObservational.png")
+```  
   * ADD Research media bias - publication bias (Bruce slide #130) and file drawer problem - section 5.3 of Manley
   * The internet
     * No gatekeeper or vetting (p. 256 of Lyons & Ward) +1

@@ -1,0 +1,49 @@
+---
+title: "COVID-19 questions"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+### Causal reasoning about COVID-19 transmission
+
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "1000px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+``` 
+
+
+```{r, echo=FALSE, out.width = "400px"}
+knitr::include_graphics("imagesForRmd/maskNoMasksReactions.png")
+``` 
+
+But, with an exponentially-growing pandemic, we don't have time to wait for strong evidence.
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("What idea do you think the creator of this image wished to encourage?",
+    answer("Masks prevent COVID-19 cases from growing exponentially.",message="jump"),
+    answer("COVID-19 cases encourage mask wearing."),
+    answer("Wearing a mask slows the rate of infections.", correct = TRUE),
+    answer("Masks are an important dependent variable"),
+    allow_retry = TRUE
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
+
