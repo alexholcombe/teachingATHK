@@ -18,9 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Causal reasoning about COVID-19 transmission
 
-### Q
-
-```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "1000px"}
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
 ``` 
 
@@ -36,24 +34,33 @@ question("What idea do you think the creator of this image wished to encourage?"
 )
 ```
 
-## Install RStudio
+## Next
 
-### How to install RStudio
-
-RStudio is an Integrated Development Environment for R. What does that mean? Well, if you think of R as a language, which it is, you can think of RStudio as a program that helps you write and work in the language. RStudio makes programming in R much easier and I suggest that you use it!
-
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+``` 
 
 ```{r ideaimage2}
-question("What idea do you think the creator of this image wished to encourage?",
-    answer("Masks prevent COVID-19 cases from growing exponentially.",message="jump"),
-    answer("COVID-19 cases encourage mask wearing."),
-    answer("Wearing a mask slows the rate of infections.", correct = TRUE),
-    answer("Masks are an important dependent variable"),
+question("'Wearing a mask slows the rate of infection' is an example of:",
+    answer("An inescapable conclusion.",message="jump"),
+    answer("A correlational statement."),
+    answer("A causal statement.", correct = TRUE),
+    answer("A very ambiguous statement.", message="I don't see anything particularly ambiguous about this."),
+    answer("An independently variable statement.", message= "This sentence doesn't mean anything, as far as I know."),
     allow_retry = TRUE
 )
 ```
 
-
+```{r multivariate}
+question("A standard approach to separate out the effects of mask wearing and temperature:",
+    answer("An inescapable conclusion.",message="jump"),
+    answer("A correlational statement."),
+    answer("A causal statement.", correct = TRUE),
+    answer("A very ambiguous statement.", message="I don't see anything particularly ambiguous about this."),
+    answer("An independently variable statement.", message= "This sentence doesn't mean anything, as far as I know."),
+    allow_retry = TRUE
+)
+```
 
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/maskNoMasksReactions.png")
