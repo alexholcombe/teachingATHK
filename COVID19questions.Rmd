@@ -15,7 +15,7 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-##
+## <!-- makes a new page, without a header or index entry -->
 
 ```{r, echo=FALSE, messages=FALSE}
 NSW<- readRDS(file="NSWcases.Rda")
@@ -52,11 +52,6 @@ question("What would a perfectly straight line on this plot indicate? Select ALL
 )
 ```
 
-## Graph interpretation
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
-show(g)
-```
 
 ```{r slope2}
 question("Between 9 March and 23 March, what was the pattern for the increase in cases?  Select ALL that are correct:",
@@ -68,18 +63,70 @@ question("Between 9 March and 23 March, what was the pattern for the increase in
 )
 ```
 
-##
-The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
+## <!--Exponential comparison-->
+
+Below, light blue dots have been added to the plot.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+require(ggplot2)
+start<-22; pctIncrease<-20
+NSW$exponential<-22
+for(i in 2:length(NSW$date)) {
+  NSW$exponential[i] <- NSW$exponential[i-1]*(1+pctIncrease/100)
+}
+h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
+  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6)
+show(h)
+```
+
+If the number of cases had increased by 20% each day, then the black dots (the real data) would fall exactly on top of the blue dots. In other words, the blue dots show the number of cases that would have occurred if there had been a 20% increase in cases each day. The raw numerical (not percentage) change in cases is greater for each day. This is because 20% of a larger number is greater than that of a smaller number. As a result, the graph becomes steeper and steeper as the number of cases grows.
+
+```{r relativeToExponential}
+question("What does the 20% comparison (the blue dots) indicate about the real data?",
+    answer("The real cases increased steadily, at a constant rate."),
+    answer("The real cases increased much more slowly than 20%/day at first, but then increased at a faster rate.", correct=TRUE),
+    answer("The real cases increased at a faster than 20%/day rate"),
+    answer("The real cases increased at close to 20% per day at first, but later increased more slowly.", correct=TRUE),
+    allow_retry = TRUE
+)
+```
+
+When the number of cases does grow by the same percentage each day, it is called "exponential growth". It is what would occur if a person who is infected infects more than one other person on average. For 20% daily growth, on average each person would have to infect 1.2 others.
+
+## Exponential growth
+
+"Exponential growth" refers to when something increases by the same percentage on each day. Below, the data have been replotted with the vertical axis percent increase compared to the previous day rather than total number of cases.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 
 #Calculate proportional increase
 increase<-diff(NSW$cases)
 increase<-c(0,increase) #pad with 0 for first item
 NSW$increase <- increase
+
+NSW$increaseE <- pctIncrease #Because manual gets it slightly wrong probably because wrong starting date or something
+
+#increaseE<-diff(NSW$exponential)
+#increaseE<-c(0,increaseE) #pad with 0 for first item
+#NSW$increaseE <- increaseE
 excludeFirst <- tail(NSW,-1)
+
+j<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("% increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,40) +
+    geom_point(data = excludeFirst, aes(x = date, y = increaseE), color = "blue", alpha=.6)
+show(j)
+```
+
+The blue dots now form a horizontal line, because they were created by calculating a 20% increase compared to the previous day.
+This graph makes it obvious that after 23 March especially, there was not a constant percentage increase each day. Instead, the percentage increase became less and less.
+
+
+##
+The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+
 NSWcori<-cor.test(as.numeric(NSW$date),NSW$increase/NSW$cases) 
-h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase") + scale_x_date(date_minor_breaks=("1 days")) +
+h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days")) +
   annotate("text",x=as.Date("2020/3/16"),y=13, label=paste0("r=",round(NSWcori$estimate,2)), parse=FALSE)
 show(h)
 ```
@@ -94,6 +141,9 @@ question("If the number of cases grew exactly exponentially, where would the dat
 )
 ```
 
+## Semi-log plot 
+
+Constant slope
 
 ## A popular and complicated plot
 
