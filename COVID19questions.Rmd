@@ -22,11 +22,33 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
 ``` 
 
+```{r axes}
+question("Which is true of the axes of this graph?",
+    answer("The horizontal axis is geometric; the vertical is logarithmic."),
+    answer("The horizontal axis is linear; the vertical is logarithmic.", correct=TRUE, message="Correct. The vertical axis is logarithmic."),
+    answer("The horizontal axis is logarithmic; the vertical is hypergeometric."),
+    answer("The horizontal axis is logarithmic; the vertical is logarithmic."),
+    allow_retry = TRUE
+)
+```
 
+, message="Correct. Slightly confusing here is that the labels on the vertical axis are not equally spaced, in order to position them at round numbers."
+
+```{r slope}
+question("What would a straight line on this graph indicates ?",
+    answer("The horizontal axis is geometric; the vertical is logarithmic."),
+    answer("The horizontal axis is linear; the vertical is logarithmic.", correct=TRUE),
+    answer("The horizontal axis is logarithmic; the vertical is hypergeometric."),
+    answer("The horizontal axis is logarithmic; the vertical is logarithmic."),
+    allow_retry = TRUE
+)
+```
+
+What may be slightly confusing in the graph is that the labels on the vertical axis are not equally spaced, in order to position them at round numbers.
 
 ```{r ideaimage}
-question("What idea do you think the creator of this image wished to encourage?",
-    answer("Masks prevent COVID-19 cases from growing exponentially.",message="jump"),
+question("What idea do you think the person who scrawled on this image wished to encourage?",
+    answer("Masks prevent COVID-19 cases from growing exponentially.",message="No, because the lines in the Masks group are fairly linear on this semi-log plot, indicating that they are growing exponentially, just slower than the masks ones"),
     answer("COVID-19 cases encourage mask wearing."),
     answer("Wearing a mask slows the rate of infections.", correct = TRUE),
     answer("Masks are an important dependent variable"),
@@ -51,19 +73,35 @@ question("'Wearing a mask slows the rate of infection' is an example of:",
 )
 ```
 
-```{r multivariate}
-question("A standard approach to separate out the effects of mask wearing and temperature:",
-    answer("An inescapable conclusion.",message="jump"),
-    answer("A correlational statement."),
-    answer("A causal statement.", correct = TRUE),
-    answer("A very ambiguous statement.", message="I don't see anything particularly ambiguous about this."),
-    answer("An independently variable statement.", message= "This sentence doesn't mean anything, as far as I know."),
+A common mistake people make is to assume there is only one reason for 
+
+```{r ianotherFactor}
+question("Other factor(s) that might explain some of the difference between the blue-circled countries and the red ones:",
+    answer("Climate.",correct=TRUE),
+    answer("Handshaking customs.",correct=TRUE),
+    answer("Government diligence in testing and tracing contacts of COVID-19 patients.", correct=TRUE),
+    answer("Responsiveness of population to government recommendations.", correct=TRUE),
+    answer("Quarantine policy.", correct=TRUE),
     allow_retry = TRUE
 )
 ```
 
+## Reactions
+
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/maskNoMasksReactions.png")
 ``` 
+
+
+```{r multivariate}
+question("What standard approach might be used to try to estimate the effects of mask wearing and temperature?",
+    answer("Multivariate regression.",correct=TRUE),
+    answer("Standard deviation."),
+    answer("Regression to the mean."),
+    answer("Post hoc ergo propter hoc.", message="I don't see anything particularly ambiguous about this."),
+    allow_retry = TRUE
+)
+```
+
 
 But, with an exponentially-growing pandemic, we don't have time to wait for strong evidence.
