@@ -68,14 +68,14 @@ question("Between 9 March and 23 March, what was the pattern for the increase in
 Below, light blue dots have been added to the plot.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
-require(ggplot2)
 start<-22; pctIncrease<-20
 NSW$exponential<-22
 for(i in 2:length(NSW$date)) {
   NSW$exponential[i] <- NSW$exponential[i-1]*(1+pctIncrease/100)
 }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
-  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6)
+  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
+  annotate("text",x=as.Date("2020/3/28"),y=2200, label="20% growth daily", color="blue", size=3, angle=70)
 show(h)
 ```
 
@@ -152,28 +152,44 @@ For the case of exponential growth, we are interested in knowing what the number
 
 Logarithms turn multiplication into addition, which means that on a logarithmic axis, stepping upward by a constant amount does not mean the number of cases has increased by the same number each time, but rather that it's been multiplied by the same number each time.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+```{r, semilogTwenty, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+k<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue",alpha=.6) + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +  theme(panel.grid.minor.y = element_blank()) +
+    annotate("text",x=as.Date("2020/3/15"),y=112, label="20% growth daily", color="blue", size=3, angle=38)
+show(k + scale_y_log10() )
+```
+As a result, our 20% growth points fall on a straight line, because each successive point is a result of multiplying (rather than adding)
+by a constant: 1.2.
 
+```{r, semilogTwenty, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 k<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue",alpha=.6) + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +  theme(panel.grid.minor.y = element_blank())
 show(k + scale_y_log10() )
-
 ```
 
-In the above plot, notice that the vertical axis labels do not mark out equal intervals additively. Rather, stepping up with steps of a particular size corresponds to multiplying by a constant amount with each step. Eac successive y-axis label is the previous label multipled by approximately three.
+In the above plot, notice that the vertical axis labels do not mark out equal intervals. That is, taking equal steps up does not result in adding one number over and over, a number corresponding to the step size. Rather, taking equal steps upward corresponds to *multiplying* by a number that reflects the step size. For the interval between the successive y-axis labels, for example, each is the previous label multipled by approximately three.
 
-an increment does not mean a constant is added to the number of cases each day, but rather a
-the number of cases increases by the s
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+start<-22; pctIncrease<-30
+NSW$thirty<-22
+for(i in 2:length(NSW$date)) {
+  NSW$thirty[i] <- NSW$thirty[i-1]*(1+pctIncrease/100)
+}
+start<-22; pctIncrease<-10
+NSW$ten<-22
+for(i in 2:length(NSW$date)) {
+  NSW$ten[i] <- NSW$ten[i-1]*(1+pctIncrease/100)
+}
+mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
+  geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
+  geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
+  theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
+  annotate("text",x=as.Date("2020/3/13"),y=38, label="10% growth daily", color="darkgreen", size=3, angle=15) +
+  annotate("text",x=as.Date("2020/3/15"),y=112, label="20% growth daily", color="blue", size=3, angle=28) +
+  annotate("text",x=as.Date("2020/3/16"),y=370, label="30% growth daily", color="red", size=3, angle=38)
+show(mm) 
+```
 
 And multiplying by a constant on each day (e.g., 1.2 for 20% increase) is what exponential growth is. Thus, while 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
-
-k<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
-  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +  theme(panel.grid.minor.y = element_blank()) +
-  scale_y_log10() 
-show(k) 
-
-```
 
 Compound interest
 
