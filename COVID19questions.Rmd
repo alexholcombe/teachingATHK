@@ -2,6 +2,7 @@
 title: "COVID-19 questions"
 output:
   learnr::tutorial:
+    version: 0.2
     progressive: true
     allow_skip: true
 runtime: shiny_prerendered
@@ -14,13 +15,13 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Plot axes
+##
 
 ```{r, echo=FALSE, messages=FALSE}
 NSW<- readRDS(file="NSWcases.Rda")
 ```
 
-The following plot shows the number of confirmed cases of COVID-19 infection on each day since 4 March.
+The following plot shows the number of confirmed cases of COVID-19 infection on each day in the state of New South Wales in Australia since 4 March.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
@@ -58,14 +59,41 @@ show(g)
 ```
 
 ```{r slope2}
-question("Between 9 March and 23 March, what is the pattern for the increase in cases? Select ALL that are correct.",
+question("Between 9 March and 23 March, what was the pattern for the increase in cases?  Select ALL that are correct:",
     answer("The cases increased steadily, at a constant rate.", message="No, that would only be true if the cases fell on a straight line."),
     answer("More quickly at the end of that period than at the beginning.", correct=TRUE),
     answer("Each day, the number of cases decreased by a constant percentage.", message="No, they certainly did not decrease."),
-    answer("In accelerating fashion.", correct=TRUE),
+    answer("They accelerated.", correct=TRUE),
     allow_retry = TRUE
 )
 ```
+
+##
+The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+
+#Calculate proportional increase
+increase<-diff(NSW$cases)
+increase<-c(0,increase) #pad with 0 for first item
+NSW$increase <- increase
+excludeFirst <- tail(NSW,-1)
+NSWcori<-cor.test(as.numeric(NSW$date),NSW$increase/NSW$cases) 
+h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase") + scale_x_date(date_minor_breaks=("1 days")) +
+  annotate("text",x=as.Date("2020/3/16"),y=13, label=paste0("r=",round(NSWcori$estimate,2)), parse=FALSE)
+show(h)
+```
+
+```{r pctage}
+question("If the number of cases grew exactly exponentially, where would the datapoints be?",
+    answer("On an accelerating curve.", message="That would be true if the vertical axis was number of cases, but not true with this percentage increase vertical axis."),
+    answer("On a straight line with an upward slope."),
+    answer("On a straight line with a downward slope."),
+    answer("A flat horizontal line.", correct=TRUE),
+    allow_retry = TRUE
+)
+```
+
 
 ## A popular and complicated plot
 
