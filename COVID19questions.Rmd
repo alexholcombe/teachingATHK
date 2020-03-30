@@ -6,8 +6,7 @@ output:
     allow_skip: true
 runtime: shiny_prerendered
 description: >
-  Learn how to set up R and RStudio on your machine. We will also demonstrate
-  how to install R packages from CRAN, and install the tidyverse package.
+  Exploit COVID-19 for graph interpretation
 ---
 
 ```{r setup, include=FALSE}
@@ -15,15 +14,24 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Plot axes
 
-## Causal reasoning about COVID-19 transmission
+```{r, echo=FALSE, messages=FALSE}
+NSW<- readRDS(file="NSWcases.Rda")
+```
 
-```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
-knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
-``` 
+The following plot shows the number of confirmed cases of COVID-19 infection on each day since 4 March.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
+require(ggplot2)
+NSWcor<-cor.test(as.numeric(NSW$date),NSW$cases) 
+g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA)
+show(g)
+```
+
 
 ```{r axes}
-question("Which is true of the axes of this graph?",
+question("Which is true of the axes of this plot?",
     answer("The horizontal axis is geometric; the vertical is logarithmic."),
     answer("The horizontal axis is linear; the vertical is logarithmic.", correct=TRUE, message="Correct. The vertical axis is logarithmic."),
     answer("The horizontal axis is logarithmic; the vertical is hypergeometric."),
@@ -32,19 +40,47 @@ question("Which is true of the axes of this graph?",
 )
 ```
 
-, message="Correct. Slightly confusing here is that the labels on the vertical axis are not equally spaced, in order to position them at round numbers."
 
-```{r slope}
-question("What would a straight line on this graph indicates ?",
-    answer("The horizontal axis is geometric; the vertical is logarithmic."),
-    answer("The horizontal axis is linear; the vertical is logarithmic.", correct=TRUE),
-    answer("The horizontal axis is logarithmic; the vertical is hypergeometric."),
-    answer("The horizontal axis is logarithmic; the vertical is logarithmic."),
+```{r slope1}
+question("What would a perfectly straight line on this plot indicate? Select ALL that are correct.",
+    answer("A constant rate of increase.", correct=TRUE),
+    answer("The doubling time of the number of confirmed cases is constant.", message="No, that would be an exponential growth rather than linear."),
+    answer("Each day, the number of confirmed cases increases by a constant percentage.", message="No, that would be an exponential growth rather than linear."),
+    answer("Each day, the number of confirmed cases increases by the same amount as the previous day.", correct=TRUE),
     allow_retry = TRUE
 )
 ```
 
-What may be slightly confusing in the graph is that the labels on the vertical axis are not equally spaced, in order to position them at round numbers.
+## Graph interpretation
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
+show(g)
+```
+
+```{r slope2}
+question("Between 9 March and 23 March, what is the pattern for the increase in cases? Select ALL that are correct.",
+    answer("The cases increased steadily, at a constant rate.", message="No, that would only be true if the cases fell on a straight line."),
+    answer("More quickly at the end of that period than at the beginning.", correct=TRUE),
+    answer("Each day, the number of cases decreased by a constant percentage.", message="No, they certainly did not decrease."),
+    answer("In accelerating fashion.", correct=TRUE),
+    allow_retry = TRUE
+)
+```
+
+## A popular and complicated plot
+
+```{r, echo=FALSE, out.width = "750px"}
+knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the image directory for Shiny apps
+``` 
+
+What may be slightly confusing in this plot is that the labels on the vertical axis are not equally spaced, in order to position them at round numbers.
+
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory for Shiny apps
+``` 
+
+
+
 
 ```{r ideaimage}
 question("What idea do you think the person who scrawled on this image wished to encourage?",
