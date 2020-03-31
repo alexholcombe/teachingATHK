@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 NSW<- readRDS(file="NSWcases.Rda")
 ```
 
-The following plot shows the number of confirmed cases of COVID-19 infection on each day in the state of New South Wales in Australia since 4 March.
+The following plot shows the number of confirmed cases of COVID-19 infection on each day in the state of New South Wales in Australia, since the 4th of March.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
@@ -142,7 +142,7 @@ question("If the number of cases grew exactly exponentially, where would the dat
 )
 ```
 
-## Semi-log plot 
+## A logarithmic vertical axis
 
 While the % increase vertical axis is useful, it unfortunately does not show the cumulative number of cases, only the change since the previous day. As a result, from that graph we don't see how high the caseload has gotten. This is one reason that people often use a logarithmic vertical axis in situations of constant (or even approximate) percentage growth.
 
@@ -267,7 +267,11 @@ As you know, the correlation of Y with X and X with Y are the same, so in princi
 
 But could Y cause X? That is, could flu deaths cause higher population density? That's is not very plausible, illustrating that with some pairs of variables, causation in only one direction is likely
 
-### Many points means more evidence
+## Many points means more evidence
+
+```{r, echo=FALSE, out.width = "400px"}
+knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
+``` 
 
 Scatterplots typically have lots of data points.  If they form a fairly consistent pattern of Y increasing or decreasing with X, this provides a lot of evidence for a correlation, which is what one wants before making the further leap to imputing a causal relationship. 
 
@@ -313,8 +317,6 @@ knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change t
 ``` 
 
 
-
-
 ```{r ideaimage}
 question("What idea do you think the person who scrawled on this image wished to encourage?",
     answer("Masks prevent COVID-19 cases from growing exponentially.",message="No, because the lines in the Masks group are fairly linear on this semi-log plot, indicating that they are growing exponentially, just slower than the masks ones"),
@@ -331,9 +333,9 @@ question("What idea do you think the person who scrawled on this image wished to
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
 ``` 
 
-```{r ideaimage2}
+```{r ideaimage3}
 question("'Wearing a mask slows the rate of infection' is an example of:",
-    answer("An inescapable conclusion.",message="jump"),
+    answer("An inescapable conclusion."),
     answer("A correlational statement."),
     answer("A causal statement.", correct = TRUE),
     answer("A very ambiguous statement.", message="I don't see anything particularly ambiguous about this."),
@@ -342,9 +344,47 @@ question("'Wearing a mask slows the rate of infection' is an example of:",
 )
 ```
 
-A common mistake people make is to assume there is only one reason for 
+## 
+
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+``` 
+
+The person who scrawled on this figure is encouraging people to make the causal inference that wearing a mask reduces the spread of COVID-19 infection.
+
+```{r ideaimage2}
+question("'How many purportedly mask-wearing countries is the causal inference based on?",
+    answer("1."),
+    answer("2."),
+    answer("3."),
+    answer("4.", correct=TRUE),
+    answer("5."),
+    allow_retry = TRUE
+)
+```
+
+In order to be confident that a statistical correlation is present between two things,  many data points are usually needed, which are typically plotted on a scatterplot. After establishing a statistically significant correlation, one may make the further leap to a causal model, keeping in mind the pitfalls of inferring causation from correlation.
 
 ```{r ianotherFactor}
+question("What are two pitfalls of inferring that X causes Y from a correlation between an X and Y variable?",
+    answer("A third factor may cause both of the variables that are correlated.",correct=TRUE),
+    answer("Correlations are subject to kurtotic doubling.",message="Kurtotic doubling is not a thing."),
+    answer("Y may cause X.", correct=TRUE),
+    answer("X minus Y is often more likely.", message="This option makes no sense in this context."),
+    allow_retry = TRUE
+)
+```
+
+## 
+
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+``` 
+
+The inference that masks cause less spreading of infection based on only four instances of mask-wearing countries. The fewer the number of instances, the more likely it is that a third variable could explain the difference between the two sets of countries.
+
+
+```{r notherFactor}
 question("Other factor(s) that might explain some of the difference between the blue-circled countries and the red ones:",
     answer("Climate.",correct=TRUE),
     answer("Handshaking customs.",correct=TRUE),
@@ -355,7 +395,13 @@ question("Other factor(s) that might explain some of the difference between the 
 )
 ```
 
-## Reactions
+## 
+
+There are many kinds of differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the four circles countries is a combination of causes, one of which *may* be masks. The evidence that masks are a cause is weak.
+
+But in an exponentially-growing pandemic, one doesn't have time to wait for strong evidence! One has to do something. Actually, one should do lots of things that may plausibly combat the crisis. Wearing masks is a plausible cause of reduced transmission, so it probably should be adopted.
+
+## 
 
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/maskNoMasksReactions.png")
@@ -372,5 +418,3 @@ question("What standard approach might be used to try to estimate the effects of
 )
 ```
 
-
-But, with an exponentially-growing pandemic, we don't have time to wait for strong evidence.
