@@ -12,6 +12,8 @@ NSW<-data.frame( cases= c(22,25,28,36,40,47,60,64,77,91,111,133,170,209,267,307,
 #NSW$increase = c(0, 6, 8, 4, 7, 13, 4, 12, 14, 20, 14, 22, 37))  
 NSW$date <- seq(as.Date("2020/3/4"), by = "day", length.out = length(NSW$cases))
 saveRDS(NSW, file="NSWcases.Rda") #for use by other scripts, like COVD19questions.Rmd
+saveRDS(NSW, file="images/NSWcases.Rda") #for use by other scripts, like COVD19questions.Rmd
+
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}

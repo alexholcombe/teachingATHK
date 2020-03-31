@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## <!-- makes a new page, without a header or index entry -->
 
 ```{r, echo=FALSE, messages=FALSE}
-NSW<- readRDS(file="NSWcases.Rda")
+NSW<- readRDS(file="images/NSWcases.Rda")
 ```
 
 The following plot shows the number of confirmed cases of COVID-19 infection on each day in the state of New South Wales in Australia, since the 4th of March.
