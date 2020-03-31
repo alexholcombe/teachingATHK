@@ -1,8 +1,8 @@
 ---
-title: "COVID-19 questions"
+title: "Growth, correlation, and causation"
 output:
   learnr::tutorial:
-    version: 0.3
+    version: 0.4
     progressive: true
     allow_skip: true
 runtime: shiny_prerendered
@@ -33,20 +33,8 @@ show(g)
 ### 
 ###
 
-```{r axes}
-question("Which is true of the axes of this plot?",
-    answer("The horizontal axis is geometric; the vertical is logarithmic."),
-    answer("The horizontal axis is linear; the vertical is logarithmic.", correct=TRUE, message="Correct. The vertical axis is logarithmic."),
-    answer("The horizontal axis is logarithmic; the vertical is hypergeometric."),
-    answer("The horizontal axis is logarithmic; the vertical is logarithmic."),
-    allow_retry = TRUE
-)
-```
-
-
 ```{r slope1}
-question("What would a perfectly straight line on this plot indicate? Select ALL that are correct.",
-    answer("A constant rate of increase.", correct=TRUE),
+question("What would a perfectly straight line on this plot indicate?",
     answer("The doubling time of the number of confirmed cases is constant.", message="No, that would be an exponential growth rather than linear."),
     answer("Each day, the number of confirmed cases increases by a constant percentage.", message="No, that would be an exponential growth rather than linear."),
     answer("Each day, the number of confirmed cases increases by the same amount as the previous day.", correct=TRUE),
@@ -56,11 +44,11 @@ question("What would a perfectly straight line on this plot indicate? Select ALL
 
 
 ```{r slope2}
-question("Between 9 March and 23 March, what was the pattern for the increase in cases?  Select ALL that are correct:",
+question("Between 9 March and 23 March, what was the pattern for the increase in cases? ",
     answer("The cases increased steadily, at a constant rate.", message="No, that would only be true if the cases fell on a straight line."),
-    answer("More quickly at the end of that period than at the beginning.", correct=TRUE),
+    answer("Quicker at the end of that period than at the beginning.", correct=TRUE),
     answer("Each day, the number of cases decreased by a constant percentage.", message="No, they certainly did not decrease."),
-    answer("They accelerated.", correct=TRUE),
+    #answer("They accelerated.", correct=TRUE),
     allow_retry = TRUE
 )
 ```
@@ -77,7 +65,7 @@ for(i in 2:length(NSW$date)) {
 }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
   geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
-  annotate("text",x=as.Date("2020/3/28"),y=2200, label="20% growth daily", color="blue", size=3, angle=70)
+  annotate("text",x=as.Date("2020/3/28"),y=2250, label="20% daily growth", color="blue", size=3.5, angle=70)
 show(h)
 ```
 
@@ -86,14 +74,14 @@ If the number of cases had increased by 20% each day, then the black dots (the r
 ```{r relativeToExponential}
 question("What does the 20% comparison (the blue dots) indicate about the real data?",
     answer("The real cases increased steadily, at a constant rate."),
-    answer("The real cases increased much more slowly than 20%/day at first, but then increased at a faster rate.", correct=TRUE),
+    answer("The real cases increased much more slowly than 20%/day at first, but from then on increased at a constant rate.", correct=TRUE),
     answer("The real cases increased at a faster than 20%/day rate"),
     answer("The real cases increased at close to 20% per day at first, but later increased more slowly.", correct=TRUE),
     allow_retry = TRUE
 )
 ```
 
-When the number of cases does grow by the same percentage each day, it is called "exponential growth". It is what would occur if a person who is infected infects more than one other person on average. For 20% daily growth, on average each person would have to infect 1.2 others.
+If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". It is what would occur if a person who is infected infects more than one other person on average. For 20% daily growth, on average each person would have to infect 1.2 others.
 
 ## Exponential growth
 
@@ -128,8 +116,7 @@ The below plot shows, for each day, the percentage increase in confirmed cases f
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 
 NSWcori<-cor.test(as.numeric(NSW$date),NSW$increase/NSW$cases) 
-h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days")) +
-  annotate("text",x=as.Date("2020/3/16"),y=13, label=paste0("r=",round(NSWcori$estimate,2)), parse=FALSE)
+h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days"))
 show(h)
 ```
 
@@ -178,9 +165,9 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
-  annotate("text",x=as.Date("2020/3/13"),y=38, label="10% daily growth", color="darkgreen", size=3, angle=15) +
-  annotate("text",x=as.Date("2020/3/15"),y=112, label="20% daily growth", color="blue", size=3, angle=28) +
-  annotate("text",x=as.Date("2020/3/16"),y=370, label="30% daily growth", color="red", size=3, angle=38)
+  annotate("text",x=as.Date("2020/3/13"),y=38, label="10% daily growth", color="darkgreen", size=3, angle=18) +
+  annotate("text",x=as.Date("2020/3/15"),y=112, label="20% daily growth", color="blue", size=3, angle=32) +
+  annotate("text",x=as.Date("2020/3/16"),y=370, label="30% daily growth", color="red", size=3, angle=42)
 show(mm) 
 ```
 
@@ -221,20 +208,20 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
-  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=15) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=28) +
-  annotate("text",x=as.Date("2020/3/20"),y=920, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=38)
+  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=19) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=32) +
+  annotate("text",x=as.Date("2020/3/20"),y=920, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=44)
 show(mm)
 ```
 
 ## Population density and flu mortality
 
-[Hoffman & Cox](https://bioone.org/journals/Transactions-of-the-Kansas-Academy-of-Science/volume-122/issue-3-4/062.122.0301/The-1918-1920-H1N1-Influenza-a-Pandemic-in-Kansas-and/10.1660/062.122.0301.full?casa_token=TtDsr1exh58AAAAA%3apcP2D8e87Ap0vYATPNofQCiq8zgIp8b0MKMHjn_awr9KMYZ7Mc65AKRiwnFi6aZrro9m6xvGYQDG) here plot data from the 1918 flu pandemic. The plot shows the mortality rate against the population density for different counties in Kansas and Missouri.
+[Hoffman & Cox](https://bioone.org/journals/Transactions-of-the-Kansas-Academy-of-Science/volume-122/issue-3-4/062.122.0301/The-1918-1920-H1N1-Influenza-a-Pandemic-in-Kansas-and/10.1660/062.122.0301.full?casa_token=TtDsr1exh58AAAAA%3apcP2D8e87Ap0vYATPNofQCiq8zgIp8b0MKMHjn_awr9KMYZ7Mc65AKRiwnFi6aZrro9m6xvGYQDG) here plot data from the 1918 flu pandemic. Their plot shows the mortality rate against the population density for different counties in Kansas and Missouri.
 
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 ``` 
 
-Not only is the vertical axis logarithmic, but also the horizontal axis is logarithmic.
+Not only is the vertical axis logarithmic on this plot, but also the horizontal axis is logarithmic. But you don't need to worry about that to answer the following questions.
 
 ```{r KansasMissouriCorrelatn}
 question("From this plot, what do you think is the relationship between population density and mortality rate?",
@@ -264,7 +251,7 @@ knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 
 So far, we have discussed inferences of causation from correlations, where the correlation is evident from a scatterplot of Y against X, and people tend to infer that X caused Y.
 
-As you know, the correlation of Y with X and X with Y are the same, so in principle, a plot like that of the above is just as consistent with Y causing X as with X causing Y. However, in some cases a causal link is much more plausible in one direction than in another. For example, it is plausible that higher population density causes a higher rate of flu deaths. A more detailed causal model is that population density causes more frequent physical contact between people, which causes more flu transmission, which causes more deaths.
+The correlation of Y with X and X with Y are by definition the same, so in principle a plot like that of the above is just as consistent with Y causing X as with X causing Y. However, in some cases a causal link is much more plausible in one direction than in another. For example, it is plausible that higher population density causes a higher rate of flu deaths. A more detailed causal model is that population density causes more frequent physical contact between people, which causes more flu transmission, which causes more deaths.
 
 But could Y cause X? That is, could flu deaths cause higher population density? That's is not very plausible, illustrating that with some pairs of variables, causation in only one direction is likely
 
@@ -278,7 +265,7 @@ Scatterplots typically have lots of data points.  If they form a fairly consiste
 
 ## A plot from the news media
 
-Now use your skills to interpret this plot produced by the Financial Times.
+Consider this plot produced by John Burn-Murdoch of the Financial Times.
 
 ```{r, echo=FALSE, out.width = "750px"}
 knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the image directory for Shiny apps
@@ -309,7 +296,7 @@ knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the 
 USrate = round( (2^(1/2)  -1) * 100  )
 ``` 
 
-Doubling every two days, as the U.S. was doing for about two weeks, corresponds to a `r USrate`% daily growth rate.
+Doubling every two days, as the U.S. was doing for the first two weeks here, corresponds to a `r USrate`% daily growth rate.
 
 ##
 
@@ -319,7 +306,7 @@ knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change t
 
 
 ```{r ideaimage}
-question("What idea do you think the person who scrawled on this image wished to encourage?",
+question("What theory do you think the person who scrawled on this image wished to encourage you to believe?",
     answer("Masks prevent COVID-19 cases from growing exponentially.",message="No, because the lines in the Masks group are fairly linear on this semi-log plot, indicating that they are growing exponentially, just slower than the masks ones"),
     answer("COVID-19 cases encourage mask wearing."),
     answer("Wearing a mask slows the rate of infections.", correct = TRUE),
@@ -354,7 +341,7 @@ knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change t
 The person who scrawled on this figure is encouraging people to make the causal inference that wearing a mask reduces the spread of COVID-19 infection.
 
 ```{r ideaimage2}
-question("'How many purportedly mask-wearing countries is the causal inference based on?",
+question("'How many countries with a high rate of mask wearing is the causal inference based on?",
     answer("1."),
     answer("2."),
     answer("3."),
@@ -382,7 +369,7 @@ question("What are two pitfalls of inferring that X causes Y from a correlation 
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
 ``` 
 
-The inference that masks cause less spreading of infection based on only four instances of mask-wearing countries. The fewer the number of instances, the more likely it is that a third variable could explain the difference between the two sets of countries.
+The inference from this plot that masks cause less spreading of infection based on only four instances of mask-wearing countries. The fewer the number of instances, the more likely it is that a third variable could explain the difference between the two sets of countries.
 
 
 ```{r notherFactor}
@@ -398,9 +385,13 @@ question("Other factor(s) that might explain some of the difference between the 
 
 ## 
 
-There are many kinds of differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the four circles countries is a combination of causes, one of which *may* be masks. The evidence that masks are a cause is weak.
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+``` 
 
-But in an exponentially-growing pandemic, one doesn't have time to wait for strong evidence! One has to do something. Actually, one should do lots of things that may plausibly combat the crisis. Wearing masks is a plausible cause of reduced transmission, so it probably should be adopted.
+There are many kinds of differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the four blue-circled countries is a combination of causes, one of which *may* be masks. The evidence here that masks are a cause therefore is weak.
+
+In an exponentially-growing pandemic, however, one doesn't have time to wait for strong evidence! One has to do something. Actually, one should do lots of things that may plausibly combat the crisis. Wearing masks is a plausible cause of reduced transmission, so it probably is a good policy to adopt.
 
 ## 
 
