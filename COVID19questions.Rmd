@@ -310,12 +310,12 @@ knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change t
 
 ```{r ideaimage}
 question("What theory do you think the person who scrawled on this image wished to encourage you to believe?",
-    answer("Masks prevent COVID-19 cases from growing exponentially.",message="No, because the lines in the Masks group are fairly linear on this semi-log plot, indicating that they are growing exponentially, just slower than the masks ones"),
     answer("COVID-19 cases encourage mask wearing."),
     answer("Wearing a mask slows the rate of infections.", correct = TRUE),
     answer("Masks are an important dependent variable"),
     allow_retry = TRUE
 )
+#    answer("Masks prevent COVID-19 cases from growing exponentially.",message="No, because the lines in the Masks group are fairly linear on this semi-log plot, indicating that they are growing exponentially, just slower than the masks ones"),
 ```
 
 ## Causal inference
