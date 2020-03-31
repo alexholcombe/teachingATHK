@@ -2,7 +2,7 @@
 title: "COVID-19 questions"
 output:
   learnr::tutorial:
-    version: 0.2
+    version: 0.3
     progressive: true
     allow_skip: true
 runtime: shiny_prerendered
@@ -30,6 +30,8 @@ g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("C
 show(g)
 ```
 
+### 
+###
 
 ```{r axes}
 question("Which is true of the axes of this plot?",
@@ -95,7 +97,7 @@ When the number of cases does grow by the same percentage each day, it is called
 
 ## Exponential growth
 
-"Exponential growth" refers to when something increases by the same percentage on each day. Below, the data have been replotted with the vertical axis percent increase compared to the previous day rather than total number of cases. 
+"Exponential growth" refers to when something increases by the same percentage over successive time points. Below, the data have been replotted with the vertical axis percent increase compared to the previous day rather than total number of cases. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 #Calculate proportional increase
@@ -116,10 +118,9 @@ show(j)
 ```
 
 The blue dots now form a horizontal line, because they were created by calculating a 20% increase compared to the previous day.
-The reason that virus infections can grow exponentially is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to more than one person (on average). Thus the new number of cases is some multiple (percentage added to) of the previous day's cases.
+The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to more than one person (on average). Thus the new number of cases is some multiple (percentage added to) of the previous day's cases.
 
-For the real data (the black dots), this graph makes it obvious that after 23 March especially, there was not a constant percentage increase each day. Instead, the percentage increase became less and less.
-
+For the real data (the black dots), this graph makes it obvious that after about 23 March (when flights from overseas stopped and social distancing was put in place), no longer was there a similar percentage increase on each day. Instead, the percentage increase dwindled.
 
 ##
 The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
