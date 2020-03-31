@@ -388,29 +388,8 @@ question("Other factor(s) that might explain some of the difference between the 
 
 ## 
 
-```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
-knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
-``` 
-
-There are many kinds of differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the four blue-circled countries is a combination of causes, one of which *may* be masks. The evidence here that masks are a cause therefore is weak.
-
-In an exponentially-growing pandemic, however, one doesn't have time to wait for strong evidence! One has to do something. Actually, one should do lots of things that may plausibly combat the crisis. Wearing masks is a plausible cause of reduced transmission, so it probably is a good policy to adopt.
-
-## 
-
-```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
-knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
-```
-
-From twitter, here are some responses to the person who tweeted the scrawled-on plot.
-
-```{r, echo=FALSE, out.width = "400px"}
-knitr::include_graphics("images/maskNoMasksReactions.png")
-``` 
-
-
 ```{r multivariate}
-question("What approach might be used to try to estimate the effects of mask wearing and temperature?",
+question("What approach might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
     answer("Multivariate regression.",correct=TRUE),
     answer("Standard deviation."),
     answer("Regression to the mean."),
@@ -418,4 +397,44 @@ question("What approach might be used to try to estimate the effects of mask wea
     allow_retry = TRUE
 )
 ```
+
+## 
+
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+``` 
+
+The [tweeter](https://twitter.com/jperla/status/1243349875015553024) of this plot got a lot of responses to their posting of the scrawled-on plot.
+Here is one. It points out some of the third variables that confound the comparison between the two sets of countries. 
+
+```{r, echo=FALSE, fig.cap="", out.width = "430px"}
+knitr::include_graphics("images/maskNoMasks3rdVariablesTweet.png") #You can't change the image directory
+```
+
+There are almost always many potentially-relevant differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the blue-circled countries is a combination of causes, one of which *may* be masks. 
+
+##
+
+Here is another response from twitter:
+
+```{r, echo=FALSE, fig.cap="", out.width = "430px"}
+knitr::include_graphics("images/maskNoMasksItalyWearingMasksTweet.png") #You can't change the image directory
+```
+
+Dario claims that in addition to the blue-circled countries, Italians have also been wearing masks a lot, yet their infection rate has not slowed. Others have [pointed out](https://twitter.com/angie_rasmussen/status/1243988682429722625) that people in China also began wearing masks at a high rate, yet their infection rate did not slow until much later.
+
+Such suggestions highlight the fact that you should be skeptical of the claims of a random person on the internet, even if their claim comports with your intuition.
+
+## 
+
+A third response to the scrawled-on plot does not argue with the claim. Rather, it asserts that there is independent reason to believe the claim that masks slow infection:
+
+```{r, echo=FALSE, fig.cap="", out.width = "430px"}
+knitr::include_graphics("images/maskNoMasksMaskShouldHelpTweet.png") #You can't change the image directory
+```
+
+This is important to consider, because to decide what one should do, it is sensible to incorporate multiple kinds of evidence. As we have discussed, the scrawled-on plot provides only very weak evidence that masks are effective.
+
+However, during an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. One has to do something. Actually, one should do lots of things that might plausibly combat the crisis. Wearing masks is a plausible cause of reduced transmission, so it may be a good policy to adopt even if empirical evidence for its effectiveness is weak.
+
 
