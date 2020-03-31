@@ -2,7 +2,7 @@
 title: "Growth, correlation, and causation"
 output:
   learnr::tutorial:
-    version: 0.4
+    version: 0.5
     progressive: true
     allow_skip: true
 runtime: shiny_prerendered
@@ -55,7 +55,7 @@ question("Between 9 March and 23 March, what was the pattern for the increase in
 
 ## <!--Exponential comparison-->
 
-Below, light blue dots have been added to the plot.
+Below, some blue dots have been added to the plot.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 start<-22; pctIncrease<-20
@@ -74,18 +74,18 @@ If the number of cases had increased by 20% each day, then the black dots (the r
 ```{r relativeToExponential}
 question("What does the 20% comparison (the blue dots) indicate about the real data?",
     answer("The real cases increased steadily, at a constant rate."),
-    answer("The real cases increased much more slowly than 20%/day at first, but from then on increased at a constant rate.", correct=TRUE),
+    answer("The real cases increased much more slowly than 20%/day at first, but from then on increased at a constant rate."),
     answer("The real cases increased at a faster than 20%/day rate"),
     answer("The real cases increased at close to 20% per day at first, but later increased more slowly.", correct=TRUE),
     allow_retry = TRUE
 )
 ```
 
-If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". It is what would occur if a person who is infected infects more than one other person on average. For 20% daily growth, on average each person would have to infect 1.2 others.
+If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". It is what would occur if each person who is infected infects, on average, more than one other person. For 20% daily growth, on average each person would have to infect 1.2 others.
 
 ## Exponential growth
 
-"Exponential growth" refers to when something increases by the same percentage over successive time points. Below, the data have been replotted with the vertical axis percent increase compared to the previous day rather than total number of cases. 
+"Exponential growth" refers to when something increases by the same percentage over successive time points. Below, the data have been replotted with the vertical axis as percent increase over the previous day rather than total number of cases. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 #Calculate proportional increase
@@ -108,7 +108,7 @@ show(j)
 The blue dots now form a horizontal line, because they were created by calculating a 20% increase compared to the previous day.
 The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to more than one person (on average). Thus the new number of cases is some multiple (percentage added to) of the previous day's cases.
 
-For the real data (the black dots), this graph makes it obvious that after about 23 March (when flights from overseas stopped and social distancing was put in place), no longer was there a similar percentage increase on each day. Instead, the percentage increase dwindled.
+For the real data (the black dots), this graph makes it obvious that after about 23 March (when flights from overseas were greatly reduced and social distancing was put in place), no longer was there a similar percentage increase on each day. The percentage increase began to dwindle.
 
 ##
 The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
@@ -132,11 +132,11 @@ question("If the number of cases grew exactly exponentially, where would the dat
 
 ## A logarithmic vertical axis
 
-While the % increase vertical axis is useful, it unfortunately does not show the cumulative number of cases, only the change since the previous day. As a result, from that graph we don't see how high the caseload has gotten. This is one reason that people often use a logarithmic vertical axis in situations of constant (or even approximate) percentage growth.
+While the % increase vertical axis is useful, it unfortunately does not show the cumulative number of cases, only the change since the previous day. As a result, from that graph one can't see how high the caseload has gotten. This is one reason that people often use a logarithmic vertical axis in situations of constant (or even approximate) percentage growth.
 
-On a non-logarithmic (linear) axis, a constant increase in *number* (not percentage) of cases results in a straight line. The greater the daily increase, the steeper the slope of the line. In other words, constant addition corresponds to a constant slope on a graph.
+On a non-logarithmic (linear) axis, a constant increase in *number* (not percentage) of cases results in a straight line. The greater the daily increase, the steeper the slope of the line. In other words, constant addition day-by-day results in a constant slope on a graph.
 
-For the case of exponential growth, we are interested in knowing what the number of cases is being *multiplied by* each day, not how much is being added to it. In the case of 20% growth, for instance, on each day the number of cases is the previous number plus 20%, which can be calculated by multiplying the previous day's number of cases by 1.2.
+When growth is exponential, we are interested in knowing what the number of cases is being *multiplied by* each day, not how much is being added to it. In the case of 20% growth, for instance, on each day the number of cases is the previous number plus 20%, which can be calculated by multiplying the previous day's number of cases by 1.2.
 
 Logarithms turn multiplication into addition, which means that on a logarithmic axis, stepping upward by a constant amount does not mean the number of cases has increased by the same number each time, but rather that it's been multiplied by the same number each time.
 
@@ -148,7 +148,7 @@ k<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue",alpha
 show(k + scale_y_log10() )
 ```
 
-In the plot, notice that the vertical axis labels do not mark out equal intervals. That is, taking equal steps up does not result in adding one number over and over, a number corresponding to the step size. Rather, taking equal steps upward corresponds to *multiplying* by a number that reflects the step size. For the interval between the successive y-axis labels, for example, each is the previous label multipled by approximately three.
+In the plot, notice that the vertical axis labels do not mark out equal intervals. That is, taking equal steps up does not result in adding one number over and over, a number corresponding to the step size. Rather, taking equal steps upward corresponds to *multiplying* by a number that reflects the step size. Notice the interval between the successive y-axis labels, for example - it is the previous label multipled by approximately three.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 start<-22; pctIncrease<-30
@@ -173,7 +173,7 @@ show(mm)
 
 The above plot shows that any particular daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope.
 
-Adding the actual data from NSW (black dots), we can see that it was growing exponentially at nearly 20% for some time. After 28 March, growth was no longer exponential. That is, the data after 28 March do not fall on a straight line, of any slope (OK, at this point this is just hope).
+Adding the actual data from NSW (black dots), we can see that it was growing exponentially at nearly 20% for some time. After 28 March, growth was no longer exponential. That is, the data after 28 March do not fall on a straight line, of any slope (OK, at this point this is just hope - there is not enough evidence yet to be confident in this).
 
 ```{r, semilogboth, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
@@ -215,7 +215,7 @@ show(mm)
 
 ## Population density and flu mortality
 
-[Hoffman & Cox](https://bioone.org/journals/Transactions-of-the-Kansas-Academy-of-Science/volume-122/issue-3-4/062.122.0301/The-1918-1920-H1N1-Influenza-a-Pandemic-in-Kansas-and/10.1660/062.122.0301.full?casa_token=TtDsr1exh58AAAAA%3apcP2D8e87Ap0vYATPNofQCiq8zgIp8b0MKMHjn_awr9KMYZ7Mc65AKRiwnFi6aZrro9m6xvGYQDG) here plot data from the 1918 flu pandemic. Their plot shows the mortality rate against the population density for different counties in Kansas and Missouri.
+[Hoffman & Cox](https://bioone.org/journals/Transactions-of-the-Kansas-Academy-of-Science/volume-122/issue-3-4/062.122.0301/The-1918-1920-H1N1-Influenza-a-Pandemic-in-Kansas-and/10.1660/062.122.0301.full?casa_token=TtDsr1exh58AAAAA%3apcP2D8e87Ap0vYATPNofQCiq8zgIp8b0MKMHjn_awr9KMYZ7Mc65AKRiwnFi6aZrro9m6xvGYQDG) plot data from the 1918 flu pandemic. Their plot, below, shows the mortality rate against the population density, with one data point for each county in Kansas and Missouri.
 
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
@@ -232,13 +232,14 @@ question("From this plot, what do you think is the relationship between populati
 )
 ```
 
-What causal statement might people suspect to be true from the data in this plot?
+### Causation
+
 
 ```{r KansasMissouriCausation}
-question("From this plot, what do you think is the relationship between population density and mortality rate?",
-    answer("No relationship", ), 
-    answer("Positive correlation", correct=TRUE),
-    answer("Negative correlation"),
+question("What causal statement might people suspect to be true from the data in this plot?",
+    answer("High population density causes flu mortality", correct=TRUE), 
+    answer("Low population density causes flu mortality"),
+    answer("Flu mortality prevents high population density"),
     allow_retry = TRUE
 )
 ```
@@ -249,11 +250,13 @@ question("From this plot, what do you think is the relationship between populati
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 ``` 
 
-So far, we have discussed inferences of causation from correlations, where the correlation is evident from a scatterplot of Y against X, and people tend to infer that X caused Y.
+When a correlation is evident from a scatterplot of Y against X, people tend to infer that X caused Y.
 
 The correlation of Y with X and X with Y are by definition the same, so in principle a plot like that of the above is just as consistent with Y causing X as with X causing Y. However, in some cases a causal link is much more plausible in one direction than in another. For example, it is plausible that higher population density causes a higher rate of flu deaths. A more detailed causal model is that population density causes more frequent physical contact between people, which causes more flu transmission, which causes more deaths.
 
-But could Y cause X? That is, could flu deaths cause higher population density? That's is not very plausible, illustrating that with some pairs of variables, causation in only one direction is likely
+But could Y cause X? That is, could flu deaths cause higher population density? That's not very plausible, illustrating that with some pairs of variables, causation in only one of the directions is likely.
+
+There is also the possibility that a third variable, Z, causes X and Y.
 
 ## Many points means more evidence
 
@@ -261,11 +264,11 @@ But could Y cause X? That is, could flu deaths cause higher population density? 
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 ``` 
 
-Scatterplots typically have lots of data points.  If they form a fairly consistent pattern of Y increasing or decreasing with X, this provides a lot of evidence for a correlation, which is what one wants before making the further leap to imputing a causal relationship. 
+Ideally, a scatterplots will have lots of data points.  If those points form a fairly consistent pattern of Y increasing or decreasing with X, this provides a lot of evidence for a correlation, which is what one wants before making the further leap to imputing a causal relationship. 
 
 ## A plot from the news media
 
-Consider this plot produced by John Burn-Murdoch of the Financial Times.
+This plot was produced by John Burn-Murdoch of the Financial Times.
 
 ```{r, echo=FALSE, out.width = "750px"}
 knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the image directory for Shiny apps
@@ -275,7 +278,7 @@ knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the 
 #rate = 2^(1/doublingTime)
 ``` 
 
-This plot has a logarithmic vertical axis, so going up a particular distance corresponds to multiplying by a particular factor. One feature you haven't seen before perhaps is that the axis labels are not at equal multiplicative intervals, in order to position them at round numbers.
+The plot has a logarithmic vertical axis, so going up a particular distance corresponds to multiplying by a particular factor. One feature you haven't seen before perhaps is that the axis labels are not at equal multiplicative intervals, in order to position them at round numbers.
 
 ```{r us}
 question("Consider the U.S. data, shown in light purple. For the first fifteen days or so after its 100th case, how fast were the number of confirmed cases growing?",
@@ -296,7 +299,7 @@ knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the 
 USrate = round( (2^(1/2)  -1) * 100  )
 ``` 
 
-Doubling every two days, as the U.S. was doing for the first two weeks here, corresponds to a `r USrate`% daily growth rate.
+Doubling every two days, as U.S. cases were for the first two weeks here, corresponds to a `r USrate`% daily growth rate.
 
 ##
 
@@ -395,13 +398,19 @@ In an exponentially-growing pandemic, however, one doesn't have time to wait for
 
 ## 
 
+```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
+knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
+```
+
+From twitter, here are some responses to the person who tweeted the scrawled-on plot.
+
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/maskNoMasksReactions.png")
 ``` 
 
 
 ```{r multivariate}
-question("What standard approach might be used to try to estimate the effects of mask wearing and temperature?",
+question("What approach might be used to try to estimate the effects of mask wearing and temperature?",
     answer("Multivariate regression.",correct=TRUE),
     answer("Standard deviation."),
     answer("Regression to the mean."),
