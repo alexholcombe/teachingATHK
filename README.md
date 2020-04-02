@@ -9,4 +9,9 @@ to make readings etc. for Alex's lectures publicly available
 
 [Vocab and readings for the Arguments And Thinking](https://alexholcombe.github.io/teachingATHK/Vocab_ReadingsATHKArgumentsThinking.html) lectures
 
+[Growth, correlation, and causation](https://alexholcombe.shinyapps.io/COVID19questions/)
+
+<!--
 [Correlation and NSW COVID-19 cases](https://alexholcombe.github.io/teachingATHK/correlation_COVID19.html) 
+-->
+This last interactive lesson is licensed under the terms of the MIT license. That's a message for those wishing to use it elsewhere. For example, [Roberto de Pinho](https://twitter.com/robertodepinho) has translated it into Portuguese.
