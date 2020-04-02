@@ -6,7 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+(this document is updated as the weeks proceed)
 * Intro `r statsStudies=5` video
 
 Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
@@ -58,17 +58,16 @@ knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
   * Relationship between pirates and high average temperature is confounded by time. 
 * Time: Post hoc ergo propter hoc (After this therefore because of this) fallacy
 
- 
-
 * Dichotomous correlation
   * dichotomous variables and correlation
-  * Contingency tables
+  * Contingency tables <!-- Manly Chapter 7 Causes, illusory correlations -->
   * Later you will see the link to arguments and logic
 
 * 4 kinds of control
   * Statistical adjustment - [controlling for](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) confounds
   * A controlled variable - matching
-* Causal phrases verus correlational phrases, see "Distinguish correlational and causal.." Canvas video
+* Causal phrases verus correlational phrases, see "Distinguish correlational and causal.." video on Canvas
+
 ```{r, echo=FALSE, out.width = "160px"}
 knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
 ```    
@@ -139,9 +138,9 @@ What proportion of females like avocados
 
 
 	Putting these two facts together still doesn't give us a correlation, because they could both be true even if males and females own cell phones at the same rate. 
-		- Make a 2 x 2 table. For base rate of each - being male and owning a cellphone. See Chapter 7, Manley
+		- Make a 2 x 2 table. For base rate of each - being male and owning a cellphone. <!-- See Chapter 7, Manley -->
 
-Most northern Hhmisphere residents have above world average income.
+Most northern Hemisphere residents have above world average income.
 Most people with above world average income are in the northern hemisphere.
 
 Most N. Hemisphere countries have more than 300 COVID-19 deaths.
@@ -152,15 +151,7 @@ Maybe not, because most countries are in the N. Hemisphere anyway, so the second
 		- Another kind of mistake is simply that we fail to think proportionally. For example, suppose we've only observed John when it's cold and we notice that he has worn a hat 70% of the time. Can we conclude that there is a correlation in our observations between his wearing a hat and cold temperatures? Of course not! What if he wears a hat 70% of the time regardless of the temperature? In that case, there is no special correlation between his hat wearing and the cold: he just loves wearing hats.
 		
 		If we are told, "Most of the time when it's cold, John wears a hat," it's easy to forget that this is not enough to establish a correlation. To infer a correlation, we have to assume that John does not wear a hat most of the time on other days too . Maybe this is a safe assumption to make, but maybe not. The point is that if we just ignore it, we are neglecting the base rate, a mistake we encountered in the previous chapter. 
-		- Suppose Jasmine smiles a lot, even when she's unhappy. Which fact would guarantee that her smiling and happiness are correlated?
-		A Most of the time when she smiles, she's happy
-		B The fraction of her smiling time in which she's happy is greater than the fraction of her time in general in which she's happy.
-		C Most of the time when she smiles, she's happy and most of the time when she's happy, she smiles
-		D Most of the time when she's happy, she smiles
-	- Illusory (not spurious) correlations and superstitions
-		- Manley Chapter 7: Selective noticing “the idea that people behave strangely more often during a full moon than they do when the moon isn't full”
-		- Michael Jordan always wore his UNC
-		- 
+
 
 * Probability <!-- tempProbabilitiesLearningTechniques Keynote file -->
 We aren’t good at understanding probabilities.
@@ -393,16 +384,6 @@ Marijuana and cocaine should be legal
 ## Reciprocity
 
 
-## Broockman & 
-
-At first, Fleischer and his team tried cerebral arguments and appeals to fairness in their doorway conversations with same-sex-marriage opponents who didn’t express deep religious objections. “That failed miserably,” he said. 
-
-![alt text](imagesForRmd/leadershipLabDirector.png)
-***
-Eventually, the canvassers tried eliciting more emotional experiences. They urged voters to talk about anyone they knew who was gay or lesbian — and, more important, to speak about their own marriages. “That changed everything,” Fleischer told me. “Most people consider marriage the most important and meaningful thing they ever did. Talking about marriage brought up deep emotion. If marriage was the most valuable thing in their own life, wouldn’t they also want their gay friends — or gay people — to experience it, too?”
-  
-
-
 
 
 Survivorship
@@ -413,4 +394,4 @@ Survivorship
 
 
 
-Learning techniques Bruce slide 
+<!-- Learning techniques Bruce slide  -->
