@@ -268,7 +268,7 @@ Ideally, a scatterplots will have lots of data points.  If those points form a f
 
 ## A plot from the news media
 
-This plot was produced by John Burn-Murdoch of the Financial Times.
+This graphic, a plot plus annotations, was produced by John Burn-Murdoch of the Financial Times.
 
 ```{r, echo=FALSE, out.width = "750px"}
 knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the image directory for Shiny apps
@@ -278,7 +278,7 @@ knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the 
 #rate = 2^(1/doublingTime)
 ``` 
 
-The plot has a logarithmic vertical axis, so going up a particular distance corresponds to multiplying by a particular factor. One feature you haven't seen before perhaps is that the axis labels are not at equal multiplicative intervals, in order to position them at round numbers.
+The plot has a logarithmic vertical axis, so going up a particular distance corresponds to multiplying by a particular factor. One feature you haven't seen before, perhaps, is that the axis labels are *not* at equal multiplicative intervals. They have been positioned at round numbers.
 
 ```{r us}
 question("Consider the U.S. data, shown in light purple. For the first fifteen days or so after its 100th case, how fast were the number of confirmed cases growing?",
@@ -307,6 +307,7 @@ Doubling every two days, as U.S. cases were for the first two weeks here, corres
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory for Shiny apps
 ``` 
 
+Here is another version of the graphic. Someone on twitter has scrawled something on it.
 
 ```{r ideaimage}
 question("What theory do you think the person who scrawled on this image wished to encourage you to believe?",
@@ -388,6 +389,8 @@ question("Other factor(s) that might explain some of the difference between the 
 
 ## 
 
+Certain statistical techniques can help estimate the various roles of different variables that contribute to a correlation.
+
 ```{r multivariate}
 question("What approach might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
     answer("Multivariate regression.",correct=TRUE),
@@ -412,6 +415,18 @@ knitr::include_graphics("images/maskNoMasks3rdVariablesTweet.png") #You can't ch
 ```
 
 There are almost always many potentially-relevant differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the blue-circled countries is a combination of causes, one of which *may* be masks. 
+
+##
+
+An unknown person had yet another idea:
+
+```{r, echo=FALSE, fig.cap="", out.width = "430px"}
+knitr::include_graphics("images/bubbleNotBubbleTea.jpg") #You can't change the image directory
+```
+
+This graphic seems to suggest that ingestion of bubble tea inhibits the virus!
+
+While that is unlikely, this makes the point that there are typically many differences between two groups of countries, only some of which you are likely to think of.
 
 ##
 
