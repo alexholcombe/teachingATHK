@@ -58,10 +58,7 @@ knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
   * Relationship between pirates and high average temperature is confounded by time. 
 * Time: Post hoc ergo propter hoc (After this therefore because of this) fallacy
 
-  * Bruce slide:
-```{r, echo=FALSE, out.width = "220px"}
-knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
-```    
+ 
 
 * Dichotomous correlation
   * dichotomous variables and correlation
@@ -82,7 +79,18 @@ knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
   * Smoking has a big effect
   * Nutrition effects are small
   * Many false positives, which we'll explain later
-  
+
+* False positives
+  * Review of hypothesis testing
+  * Bruce slide:
+```{r, echo=FALSE, out.width = "220px"}
+knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
+```  
+  * Excess of statistical comparisons
+  * Publication bias
+  * P-hacking
+  * Preregistration
+   
 * Expectancy effects
   * Experimenter
   * Participant
