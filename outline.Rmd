@@ -71,20 +71,25 @@ knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
 ```{r, echo=FALSE, out.width = "160px"}
 knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
 ```    
+
   * Recognizing correlational studies in the news
   * Controlling for in regression and multicollinearity
 
 * Epidemiology
-  * Smoking has a big effect
+  * Smoking has a big effect,
   * Nutrition effects are small
   * Many false positives, which we'll explain later
 
-* False positives
-  * Review of hypothesis testing
+* Hypothesis testing review and extension
+  * Review of hypothesis testing (recall tutorial week 5 and Bruce's 18 March lecture)
   * Bruce slide:
 ```{r, echo=FALSE, out.width = "220px"}
 knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
 ```  
+  * False positives, false negatives, true positives, true negatives
+  * Hypothesis testing and medical testing
+  
+* Why does the news have lots of false positives? 
   * Excess of statistical comparisons
   * Publication bias
   * P-hacking
