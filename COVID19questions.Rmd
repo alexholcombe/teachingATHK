@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 NSW<- readRDS(file="images/NSWcases.Rda")
 ```
 
-The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for the four weeks since the 4th of March.
+The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for each day during a period beginning the 4th of March.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
