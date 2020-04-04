@@ -19,7 +19,7 @@ saveRDS(NSW, file="images/NSWcases.Rda") #for use by other scripts, like COVD19q
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
 NSWcor<-cor.test(as.numeric(NSW$date),NSW$cases) 
-g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +   annotate("text",x=as.Date("2020/3/25"),y=900, label=">400 cases\n from\n Ruby\n Princess",size=1.7)
+g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +   annotate("text",x=as.Date("2020/3/25"),y=900, label=">300 cases\n from\n Ruby\n Princess",size=1.7)
 ##79 cases from the Ovation of the Seas which docked 18 March
 show(g)
 ```

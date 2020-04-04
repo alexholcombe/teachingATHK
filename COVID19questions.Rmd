@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 NSW<- readRDS(file="images/NSWcases.Rda")
 ```
 
-The following plot shows the number of confirmed cases of COVID-19 infection on each day in the state of New South Wales in Australia, since the 4th of March.
+The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for each day since the 4th of March.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
@@ -426,7 +426,7 @@ knitr::include_graphics("images/bubbleNotBubbleTea.jpg") #You can't change the i
 
 This graphic seems to suggest that ingestion of bubble tea inhibits the virus!
 
-While that is unlikely, this makes the point that there are typically many differences between two groups of countries, only some of which you are likely to think of.
+While that is unlikely, it makes the point that there are typically many differences between two groups of countries, only some of which you are likely to think of.
 
 ##
 
@@ -448,8 +448,8 @@ A third response to the scrawled-on plot does not argue with the claim. Rather, 
 knitr::include_graphics("images/maskNoMasksMaskShouldHelpTweet.png") #You can't change the image directory
 ```
 
-This is important to consider, because to decide what one should do, it is sensible to incorporate multiple kinds of evidence. As we have discussed, the scrawled-on plot provides only very weak evidence that masks are effective.
+This is important to consider, because although the scrawled-on plot by itself provides only very weak evidence that masks are effective, reasons to believe a claim can also come from other places.
 
-However, during an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. One has to do something. Actually, one should do lots of things that might plausibly combat the crisis. Wearing masks is a plausible cause of reduced transmission, so it may be a good policy to adopt even if empirical evidence for its effectiveness is weak.
+During an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. Wearing masks is a very plausible cause of reduced transmission, so it may be a good policy to adopt even if empirical evidence for its effectiveness is weak.
 
 
