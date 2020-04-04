@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 NSW<- readRDS(file="images/NSWcases.Rda")
 ```
 
-The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for each day since the 4th of March.
+The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for the four weeks since the 4th of March.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
@@ -380,7 +380,7 @@ The inference from this plot that masks cause less spreading of infection based 
 question("Other factor(s) that might explain some of the difference between the blue-circled countries and the red ones:",
     answer("Climate.",correct=TRUE),
     answer("Handshaking customs.",correct=TRUE),
-    answer("Government diligence in testing and tracing contacts of COVID-19 patients.", correct=TRUE),
+    answer("Diligence in testing and tracing contacts of COVID-19 patients.", correct=TRUE),
     answer("Responsiveness of population to government recommendations.", correct=TRUE),
     answer("Quarantine policy.", correct=TRUE),
     allow_retry = TRUE
@@ -392,7 +392,7 @@ question("Other factor(s) that might explain some of the difference between the 
 Certain statistical techniques can help estimate the various roles of different variables that contribute to a correlation.
 
 ```{r multivariate}
-question("What approach might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
+question("Which approach might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
     answer("Multivariate regression.",correct=TRUE),
     answer("Standard deviation."),
     answer("Regression to the mean."),
@@ -408,17 +408,19 @@ knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change t
 ``` 
 
 The [tweeter](https://twitter.com/jperla/status/1243349875015553024) of this plot got a lot of responses to their posting of the scrawled-on plot.
-Here is one. It points out some of the third variables that confound the comparison between the two sets of countries. 
+Here is one that points out some of the third variables that confound the comparison between the two sets of countries. 
 
 ```{r, echo=FALSE, fig.cap="", out.width = "430px"}
 knitr::include_graphics("images/maskNoMasks3rdVariablesTweet.png") #You can't change the image directory
 ```
 
+##
+
 There are almost always many potentially-relevant differences between countries, from genetic to cultural to environmental and governmental. As a result, the most likely explanation for the lower infection growth rate of the blue-circled countries is a combination of causes, one of which *may* be masks. 
 
 ##
 
-An unknown person had yet another idea:
+Someone else had a more creative explanation of the differences between the two groups of countries:
 
 ```{r, echo=FALSE, fig.cap="", out.width = "430px"}
 knitr::include_graphics("images/bubbleNotBubbleTea.jpg") #You can't change the image directory
@@ -426,7 +428,7 @@ knitr::include_graphics("images/bubbleNotBubbleTea.jpg") #You can't change the i
 
 This graphic seems to suggest that ingestion of bubble tea inhibits the virus!
 
-While that is unlikely, it makes the point that there are typically many differences between two groups of countries, only some of which you are likely to think of.
+While that is unlikely, it makes the point that there are typically many differences between two groups of countries, only some of which you are likely to think of at first.
 
 ##
 
@@ -440,16 +442,28 @@ Dario claims that in addition to the blue-circled countries, Italians have also 
 
 Such suggestions highlight the fact that you should be skeptical of the claims of a random person on the internet, even if their claim comports with your intuition.
 
+##
+
+People tend to assume that numbers plotted on the same axis all mean the same thing. But can the count of cases from one country really be compared so directly to that of another country?
+
+##
+
+```{r, echo=FALSE, fig.cap="", out.width = "430px"}
+knitr::include_graphics("images/myIssuesWithTheGraphs.png") #You can't change the image directory
+```
+
+As Christophe Toukam implies above, countries vary in their testing policies. Moreover, these testing policies change over time, which can contribute to different growth rates for different countries.
+
 ## 
 
-A third response to the scrawled-on plot does not argue with the claim. Rather, it asserts that there is independent reason to believe the claim that masks slow infection:
+A fourth response to the scrawled-on plot, below, does not argue with the claim. Rather, it asserts that there is independent reason to believe the claim that masks slow infection:
 
 ```{r, echo=FALSE, fig.cap="", out.width = "430px"}
 knitr::include_graphics("images/maskNoMasksMaskShouldHelpTweet.png") #You can't change the image directory
 ```
 
-This is important to consider, because although the scrawled-on plot by itself provides only very weak evidence that masks are effective, reasons to believe a claim can also come from other places.
+Although the scrawled-on plot by itself provides only very weak evidence that masks are effective, reasons to believe a claim can also come from other places.
 
-During an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. Wearing masks is a very plausible cause of reduced transmission, so it may be a good policy to adopt even if empirical evidence for its effectiveness is weak.
+During an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. Wearing masks is a  plausible cause of reduced transmission, so it may be a good policy to adopt even if empirical evidence for its effectiveness is weak.
 
 
