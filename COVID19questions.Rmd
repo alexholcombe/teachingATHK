@@ -393,10 +393,10 @@ Certain statistical techniques can help estimate the various roles of different 
 
 ```{r multivariate}
 question("Which approach might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
-    answer("Multivariate regression.",correct=TRUE),
+    answer("Regression.",correct=TRUE),
     answer("Standard deviation."),
-    answer("Regression to the mean."),
-    answer("Post hoc ergo propter hoc.", message="I don't see anything particularly ambiguous about this."),
+    answer("Avoidance of the mean."),
+    answer("Post hoc ergo propter hoc."),
     allow_retry = TRUE
 )
 ```
@@ -450,6 +450,7 @@ People tend to assume that numbers plotted on the same axis all mean the same th
 
 ```{r, echo=FALSE, fig.cap="", out.width = "430px"}
 knitr::include_graphics("images/myIssuesWithTheGraphs.png") #You can't change the image directory
+#https://twitter.com/bewithchrisjr/status/1243621603834904576
 ```
 
 As Christophe Toukam implies above, countries vary in their testing policies. Moreover, these testing policies change over time, which can contribute to different growth rates for different countries.
