@@ -81,7 +81,7 @@ question("What does the 20% comparison (the blue dots) indicate about the real d
 )
 ```
 
-If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". It is what would occur if each person who is infected infects, on average, more than one other person. For 20% daily growth, on average each person would have to infect 1.2 others.
+If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". On average each person infected may pass a disease on to a certain number of others. Thus the change in cases reflects the number who are already infected, yielding a percentage increase rather than a constant.
 
 ## Exponential growth
 
@@ -106,9 +106,9 @@ show(j)
 ```
 
 The blue dots now form a horizontal line, because they were created by calculating a 20% increase compared to the previous day.
-The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to more than one person (on average). Thus the new number of cases is some multiple (percentage added to) of the previous day's cases.
+The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to others. Thus the new number of cases is some multiple (percentage added to) of the previous day's cases.
 
-For the real data (the black dots), this graph makes it obvious that after about 23 March (when flights from overseas were greatly reduced and social distancing was put in place), no longer was there a similar percentage increase on each day. The percentage increase began to dwindle.
+For the real data (the black dots), this graph makes it obvious that after about 23 March (soon after flights from overseas were greatly reduced and social distancing began), no longer was there a similar percentage increase on each day. The percentage increase began to dwindle.
 
 ##
 The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
@@ -150,6 +150,8 @@ show(k + scale_y_log10() )
 
 In the plot, notice that the vertical axis labels do not mark out equal intervals. That is, taking equal steps up does not result in adding one number over and over, a number corresponding to the step size. Rather, taking equal steps upward corresponds to *multiplying* by a number that reflects the step size. Notice the interval between the successive y-axis labels, for example - it is the previous label multipled by approximately three.
 
+##
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 start<-22; pctIncrease<-30
 NSW$thirty<-22
@@ -161,10 +163,13 @@ NSW$ten<-22
 for(i in 2:length(NSW$date)) {
   NSW$ten[i] <- NSW$ten[i-1]*(1+pctIncrease/100)
 }
+require(scales)
 mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
-  theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
+  theme(panel.grid.minor.y = element_blank()) +  
+  scale_y_continuous(labels = scales::comma) + #stop scientific notation
+  scale_y_log10() +
   annotate("text",x=as.Date("2020/3/13"),y=38, label="10% daily growth", color="darkgreen", size=3, angle=18) +
   annotate("text",x=as.Date("2020/3/15"),y=112, label="20% daily growth", color="blue", size=3, angle=32) +
   annotate("text",x=as.Date("2020/3/16"),y=370, label="30% daily growth", color="red", size=3, angle=42)
@@ -173,16 +178,21 @@ show(mm)
 
 The above plot shows that any particular daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope.
 
-Adding the actual data from NSW (black dots), we can see that it was growing exponentially at nearly 20% for some time. After 28 March, growth was no longer exponential. That is, the data after 28 March do not fall on a straight line, of any slope (OK, at this point this is just hope - there is not enough evidence yet to be confident in this).
+##
+
+Plotting the actual data from NSW (black dots), thanks to the  blue dots comparison, we can see that it was growing exponentially at nearly 20% for some time. After 28 March, growth was slower. The data after 28 March no longer increase as steeply as the dots that indicate 20% growth.
 
 ```{r, semilogboth, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
+    annotate("text",x=as.Date("2020/3/15"),y=240, label="20% daily growth", color="blue", size=3, angle=48) +
   geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
   #  geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
    # geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   scale_y_log10()
 show(h)
 ```
+
+##
 
 Exponential growth is not always bad. Investments often yield exponential growth, because on average their value increases by some percentage each year. For example, the U.S. stock market increased on average 14% a year between 2000 and the end of 2019. If your parents had invested \$2000 for you in the year 2000, at the beginning of 2020 it would have been worth about \$27,000. 
 
@@ -208,8 +218,8 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
-  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=19) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=32) +
-  annotate("text",x=as.Date("2020/3/20"),y=920, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=44)
+  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=20) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=35) +
+  annotate("text",x=as.Date("2020/3/20"),y=920, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=46)
 show(mm)
 ```
 
@@ -221,7 +231,7 @@ show(mm)
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 ``` 
 
-Not only is the vertical axis logarithmic on this plot, but also the horizontal axis is logarithmic. But you don't need to worry about that to answer the following questions.
+Not only is the vertical axis logarithmic on this plot, but also the horizontal axis is logarithmic. But you don't need to worry about that to answer the following.
 
 ```{r KansasMissouriCorrelatn}
 question("From this plot, what do you think is the relationship between population density and mortality rate?",
