@@ -88,6 +88,7 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
 ```  
   * False positives, false negatives, true positives, true negatives
   * Hypothesis testing and medical testing
+    * Sensitivity and specificity
   
 * Why does the news have lots of false positives? 
   * Excess of statistical comparisons

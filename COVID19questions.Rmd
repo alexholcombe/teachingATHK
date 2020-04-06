@@ -42,7 +42,7 @@ g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("C
 show(g)
 ```
 
-The line that best fits the data is shown above in dark red. The fit is not very good! Data like the number of cases each day during an epidemic typically do not fall on a straight line, so linear regression is not very useful.
+The line that best fits the data is shown above in dark red. The fit is not very good! The relationship between number of cases and days is nonlinear - they do not fall on a straight line. Here, linear regression is not very useful.
 
 
 ```{r slope1}
