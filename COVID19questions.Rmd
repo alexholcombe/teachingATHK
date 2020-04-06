@@ -30,8 +30,20 @@ g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("C
 show(g)
 ```
 
-### 
-###
+
+##
+
+Linear regression is often used to predict one variable based on another, but it assumes the data fall on close to a straight line, plus or minus some random variability. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
+g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) +
+  geom_smooth(method='lm', fill=NA, color="darkred") +  ylim(0,NA) #+
+  #annotate("text",x=as.Date("2020/3/7"),y=100, label=paste0("r=",round(NSWcor$estimate,2)), parse=FALSE) 
+show(g)
+```
+
+The line that best fits the data is shown above in dark red. The fit is not very good! Data like the number of cases each day during an epidemic typically do not fall on a straight line, so linear regression is not very useful.
+
 
 ```{r slope1}
 question("What would a perfectly straight line on this plot indicate?",
@@ -40,6 +52,19 @@ question("What would a perfectly straight line on this plot indicate?",
     answer("Each day, the number of confirmed cases increases by the same amount as the previous day.", correct=TRUE),
     allow_retry = TRUE
 )
+```
+
+
+Next, let's consider the shape of the data more closely.
+
+##
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
+require(ggplot2)
+NSWcor<-cor.test(as.numeric(NSW$date),NSW$cases) 
+g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA)
+show(g)
 ```
 
 
@@ -65,7 +90,7 @@ for(i in 2:length(NSW$date)) {
 }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
   geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
-  annotate("text",x=as.Date("2020/3/28"),y=2250, label="20% daily growth", color="blue", size=3.5, angle=70)
+  annotate("text",x=as.Date("2020/3/25"),y=2300, label="20% daily growth", color="blue", size=3.5, angle=47)
 show(h)
 ```
 
@@ -81,7 +106,7 @@ question("What does the 20% comparison (the blue dots) indicate about the real d
 )
 ```
 
-If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". On average each person infected may pass a disease on to a certain number of others. Thus the change in cases reflects the number who are already infected, yielding a percentage increase rather than a constant.
+If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". Each person infected may pass the infection on to a certain number of others. Thus the change in cases reflects the number who are already infected, yielding a percentage increase each day rather than a constant increase in cases each day.
 
 ## Exponential growth
 
