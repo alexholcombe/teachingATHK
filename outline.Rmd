@@ -58,6 +58,8 @@ knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
   * Relationship between pirates and high average temperature is confounded by time. 
 * Time: Post hoc ergo propter hoc (After this therefore because of this) fallacy
 
+Week 8 <!--statsAndStudies PPT-->
+
 * Dichotomous correlation
   * dichotomous variables and correlation
   * Contingency tables <!-- Manly Chapter 7 Causes, illusory correlations -->

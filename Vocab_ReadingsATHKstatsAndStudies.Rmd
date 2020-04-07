@@ -1,5 +1,5 @@
 ---
-title: "Vocab, readings: Week 7 lectures on Stats and Studies, and Week 8 tutorial"
+title: "Vocab, readings: Week 7 and 8 and some of week 9 lectures on Stats and Studies, and Week 8 tutorial"
 date: "lectures starting 7 Apr, 2020. This document may be updated as the lectures proceed."
 output: html_document
 ---
