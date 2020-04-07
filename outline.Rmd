@@ -83,6 +83,8 @@ knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
   * Nutrition effects are small
   * Many false positives, which we'll explain later
 
+Week 9 
+
 * Hypothesis testing review and extension
   * Review of hypothesis testing (recall tutorial week 5 and Bruce's 18 March lecture)
   * Bruce slide:
@@ -95,19 +97,86 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
   
 * Why does the news have lots of false positives? 
   * Excess of statistical comparisons
+  * More reasons given later in the class, after logic and arguments
+  
+
+  
+We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
+
+###  Arguments <!-- Week 8? -->
+
+* Most arguments are people just trying to win - to get what they want. Persuasion.
+* But sometimes you don't just want to win, you actually want to learn and find things out.
+* We need to know good reasons for believing things. Ideally,
+  * Assumptions are true
+  * Logic must be airtight (inescapable)
+* Syllogism
+  * Suppositionally inescapable, inescapable, suppositionally solid, solid
+* Real-world arguments and Casting an argument
+  * Socrative poll about vegetarianism
+* Implicit premise
+* Redundant premise
+* Poly-syllogism
+* Decoupling and biased evaluation
+
+* Mindset for real-world (4 slides)
+  * I will happily change, for I seek the truth - Aurelius.
+* Loose language in the wild
+  * hyperbole
+  * principle of charity (related to steel man which comes later)
+
+* Deduction and induction
+  * Process of elimination, Sherlock Holmes
+  * Abduction
+* Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions)
+* Casting the we must bomb Iran argument
+* Deduction and induction in science
+* Analysing scientific abstracts
+* Analysing the Molly and Bea argument
+
+Week 9: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
+
+* Informal fallacies
+* Post hoc ergo propter hoc, again
+  * [Video](https://www.youtube.com/watch?v=5A7hSaoRv0g) combining this fallacy with deductive and inductive logic. Good way to bring previous bits of the class together!
+
+* Ad hominem: 
+
+Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
+
+* Wason card selection task, as an argument/syllogism `r wk10=wk10+ 18` <!-- 18 slides -->
+  * [Confirmation bias](https://www.verywellmind.com/what-is-a-confirmation-bias-2795024)
+  * Cheater detection framing
+  * Self-explanation
+  * Group discussion
+* Mindset again: Biased evaluation - confirmation or "my-side" bias `r wk10=wk10+ 7` <!-- slides -->
+  * It stops search for possibilities (Manley chapter 2)
+  * Francis Bacon was concerned, so he invented science
+  * Mercier & Sperber
+  * Info sources that tend to use opposing experts
+  * Not invented here
+* Overconfidence `r wk10=wk10+ 28` <!-- slides -->
+  * https://web.csulb.edu/~cwallis/382/certainty/chapter19.html
+  * Most of us think we're above average
+  * Making judgments when not expert
+  * Student logic exam results
+  * Dunning-Kruger effect 
+  * Planning fallacy <!-- 7 slides -->
+* `r wk10` slides above for this week
+
+* Why does the news have lots of false positives? 
+  * Excess of statistical comparisons (already talked about this)  
   * Publication bias
   * P-hacking
   * Preregistration
-   
-* Expectancy effects
-  * Experimenter
-  * Participant
-  * Addressing expectancy effects
+  * Expectancy effects
+    * Experimenter
+    * Participant
+    * Addressing expectancy effects
 ```{r, echo=FALSE, out.width = "160px"}
 knitr::include_graphics("imagesForRmd/blindingEffectFromPSYC1.png")
 ```     
-  
-* Experimentation effect
+  * Experimentation effect
 
 Base rates, probabilities, and correlations   <!-- TENTATIVELY TRYING OUT IN DECKSET? -->
 
@@ -178,69 +247,6 @@ Relative versus absolute risk
   Relatively risky https://twitter.com/justsaysrisks
 
   
-  
-We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
-
-###  Arguments <!-- Week 8? -->
-* Most arguments are people just trying to win - to get what they want. Persuasion.
-* But sometimes you don't just want to win, you actually want to learn and find things out.
-* We need to know good reasons for believing things. Ideally,
-  * Assumptions are true
-  * Logic must be airtight (inescapable)
-* Syllogism
-  * Suppositionally inescapable, inescapable, suppositionally solid, solid
-* Real-world arguments and Casting an argument
-  * Socrative poll about vegetarianism
-* Implicit premise
-* Redundant premise
-* Poly-syllogism
-* Decoupling and biased evaluation
-
-* Mindset for real-world (4 slides)
-  * I will happily change, for I seek the truth - Aurelius.
-* Loose language in the wild
-  * hyperbole
-  * principle of charity (related to steel man which comes later)
-
-* Deduction and induction
-  * Process of elimination, Sherlock Holmes
-  * Abduction
-* Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions)
-* Casting the we must bomb Iran argument
-* Deduction and induction in science
-* Analysing scientific abstracts
-* Analysing the Molly and Bea argument
-
-Week 9: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
-
-* Informal fallacies
-* Post hoc ergo propter hoc, again
-  * [Video](https://www.youtube.com/watch?v=5A7hSaoRv0g) combining this fallacy with deductive and inductive logic. Good way to bring previous bits of the class together!
-
-* Ad hominem: 
-
-Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
-
-* Wason card selection task, as an argument/syllogism `r wk10=wk10+ 18` <!-- 18 slides -->
-  * [Confirmation bias](https://www.verywellmind.com/what-is-a-confirmation-bias-2795024)
-  * Cheater detection framing
-  * Self-explanation
-  * Group discussion
-* Mindset again: Biased evaluation - confirmation or "my-side" bias `r wk10=wk10+ 7` <!-- slides -->
-  * It stops search for possibilities (Manley chapter 2)
-  * Francis Bacon was concerned, so he invented science
-  * Mercier & Sperber
-  * Info sources that tend to use opposing experts
-  * Not invented here
-* Overconfidence `r wk10=wk10+ 28` <!-- slides -->
-  * https://web.csulb.edu/~cwallis/382/certainty/chapter19.html
-  * Most of us think we're above average
-  * Making judgments when not expert
-  * Student logic exam results
-  * Dunning-Kruger effect 
-  * Planning fallacy <!-- 7 slides -->
-* `r wk10` slides above for this week
-
 
 * Who to believe <!-- whoToBelieve Keynote file -->
   * [Telling fact from fiction in the news](https://theconversation.com/can-you-tell-fact-from-fiction-in-the-news-most-students-cant-102580)
@@ -363,7 +369,7 @@ I'm not one of those people who went into psychology because they wanted to deal
 What I'm into is evidence, reasons and logic. But I've learned I can only have those conversations with certain people if I deal with their feelings.
 </div>
 
-
+<!--
 ## Self-challenge
 
 Something about indigenous people
@@ -392,7 +398,7 @@ Marijuana and cocaine should be legal
 
 ## Reciprocity
 
-
+-->
 
 
 Survivorship

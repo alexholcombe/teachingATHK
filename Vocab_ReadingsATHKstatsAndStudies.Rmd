@@ -4,7 +4,7 @@ date: "This document may be updated as the lectures proceed."
 output: html_document
 ---
 
-#### THE LINKS BELOW MIGHT NOT WORK UNLESS YOU CLICK ON "Vocab an readings" AT THE TOP OF THIS WINDOW, TO ESCAPE OUT OF THE CANVAS EMBEDDING
+#### THE LINKS BELOW MIGHT NOT WORK UNTIL YOU CLICK ON "Vocab and readings" AT THE TOP OF THIS WINDOW, TO ESCAPE OUT OF THE CANVAS EMBEDDING
 
 ## Important Readings
 
@@ -25,7 +25,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * [What is a confounding variable?](http://www.statisticshowto.com/design-of-experiments/confounding-variable/)
 
-* [Comic book](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis".
+* [Comic book](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis" (for Week 9)
 
 <!-- Critical Thinking, by Paul and Elder -->
 
@@ -82,4 +82,6 @@ Also explained in https://alexholcombe.wordpress.com/2016/02/03/problems-with-co
 * Contingency table
 * Residual
 * Nonlinear model
+* False positive, true positive, false negative, true negative
+* Specificity and sensitivity
 
