@@ -7,7 +7,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 (this document is updated as the weeks proceed)
-* Intro `r statsStudies=5` video
+
+* Intro `r statsStudies=5` video to Alex Holcombe, find it in Canvas
 
 Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 

@@ -1,8 +1,10 @@
 ---
-title: "Vocab, readings: Week 7 and 8 and some of week 9 lectures on Stats and Studies, and Week 8 tutorial"
-date: "lectures starting 7 Apr, 2020. This document may be updated as the lectures proceed."
+title: "Vocab, readings: Week 7, 8, and some of week 9 lectures on Stats and Studies"
+date: "This document may be updated as the lectures proceed."
 output: html_document
 ---
+
+#### THE LINKS BELOW MIGHT NOT WORK UNLESS YOU CLICK ON "Vocab an readings" AT THE TOP OF THIS WINDOW, TO ESCAPE OUT OF THE CANVAS EMBEDDING
 
 ## Important Readings
 
@@ -41,7 +43,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
 
-# Vocabulary
+# Vocabulary (partial list, see more terms on the outline)
 
 * Correlation, used in this class to refer only to linear correlation.
 * Observational study.
