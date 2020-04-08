@@ -4,19 +4,23 @@ date: "This will be updated as the lectures proceed."
 output: html_document
 ---
 
-Week 9 tutorial:
+## Tutorial overview
 
-Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity)
+Week 9 tutorial: Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity)
 
-Week 10 tutorial:
-Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.
+Week 10 tutorial: Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.
 
-Week 11 tutorial: Arguments in the wild.
-Identifying conclusions and premises in real-world text and conversations.
+Week 11 tutorial: Arguments in the wild. Identifying conclusions and premises in real-world text and conversations.
+
+## Important terminological note
+
+Philosophers typically use "valid" and "sound" for describing deductive arguments, in this class we instead use the terms "suppositionally inescapable" and "inescapable" because they are easier to understand. On quizzes and tests, you will only be tested on these terms.
+
+Philosophers typically use "strong" and "cogent" for describing *inductive* arguments, but in this class we use the terms "suppositionally solid" and "solid" because they are easier to understand. On quizzes and tests, you will only be tested on these terms.
 
 ## Important Readings
 
-* To find some definitions of the terms in the Vocabulary section, open   [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKArgumentsThinking.Rmd) and you'll see definitions in the comments, embedded in "\<!-- \-->", something like `<!--- comment text -->`. 
+* To find some definitions of the terms in the Vocabulary section, open   [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKArgumentsThinking.Rmd) and search for "\<!--" - you'll see definitions of a few of the terms there. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * *The power of critical thinking* by Vaughn, Chapter 1, available from the eReserve link at left of Canvas
@@ -28,11 +32,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
   * Distinguish between passages that do and do not contain an argument
   * Identify arguments in various contexts and distinguish between arguments and superflous material, arguments and explanations, and premises and conclusions
 
-* [*Introduction to Logic and Critical Thinking*](https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking) by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
-
-Instead of "valid" and "sound" for describing deductive arguments, in this class we use the terms "suppositionally inescapable" and "inescapable" because they are easier to understand. On quizzes and tests, you will only be tested on these terms.
-
-Instead of "strong" and "cogent" for describing *inductive* arguments, in this class we use the terms "suppositionally solid" and "solid" because they are easier to understand. On quizzes and tests, you will only be tested on these terms.
+* [*Introduction to Logic and Critical Thinking*](https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking) by Van Cleave, Chapter 1, in particular 1.6 (Validity, which we call suppositional inescapability), 1.7 (Soundness, which we calll inescapability), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)
 
 * Common logic mistake associated with [affirming the consequent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/14/Affirming-the-Consequent)
 
@@ -40,10 +40,9 @@ Instead of "strong" and "cogent" for describing *inductive* arguments, in this c
 
 * *Think Critically* by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, available from the eReserve link at left of Canvas
 
-
 <!-- Critical Thinking, by Paul and Elder -->
 
-* *ArgumentsIntro* on Canvas linked from Week 8: Resources
+* [Arguments overview](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/ArgumentsOverview.docx)
 
 * [Galef on confirmation bias](http://ideas.ted.com/why-you-think-youre-right-even-when-youre-wrong/), which she refers to as **soldier mind**
 
@@ -55,29 +54,35 @@ Instead of "strong" and "cogent" for describing *inductive* arguments, in this c
 
 * *Critical thinking* by Bassham et al., Chapter on inductive reasoning (which is chapter 11 if you have the 4th edition)
 
+## Back to science
+
+* [John Oliver video starting at 1:46](https://youtu.be/0Rnq1NpHdmw?t=105) on p-hacking
+
+* [Comic book](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis" 
+
 # Vocabulary
 
 * Confound, confounding factor, or confound variable <!-- Bruce: "Confounding factor is one that varies with both variables being considered and thus obscures their true relationship". Alex: In an experiment, a confound is something that is different for the different levels of the independent variable. Because it may affect the outcome variable, we don't know whether it is the confound or the independent variable causing any difference in the outcome variable. -->
 
 One that varies with the variable whose effect one is interested in and thus obscures their true relationship
 
-* Enthymeme
-
-<!-- From Greek "in-mind", because the full argument in the mind is not stated. Usually a condensed syllogism where one premise is not explicitly stated.
+* Enthymeme  <!-- From Greek "in-mind", because the full argument in the mind is not stated. Usually a condensed syllogism where one premise is not explicitly stated.
 E.g., "Socrates is mortal because he's human." instead of the usual 
 "All humans are mortal. 
 Socrates is human. 
 Therefore, Socrates is mortal."
 -->
-* Casting arguments
-
-<!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text -->
+* Casting arguments  <!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text -->
 
 * [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
 
 * Necessary versus sufficient
 
+* Syllogism <!-- A simple argument comprised of a conclusion drawn from two given premises. -->
+
 * Syllogism form
+
+* Truth table
 
 * Redundant argument
 

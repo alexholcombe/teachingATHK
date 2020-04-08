@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -268,7 +268,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -330,6 +329,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -341,18 +341,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -379,14 +367,22 @@ $(document).ready(function () {
 </div>
 
 
-<p>Week 9 tutorial:</p>
-<p>Necessary and sufficient, if-then, and only-if <a href="https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity">explained by Khan academy</a></p>
+<div id="tutorial-overview" class="section level2">
+<h2>Tutorial overview</h2>
+<p>Week 9 tutorial: Necessary and sufficient, if-then, and only-if <a href="https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity">explained by Khan academy</a></p>
 <p>Week 10 tutorial: Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.</p>
 <p>Week 11 tutorial: Arguments in the wild. Identifying conclusions and premises in real-world text and conversations.</p>
+</div>
+<div id="important-terminological-note" class="section level2">
+<h2>Important terminological note</h2>
+<p>Philosophers typically use “valid” and “sound” for describing deductive arguments, in this class we instead use the terms “suppositionally inescapable” and “inescapable” because they are easier to understand. On quizzes and tests, you will only be tested on these terms.</p>
+<p>Philosophers typically use “strong” and “cogent” for describing <em>inductive</em> arguments, but in this class we use the terms “suppositionally solid” and “solid” because they are easier to understand. On quizzes and tests, you will only be tested on these terms.</p>
+</div>
 <div id="important-readings" class="section level2">
 <h2>Important Readings</h2>
 <ul>
-<li><p>To find some definitions of the terms in the Vocabulary section, open <a href="https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKArgumentsThinking.Rmd">Vocab_ReadingsATHK2017ArgumentsThinking.Rmd</a> and you’ll see definitions in the comments, embedded in “&lt;!– --&gt;”, something like <code>&lt;!--- comment text --&gt;</code>. Quiz yourself with this webpage that doesn’t show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.</p></li>
+<li><p>To find some definitions of the terms in the Vocabulary section, open <a href="https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKArgumentsThinking.Rmd">Vocab_ReadingsATHK2017ArgumentsThinking.Rmd</a> and search for “&lt;!–” - you’ll see definitions of a few of the terms there. Quiz yourself with this webpage that doesn’t show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.</p>
+<ul>
 <li><em>The power of critical thinking</em> by Vaughn, Chapter 1, available from the eReserve link at left of Canvas (or Chapters 2 and 3 of Bassham et al.’s <em>Critical Thinking</em>)
 <ul>
 <li>Why it matters - makes the case for how critical thinking will help you in life</li>
@@ -396,14 +392,13 @@ $(document).ready(function () {
 <li>Distinguish between passages that do and do not contain an argument</li>
 <li>Identify arguments in various contexts and distinguish between arguments and superflous material, arguments and explanations, and premises and conclusions</li>
 </ul></li>
-<li><p><a href="https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking"><em>Introduction to Logic and Critical Thinking</em></a> by Van Cleave, Chapter 1, in particular 1.6 (Validity), 1.7 (Soundness), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)</p></li>
+<li><p><a href="https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking"><em>Introduction to Logic and Critical Thinking</em></a> by Van Cleave, Chapter 1, in particular 1.6 (Validity, which we call suppositional inescapability), 1.7 (Soundness, which we calll inescapability), 1.8 (Deductive vs. inductive arguments), 1.9 (Missing premises)</p></li>
 <li><p>Common logic mistake associated with <a href="https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/14/Affirming-the-Consequent">affirming the consequent</a></p></li>
 <li><p>Common logic mistake associated with <a href="https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/77/Denying-the-Antecedent">denying the antecedent</a></p></li>
 <li><p><em>Think Critically</em> by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, available from the eReserve link at left of Canvas</p></li>
 </ul>
-<!-- Critical Thinking, by Paul and Elder -->
-<ul>
-<li><p><em>ArgumentsIntro</em> on Canvas linked from Week 8: Resources</p></li>
+<!-- Critical Thinking, by Paul and Elder --></li>
+<li><p><a href="https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/ArgumentsOverview.docx">Arguments overview</a></p></li>
 <li><p><a href="http://ideas.ted.com/why-you-think-youre-right-even-when-youre-wrong/">Galef on confirmation bias</a>, which she refers to as <strong>soldier mind</strong></p></li>
 </ul>
 </div>
@@ -415,6 +410,13 @@ $(document).ready(function () {
 <li><p><em>Critical thinking</em> by Bassham et al., Chapter on inductive reasoning (which is chapter 11 if you have the 4th edition)</p></li>
 </ul>
 </div>
+<div id="back-to-science" class="section level2">
+<h2>Back to science</h2>
+<ul>
+<li><p><a href="https://youtu.be/0Rnq1NpHdmw?t=105">John Oliver video starting at 1:46</a> on p-hacking</p></li>
+<li><p><a href="https://thenib.com/repeat-after-me/">Comic book</a> about p-hacking and publication bias and the “replication crisis”</p></li>
+</ul>
+</div>
 <div id="vocabulary" class="section level1">
 <h1>Vocabulary</h1>
 <ul>
@@ -422,25 +424,21 @@ $(document).ready(function () {
 </ul>
 <p>One that varies with the variable whose effect one is interested in and thus obscures their true relationship</p>
 <ul>
-<li>Enthymeme</li>
-</ul>
-<!-- From Greek "in-mind", because the full argument in the mind is not stated. Usually a condensed syllogism where one premise is not explicitly stated.
+<li>Enthymeme <!-- From Greek "in-mind", because the full argument in the mind is not stated. Usually a condensed syllogism where one premise is not explicitly stated.
 E.g., "Socrates is mortal because he's human." instead of the usual 
 "All humans are mortal. 
 Socrates is human. 
 Therefore, Socrates is mortal."
--->
-<ul>
-<li>Casting arguments</li>
-</ul>
-<!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text -->
-<ul>
+--></li>
+<li><p>Casting arguments <!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text --></p></li>
 <li><p><a href="https://dictionary.apa.org/nuisance-variable">Nuisance variable</a></p></li>
 <li><p>Necessary versus sufficient</p></li>
+<li><p>Syllogism <!-- A simple argument comprised of a conclusion drawn from two given premises. --></p></li>
 <li><p>Syllogism form</p></li>
+<li><p>Truth table</p></li>
 <li><p>Redundant argument</p></li>
 <li><p>Casting an argument</p></li>
-<li><p>Validity</p></li>
+<li><p>Suppositionally inescapable (also known as “valid”)</p></li>
 <li><p>Soundness</p></li>
 <li><p>Deduction</p></li>
 <li><p>Induction</p></li>
@@ -486,6 +484,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

@@ -98,20 +98,23 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
 * Why does the news have lots of false positives? 
   * Excess of statistical comparisons
   * More reasons given later in the class, after logic and arguments
-  
 
-  
+###  Arguments and logic <!-- Week 9 -->
+
 We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
-
-###  Arguments <!-- Week 8? -->
 
 * Most arguments are people just trying to win - to get what they want. Persuasion.
 * But sometimes you don't just want to win, you actually want to learn and find things out.
 * We need to know good reasons for believing things. Ideally,
   * Assumptions are true
   * Logic must be airtight (inescapable)
-* Syllogism
+* Syllogisms introduction
+  * Suppositionally inescapable; inescapable
+* Truth tables 
+* Necessary and sufficient
+* Syllogisms 
   * Suppositionally inescapable, inescapable, suppositionally solid, solid
+  
 * Real-world arguments and Casting an argument
   * Socrative poll about vegetarianism
 * Implicit premise
@@ -164,12 +167,16 @@ Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
   * Planning fallacy <!-- 7 slides -->
 * `r wk10` slides above for this week
 
-* Why does the news have lots of false positives? 
+Week 11
+
+* Why does the news have lots of false positives? <!--slides 168 to 180-->
   * Excess of statistical comparisons (already talked about this)  
   * Publication bias
+  * <!-- Link to syllogisms: This conclusion is probably true, if there isn't lots of contrary evidence (that we're not seeing) and if they did their statistics right and if... -->
   * P-hacking
+    * <!-- The following rule accurately matches the results of every US presidential election since 1932: the incumbent party will win the election if and only if the Washington Redskins won their last home game before the election – unless the incumbent is black or the challenger attended a Central European boarding school, in which case it will lose.” -->
   * Preregistration
-  * Expectancy effects
+  * Expectancy effects  <!--slides 181 to 191-->
     * Experimenter
     * Participant
     * Addressing expectancy effects
@@ -257,6 +264,7 @@ Relative versus absolute risk
   * Argument from authority
     * Bias: Incentive, and circumstantial ad hominem
     * Track record
+      * Postdiction versus prediction “ Heyman notes that Gottman doesn’t predict divorce at all. He postdicts it. He gets 100 (or however many) couples, sees how many divorced, and then finds a set of factors that explain what happened."
     * Experts
     * Expertise: area of expertise
 ```{r, echo=FALSE, out.width = "210px"}

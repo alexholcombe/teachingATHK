@@ -25,13 +25,10 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * [What is a confounding variable?](http://www.statisticshowto.com/design-of-experiments/confounding-variable/)
 
-* [Comic book](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis" (for Week 9)
 
 <!-- Critical Thinking, by Paul and Elder -->
 
 ## Not-so-important Readings
-
-* [John Oliver video starting at 1:46](https://youtu.be/0Rnq1NpHdmw?t=105) on p-hacking
 
 * Chapter 4, Correlation, of *Naked Statistics* (already recommended by Bruce)
 
@@ -51,9 +48,9 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 * Quasi / natural experiment
 * Random assignment ([explainer](http://isps.yale.edu/node/16697))
 * r
-* r-squared and shared variance
+<!-- * r-squared and shared variance
 * Proportion of variance explained, shared variance
-<!-- Squaring r gives the proportion of variance explained by the line. "Shared variance" is a synonym.-->
+ Squaring r gives the proportion of variance explained by the line. "Shared variance" is a synonym.-->
 
 ### Variables
 * IV, DV <!-- Independent variable, dependent variable. -->
