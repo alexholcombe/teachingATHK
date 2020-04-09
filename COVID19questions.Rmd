@@ -67,6 +67,9 @@ g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("C
 show(g)
 ```
 
+```{r}
+endDate<- "2020/4/08" #to avoid vertical axis going too high with the growth ones
+```
 
 ```{r slope2}
 question("Between 9 March and 23 March, what was the pattern for the increase in cases? ",
@@ -80,7 +83,7 @@ question("Between 9 March and 23 March, what was the pattern for the increase in
 
 ## <!--Exponential comparison-->
 
-Below, some blue dots have been added to the plot.
+Below, some blue dots have been added to the plot. Also, the vertical axis has been rescaled to accommodate how high the numbers go for the blue dots.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 start<-22; pctIncrease<-20
@@ -88,7 +91,7 @@ NSW$exponential<-22
 for(i in 2:length(NSW$date)) {
   NSW$exponential[i] <- NSW$exponential[i-1]*(1+pctIncrease/100)
 }
-h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
+h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + xlim(as.Date(c(NA, endDate))) +
   geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
   annotate("text",x=as.Date("2020/3/25"),y=2300, label="20% daily growth", color="blue", size=3.5, angle=47)
 show(h)
@@ -125,13 +128,13 @@ NSW$increaseE <- pctIncrease #Because manual gets it slightly wrong probably bec
 #NSW$increaseE <- increaseE
 excludeFirst <- tail(NSW,-1)
 
-j<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("% increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,40) +
+j<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("% increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,40) + xlim(as.Date(c(NA, endDate))) +
     geom_point(data = excludeFirst, aes(x = date, y = increaseE), color = "blue", alpha=.6)
 show(j)
 ```
 
 The blue dots now form a horizontal line, because they were created by calculating a 20% increase compared to the previous day.
-The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to others. Thus the new number of cases is some multiple (percentage added to) of the previous day's cases.
+<!-- The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to others. Thus the new number of cases is some multiple (percentage added to) of the previous day's cases. -->
 
 For the real data (the black dots), this graph makes it obvious that after about 23 March (soon after flights from overseas were greatly reduced and social distancing began), no longer was there a similar percentage increase on each day. The percentage increase began to dwindle.
 
@@ -141,7 +144,7 @@ The below plot shows, for each day, the percentage increase in confirmed cases f
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 
 NSWcori<-cor.test(as.numeric(NSW$date),NSW$increase/NSW$cases) 
-h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days"))
+h<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() + theme_bw() + ylab("Percent increase in NSW confirmed cases") + scale_x_date(date_minor_breaks=("1 days")) 
 show(h)
 ```
 
@@ -165,15 +168,15 @@ When growth is exponential, we are interested in knowing what the number of case
 
 Logarithms turn multiplication into addition, which means that on a logarithmic axis, stepping upward by a constant amount does not mean the number of cases has increased by the same number each time, but rather that it's been multiplied by the same number each time.
 
-As a result, our 20% growth points fall on a straight line, because each successive point is a result of multiplying (rather than adding)
-by a constant, namely 1.2.
 ```{r, semilogTwenty, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
-k<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue",alpha=.6) + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +  theme(panel.grid.minor.y = element_blank()) +
+k<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue",alpha=.6) + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +  theme(panel.grid.minor.y = element_blank()) + xlim(as.Date(c(NA, endDate))) +
     annotate("text",x=as.Date("2020/3/15"),y=112, label="20% growth daily", color="blue", size=3, angle=46)
 show(k + scale_y_log10() )
 ```
 
-In the plot, notice that the vertical axis labels do not mark out equal intervals. That is, taking equal steps up does not result in adding one number over and over, a number corresponding to the step size. Rather, taking equal steps upward corresponds to *multiplying* by a number that reflects the step size. Notice the interval between the successive y-axis labels, for example - it is the previous label multipled by approximately three.
+Our 20% growth points now fall on a straight line, because each successive point is a result of multiplying (rather than adding) by a constant, just like the vertical axis.
+
+Indeed, notice that the vertical axis labels do not mark out equal intervals. That is, taking equal steps up does not result in adding one number over and over, a number corresponding to the step size. Rather, taking equal steps upward corresponds to *multiplying* by a number that reflects the step size. Notice the interval between the successive y-axis labels, for example - it is the previous label multipled by ten.
 
 ##
 
@@ -192,7 +195,7 @@ require(scales)
 mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
-  theme(panel.grid.minor.y = element_blank()) +  
+  theme(panel.grid.minor.y = element_blank()) +  xlim(as.Date(c(NA, endDate))) +
   scale_y_continuous(labels = scales::comma) + #stop scientific notation
   scale_y_log10() +
   annotate("text",x=as.Date("2020/3/13"),y=38, label="10% daily growth", color="darkgreen", size=3, angle=18) +
@@ -210,7 +213,7 @@ Plotting the actual data from NSW (black dots), thanks to the  blue dots compari
 ```{r, semilogboth, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
     annotate("text",x=as.Date("2020/3/15"),y=240, label="20% daily growth", color="blue", size=3, angle=48) +
-  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
+  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) + xlim(as.Date(c(NA, endDate))) +
   #  geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
    # geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   scale_y_log10()
@@ -243,7 +246,7 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
-  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=20) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=35) +
+  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=20) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=35) + xlim(as.Date(c(NA, endDate))) +
   annotate("text",x=as.Date("2020/3/20"),y=920, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=46)
 show(mm)
 ```

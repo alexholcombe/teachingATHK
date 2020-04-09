@@ -6,7 +6,7 @@ output: html_document
 
 ## Tutorial overview
 
-Week 9 tutorial: Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity)
+Week 9 tutorial: Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity) and [by Carneades](https://www.youtube.com/watch?v=ibjL90iY1d0)
 
 Week 10 tutorial: Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.
 
@@ -42,7 +42,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 <!-- Critical Thinking, by Paul and Elder -->
 
-* [Arguments overview](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/ArgumentsOverview.docx)
+* [Arguments overview](https://github.com/alexholcombe/teachingATHK/blob/master/ArgumentsOverview.docx?raw=true)
 
 * [Galef on confirmation bias](http://ideas.ted.com/why-you-think-youre-right-even-when-youre-wrong/), which she refers to as **soldier mind**
 
@@ -76,7 +76,7 @@ Therefore, Socrates is mortal."
 
 * [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
 
-* Necessary versus sufficient
+* Necessary versus sufficient <!-- If A is necessary for B, every time you have B you have A. If A is sufficient for B, every time you have A you have B -->
 
 * Syllogism <!-- A simple argument comprised of a conclusion drawn from two given premises. -->
 
