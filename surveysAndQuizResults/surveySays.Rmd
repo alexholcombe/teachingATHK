@@ -14,3 +14,103 @@ rawDataPath<- file.path("15AprWeek7EnglishCareer")
 files <- dir(path=rawDataPath,pattern='.csv')  #find all data files in this directory
 files
 ```
+
+Read in all files function which also adds filename and panel name and study name to dataframe.
+```{r all}
+readInAllFiles <- function(rawDataPath) {
+  files <- dir(path=rawDataPath,pattern='.csv')  #find all data files in this directory
+  tbAll<-tibble()
+  firstFileHasBeenRead <- FALSE
+  #for (i in 1:2 ) {#length(files)) { #read in each file
+  for (i in 1:length(files)) { #read in each file  filename <- files[i]
+    filename<- files[i]
+    fileThis<- file.path(rawDataPath,filename)
+    
+    tbThis<- tryCatch(
+      read_csv(fileThis, col_names = TRUE, 
+               col_types = cols()), #suppressses the annoying 'Parsed with column specification' message
+      error=function(e) {
+        stop( paste0("ERROR reading the file ",fname," :",e) )
+      } )
+    filenameWithoutSuffix <- tools::file_path_sans_ext(filename)
+    writeLines( paste("Importing",filename) )
+
+    if (!firstFileHasBeenRead) {
+      tbAll<-tbThis
+      firstFileHasBeenRead <- TRUE
+    } else { #check for new columns, then merge
+      newCols <- setdiff( colnames(tbThis),prevColNames )
+      oldColsNotInNew <- setdiff( prevColNames,colnames(tbThis) )
+      if (length(newCols) >0) {
+        writeLines( paste("newCols are:",newCols))
+        for (n in 1:length(newCols)) { #add newCol to old data.frame with dummy value
+          tbAll[newCols[n]] <- -999
+          writeLines(paste("Added new column",newCols[n],"to tbAll"))
+        }
+      }
+      if (length(oldColsNotInNew)>0) {
+        
+        writeLines( "oldColsNotInNew are: ",sep=""); writeLines(oldColsNotInNew,sep="\t")
+        writeLines("") #newline
+        #cat(oldColsNotInNew); writeLines("'")
+        for (n in 1:length(oldColsNotInNew)) #add old col to new data.frame that doesn't have it
+          tbThis[oldColsNotInNew[n]] <- -999	
+      }
+      tryCatch( tbAll<-rbind(tbAll,tbThis), #if fail to bind new with old,
+                error=function(e)
+                { print ("ERROR merging"); print(e)
+                  colnamesNew <- paste(colnames(tbThis),collapse=",")
+                  colnamesOld <- paste(colnames(tbAll),collapse=",")
+                  diff= setdiff(colnames(tbThis),colnames(tbAll))
+                  if (length(diff) >0) {
+                    writeLines( paste('colnamesNew=',colnamesNew,'\n colnamesOld=', colnamesOld))
+                    writeLines('difference is'); writelines( diff )
+                  } else {
+                    writeLines( paste('colnames=',colnamesNew,' no difference between the two files'))    
+                  }    
+                  quitQUIT
+                } ) #end tryCatch
+      # if (!("knownMachinesForPilot.index(networkMachineName)" %in% names(tbThis))) {
+      #   #only included if it was a known machine on a pilot day
+      #   tbThis["knownMachine"] <- "NA"
+      # } else {  #give it a name that is not impossible"
+      #   tbThis["knownMachine"] <- 
+      #     tbThis["knownMachinesForPilot.index(networkMachineName)"]
+      #   tbThis["knownMachinesForPilot.index(networkMachineName)"] <- NULL #delete
+      # }
+    }
+    prevColNames<- colnames(tbThis)
+  }
+
+  return(tbAll)
+}
+```
+
+```{r read up }
+sur<- readInAllFiles(rawDataPath)
+```
+```{r well up }
+answers<- sur %>% select(starts_with("82")) #important columns
+```
+
+English first language
+```{r datttt}
+require(questionr)
+questionr::freq(answers$`828849: Is English the first language you learned?`, cum = TRUE, sort = "dec", total = TRUE)
+```
+
+Better at math
+```{r dathhttt}
+questionr::freq(answers$`828850: Do you think you are better at math than the average person?`, sort = "dec", total = TRUE)
+```
+
+
+better at critical thinking than the average first-year student?
+```{r dathhjjttt}
+questionr::freq(answers$`828851: Do you think you are better at critical thinking than the average first-year student?`, sort = "dec", total = TRUE)
+```
+current idea for what you might want to do as a career?
+
+```{r dathhjjttt}
+questionr::freq(answers$`828876: What's your current idea for what you might want to do as a career?`, sort = "dec", total = TRUE)
+```
