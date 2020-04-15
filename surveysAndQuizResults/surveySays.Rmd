@@ -1,0 +1,16 @@
+---
+title: "surveySays"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r set up }
+library(readr)
+library(dplyr)
+rawDataPath<- file.path("15AprWeek7EnglishCareer")
+files <- dir(path=rawDataPath,pattern='.csv')  #find all data files in this directory
+files
+```
