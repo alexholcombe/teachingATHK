@@ -95,7 +95,7 @@ answers<- sur %>% select(starts_with("82")) #important columns
 
 English first language
 ```{r datttt}
-require(questionr)
+require(questionr) #https://dabblingwithdata.wordpress.com/2017/12/20/my-favourite-r-package-for-frequency-tables/
 questionr::freq(answers$`828849: Is English the first language you learned?`, cum = TRUE, sort = "dec", total = TRUE)
 ```
 
@@ -111,6 +111,33 @@ questionr::freq(answers$`828851: Do you think you are better at critical thinkin
 ```
 current idea for what you might want to do as a career?
 
-```{r dathhjjttt}
-questionr::freq(answers$`828876: What's your current idea for what you might want to do as a career?`, sort = "dec", total = TRUE)
+```{r daffthhjjttt}
+
+#sink("careers.txt")
+#print(answers$`828876: What's your current idea for what you might want to do as a career?`)
+#sink()
+cat(answers$`828876: What's your current idea for what you might want to do as a career?`,file="careers.txt")
+```
+
+```{r dfaad}
+require(wordcloud) #http://www.sthda.com/english/wiki/word-cloud-generator-in-r-one-killer-function-to-do-everything-you-need
+source('http://www.sthda.com/upload/rquery_wordcloud.r')
+#getwd()
+x<-readLines("careers.txt")
+x<-gsub("want","",x) #remove 'want'
+x<-gsub("become","",x) 
+x<-gsub("sure","",x) 
+x<-gsub("field","",x) 
+x<-gsub("sure","",x) 
+x<-gsub("know","",x) 
+x<-gsub("something","",x) 
+x<-gsub("career","",x) 
+x<-gsub("like","",x) 
+x<-gsub("idea","",x) 
+x<-gsub("really","",x) 
+x<-gsub("can","",x) 
+x<-gsub("yet","",x) 
+
+#filePath <- file.path("surveysAndQuizResults","careers.txt")
+res<-rquery.wordcloud(x, type ="text", lang = "english")#,  min.freq = 1,  max.words = 40)
 ```
