@@ -120,7 +120,7 @@ cat(answers$`828876: What's your current idea for what you might want to do as a
 ```
 
 ```{r dfaad}
-require(wordcloud) #http://www.sthda.com/english/wiki/word-cloud-generator-in-r-one-killer-function-to-do-everything-you-need
+library(wordcloud) #http://www.sthda.com/english/wiki/word-cloud-generator-in-r-one-killer-function-to-do-everything-you-need
 source('http://www.sthda.com/upload/rquery_wordcloud.r')
 #getwd()
 x<-readLines("careers.txt")
@@ -139,5 +139,5 @@ x<-gsub("can","",x)
 x<-gsub("yet","",x) 
 
 #filePath <- file.path("surveysAndQuizResults","careers.txt")
-res<-rquery.wordcloud(x, type ="text", lang = "english")#,  min.freq = 1,  max.words = 40)
+res<-rquery.wordcloud(x, type ="text", lang = "english",  min.freq = 2,  max.words = 40)
 ```

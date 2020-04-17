@@ -99,7 +99,7 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
   * Excess of statistical comparisons
   * More reasons given later in the class, after logic and arguments
 
-###  Arguments and logic <!-- Week 9 -->
+###  Arguments and logic , Week 9-
 
 We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
 
