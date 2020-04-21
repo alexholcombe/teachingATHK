@@ -61,6 +61,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 <!-- Confounds are sometimes known as omitted variables in the context of observational studies or in the context of a statistical model like a regression. In experiment design, you might be interested in the effect of videogames on agression. You recruit a group of videogamers and another group of non-gamers and assess their agression level (somehow). You find that the videogamers are more agressive. Does this mean that videogaming causes agression? No, because you might have a confounding variable like age. Videogamers tend to be younger so your videogaming group may be younger than your non-gaming group. And, aggression levels decrease with age (and this was true even before videogames was invented), meaning that perhaps the only reason gamers are more violent is because they are younger. 
 http://www.statisticshowto.com/design-of-experiments/confounding-variable/
 -->
+* [Nuisance variable](https://dictionary.apa.org/nuisance-variable) or noise variable versus confound
 * Omitted variable
 <!-- This term is used in the context of observational studies, where Bruce used it to refer to a problematic variable that in an experimental study would be referred to as
 a "confound"-->

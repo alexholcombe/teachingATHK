@@ -74,8 +74,6 @@ Therefore, Socrates is mortal."
 -->
 * Casting arguments  <!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text -->
 
-* [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
-
 * Necessary versus sufficient <!-- If A is necessary for B, every time you have B you have A. If A is sufficient for B, every time you have A you have B -->
 
 * Syllogism <!-- A simple argument comprised of a conclusion drawn from two given premises. -->
@@ -90,15 +88,15 @@ Therefore, Socrates is mortal."
 
 * Suppositionally inescapable (also known as "valid")
 
-* Soundness
+* Inescapable (also known as "sound")
 
 * Deduction
 
 * Induction
 
-* Strong
+* Suppositionally solid (also known as "strong")
 
-* Cogent
+* Solid (also known as "cogent")
 
 * Circularity
 
@@ -108,7 +106,7 @@ Therefore, Socrates is mortal."
 
 * Confabulation
 
-<!-- Dissensus  -->
+* Dissensus and consensus
 
 * Appeal to authority
 * Straw man
