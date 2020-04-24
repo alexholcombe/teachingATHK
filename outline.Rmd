@@ -114,13 +114,13 @@ We're going to go back and forth between bare-bones examples and arguments from 
 * Necessary and sufficient
 * Syllogisms 
   * Suppositionally inescapable, inescapable, suppositionally solid, solid
-  
+
 * Real-world arguments and Casting an argument
-  * Socrative poll about vegetarianism
+  <!--* Socrative poll about vegetarianism-->
+  * Decoupling and biased evaluation
 * Implicit premise
 * Redundant premise
 * Poly-syllogism
-* Decoupling and biased evaluation
 
 * Mindset for real-world (4 slides)
   * I will happily change, for I seek the truth - Aurelius.
@@ -137,7 +137,7 @@ We're going to go back and forth between bare-bones examples and arguments from 
 * Analysing scientific abstracts
 * Analysing the Molly and Bea argument
 
-Week 9: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
+Week 10: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
 
 * Informal fallacies
 * Post hoc ergo propter hoc, again
@@ -145,7 +145,7 @@ Week 9: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
 
 * Ad hominem: 
 
-Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
+Week 11 - `r wk10=0` <!-- "confirmationBias" Keynote -->
 
 * Wason card selection task, as an argument/syllogism `r wk10=wk10+ 18` <!-- 18 slides -->
   * [Confirmation bias](https://www.verywellmind.com/what-is-a-confirmation-bias-2795024)
@@ -167,11 +167,11 @@ Week 10 - `r wk10=0` <!-- "confirmationBias" Keynote -->
   * Planning fallacy <!-- 7 slides -->
 * `r wk10` slides above for this week
 
-Week 11
+Week 12
 
 * Why does the news have lots of false positives? <!--slides 168 to 180-->
   * Excess of statistical comparisons (already talked about this)  
-  * Publication bias
+  * Publication bias <!-- Make a "false positives" video -->
   * <!-- Link to syllogisms: This conclusion is probably true, if there isn't lots of contrary evidence (that we're not seeing) and if they did their statistics right and if... -->
   * P-hacking
     * <!-- The following rule accurately matches the results of every US presidential election since 1932: the incumbent party will win the election if and only if the Washington Redskins won their last home game before the election – unless the incumbent is black or the challenger attended a Central European boarding school, in which case it will lose.” -->
@@ -257,6 +257,12 @@ Relative versus absolute risk
 
 * Who to believe <!-- whoToBelieve Keynote file -->
   * [Telling fact from fiction in the news](https://theconversation.com/can-you-tell-fact-from-fiction-in-the-news-most-students-cant-102580)
+    * 
+```{r, echo=FALSE, out.width = "210px"}
+knitr::include_graphics("imagesForRmd/SteakummOnMediaLiteracy.png") #https://twitter.com/steak_umm/status/1252355987249303555
+```    
+Great thread answering Soledad O'Brien: https://twitter.com/temanue/status/1252358692424437763
+
   * Ensure your mouth and throat are always moist. Stomach acid can kill coronavirus. It's just the flu. China created COVID-19 as a biological weapon. At least 60 per cent of the population needs to be exposed to build up "necessary resistance" to the virus. From [this](https://www.smh.com.au/business/companies/the-other-viral-problem-in-the-covid-19-pandemic-online-misinformation-20200318-p54bd3.html) 
   * [Only about 30% of Australians](https://www.smh.com.au/business/companies/the-other-viral-problem-in-the-covid-19-pandemic-online-misinformation-20200318-p54bd3.html) checked with other sources of info before sharing something
     * OK but there are other signals of credibility
@@ -271,6 +277,7 @@ Relative versus absolute risk
 knitr::include_graphics("imagesForRmd/brainSurgeonNotExpertPreventDementia.png")
 ```
       * Success bias p.10 of Mercier - Makes sense in small-scale societies
+      * Advertising typically uses respected people, often outside of their area of expertise <!-- TETLOCK: I think a lot of good executives have the intuition that you get more out of a team of forecasters or problem solvers if you elicit independent judgments initially that are uncontaminated by conformity pressure, and then you create an environment in which ideas can be freely critiqued before lifting the veil of anonymity and letting people see who’s taking which positions. -->
     * Multiple independent experts
     * Wikipedia (pp.263-5 of Lyons & Ward)
     * Fake experts

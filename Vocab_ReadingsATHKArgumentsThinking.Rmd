@@ -6,6 +6,8 @@ output: html_document
 
 ## Tutorial overview
 
+Week 8 tutorial: Confounds
+
 Week 9 tutorial: Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity) and [by Carneades](https://www.youtube.com/watch?v=ibjL90iY1d0)
 
 Week 10 tutorial: Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.

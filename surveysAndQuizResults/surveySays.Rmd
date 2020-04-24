@@ -141,3 +141,6 @@ x<-gsub("yet","",x)
 #filePath <- file.path("surveysAndQuizResults","careers.txt")
 res<-rquery.wordcloud(x, type ="text", lang = "english",  min.freq = 2,  max.words = 40)
 ```
+```{r}
+"I am an Ancient History major in a BLAS. I have no need for detailed study of scientific data nor statistics.I aspire to be in ALLIED HEALTH in a Radiology (diagnostic) role, again no data analysis nor statistics or research."
+```
