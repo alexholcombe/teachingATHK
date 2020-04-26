@@ -262,6 +262,7 @@ Relative versus absolute risk
 knitr::include_graphics("imagesForRmd/SteakummOnMediaLiteracy.png") #https://twitter.com/steak_umm/status/1252355987249303555
 ```    
 Great thread answering Soledad O'Brien: https://twitter.com/temanue/status/1252358692424437763
+https://twitter.com/steak_umm/status/1253514561128402944
 
   * Ensure your mouth and throat are always moist. Stomach acid can kill coronavirus. It's just the flu. China created COVID-19 as a biological weapon. At least 60 per cent of the population needs to be exposed to build up "necessary resistance" to the virus. From [this](https://www.smh.com.au/business/companies/the-other-viral-problem-in-the-covid-19-pandemic-online-misinformation-20200318-p54bd3.html) 
   * [Only about 30% of Australians](https://www.smh.com.au/business/companies/the-other-viral-problem-in-the-covid-19-pandemic-online-misinformation-20200318-p54bd3.html) checked with other sources of info before sharing something
