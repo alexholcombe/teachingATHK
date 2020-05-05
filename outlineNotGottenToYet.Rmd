@@ -1,0 +1,24 @@
+---
+title: "outlineNotGottenToYet.Rmd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+* Probability <!-- tempProbabilitiesLearningTechniques Keynote file -->
+We aren’t good at understanding probabilities.
+Gerd Gigerenzer argues we are poor at understanding probabilities, but better at frequencies.
+
+Overconfidence takes over and we tend to think we can beat the odds 
+“statistics happen to other people.” 
+In risky financial markets this can get people into a lot of trouble. 
+E.g., most people lose their money in futures markets
+But the spectacular profits that can be gained draw in people who believe they will be the ones to win.
+Awareness of our biases and heuristics could improve our thinking.
+* Risk
+   * Relative versus absolute risk 
+Relative versus absolute risk
+  Relatively risky https://twitter.com/justsaysrisks
