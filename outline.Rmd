@@ -134,6 +134,7 @@ We're going to go back and forth between bare-bones examples and arguments from 
 * Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions)
 * Casting the we must bomb Iran argument
 * Deduction and induction in science
+  * [reading](https://www.livescience.com/21569-deduction-vs-induction.html)
 * Analysing scientific abstracts
 * Analysing the Molly and Bea argument
 
@@ -238,20 +239,6 @@ Maybe not, because most countries are in the N. Hemisphere anyway, so the second
 		If we are told, "Most of the time when it's cold, John wears a hat," it's easy to forget that this is not enough to establish a correlation. To infer a correlation, we have to assume that John does not wear a hat most of the time on other days too . Maybe this is a safe assumption to make, but maybe not. The point is that if we just ignore it, we are neglecting the base rate, a mistake we encountered in the previous chapter. 
 
 
-* Probability <!-- tempProbabilitiesLearningTechniques Keynote file -->
-We aren’t good at understanding probabilities.
-Gerd Gigerenzer argues we are poor at understanding probabilities, but better at frequencies.
-
-Overconfidence takes over and we tend to think we can beat the odds 
-“statistics happen to other people.” 
-In risky financial markets this can get people into a lot of trouble. 
-E.g., most people lose their money in futures markets
-But the spectacular profits that can be gained draw in people who believe they will be the ones to win.
-Awareness of our biases and heuristics could improve our thinking.
-* Risk
-   * Relative versus absolute risk 
-Relative versus absolute risk
-  Relatively risky https://twitter.com/justsaysrisks
 
   
 

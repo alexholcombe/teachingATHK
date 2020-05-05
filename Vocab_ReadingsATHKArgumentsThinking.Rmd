@@ -12,7 +12,11 @@ Week 9 tutorial: Necessary and sufficient, if-then, and only-if [explained by Kh
 
 Week 10 tutorial: Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.
 
-Week 11 tutorial: Arguments in the wild. Identifying conclusions and premises in real-world text and conversations.
+Week 11 tutorial: Implicit premises, inductive arguments, identifying conclusions in real-world arguments
+
+Week 12 tutorial: Coupling of beliefs and real-world arguments
+
+Week 13 tutorial: Fallacies and 
 
 ## Important terminological note
 
