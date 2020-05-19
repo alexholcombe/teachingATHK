@@ -99,12 +99,10 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
   * Excess of statistical comparisons
   * More reasons given later in the class, after logic and arguments
 
-###  Arguments and logic , Week 9-10
+### Arguments and logic, Weeks 9-10
 
 We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
 
-* Most arguments are people just trying to win - to get what they want. Persuasion.
-* But sometimes you don't just want to win, you actually want to learn and find things out.
 * We need to know good reasons for believing things. Ideally,
   * Assumptions are true
   * Logic must be airtight (inescapable)
@@ -115,32 +113,43 @@ We're going to go back and forth between bare-bones examples and arguments from 
 * Syllogisms 
   * Suppositionally inescapable, inescapable, suppositionally solid, solid
 
-* Real-world arguments and Casting an argument
-  <!--* Socrative poll about vegetarianism-->
-  * Decoupling and biased evaluation
-* Implicit premise
-* Redundant premise
+* Towards real-world arguments 
+* The vegetarianism argument, student responses, and the difficulty of decoupling
+* Redundant premises
+* Implicit premises
+
+### Arguments and reasoning in the wild, Weeks 11-13
+
+Week 11
+
 * Poly-syllogism
+* Casting an argument
 
 * Mindset for real-world (4 slides)
   * I will happily change, for I seek the truth - Aurelius.
+  * Most arguments are people just trying to win - to get what they want. Persuasion.
+  * But ideally you don't just want to win, you actually want to learn and find things out.
+  
+Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
+
 * Loose language in the wild
   * hyperbole
-  * principle of charity (related to steel man which comes later)
+  * principle of charity (related to steel man, discussed later)
 
-* Deduction and induction
+* Casting the we must bomb Iran argument
+
+* Induction and deduction <!-- https://rintintin.colorado.edu/~vancecd/phil1440/induction.pdf -->
   * Process of elimination, Sherlock Holmes
   * Abduction
-* Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions)
-* Casting the we must bomb Iran argument
+
+Week 12
+
 * Deduction and induction in science
   * [reading](https://www.livescience.com/21569-deduction-vs-induction.html)
 * Analysing scientific abstracts
-* Analysing the Molly and Bea argument
 
-###  Arguments and reasoning in the wild, Weeks 11-13
+* Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions)
 
-Week 11: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
 
 * Informal fallacies
 * Post hoc ergo propter hoc, again
@@ -149,9 +158,10 @@ Week 11: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
 * Ad hominem "To the person": 
   * Puerile name-calling <!--Include a Gilbert tweet -->
   * Questioning the motive
-  * Hypocrite
+  * Hypocrite (including [whataboutism](https://en.wikipedia.org/wiki/Whataboutism))
   * You’re not entitled to speak on that
   * Appeal to authority
+    * Appropriate versus inappropriate
 * Straw man
   * Relation to principle of charity
 * Fallacy of the single cause <!-- Relation to affirming the consequent -->
@@ -161,37 +171,38 @@ Week 11: Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
   * No True Scotsman
 * Slippery slope
 
-Week 12 - `r wk10=0` <!-- "confirmationBias" Keynote -->
+* Analysing the Molly and Bea argument
 
-* Wason card selection task, as an argument/syllogism `r wk10=wk10+ 18` <!-- 18 slides -->
+<!-- "confirmationBias" Keynote -->
+
+* Wason card selection task, as an argument/syllogism  <!-- 18 slides -->
   * [Confirmation bias](https://www.verywellmind.com/what-is-a-confirmation-bias-2795024)
   * Cheater detection framing
   * Self-explanation
   * Group discussion
-* Mindset again: Biased evaluation - confirmation or "my-side" bias `r wk10=wk10+ 7` <!-- slides -->
+* Mindset again: Biased evaluation - confirmation or "my-side" bias  <!-- 7 slides -->
   * It stops search for possibilities (Manley chapter 2)
   * Francis Bacon was concerned, so he invented science
   * Mercier & Sperber
   * Info sources that tend to use opposing experts
   * Not invented here
-* Overconfidence `r wk10=wk10+ 28` <!-- slides -->
+* Overconfidence  <!-- 28 slides -->
   * https://web.csulb.edu/~cwallis/382/certainty/chapter19.html
   * Most of us think we're above average
   * Making judgments when not expert
   * Student logic exam results
   * Dunning-Kruger effect 
   * Planning fallacy <!-- 7 slides -->
-* `r wk10` slides above for this week
 
 
 * Why does the news have lots of false positives? <!--slides 168 to 180-->
-  * Excess of statistical comparisons (already talked about this)  
-  * Publication bias <!-- Make a "false positives" video -->
+  * Excess of statistical comparisons (already talked about this in Week 9)  
+  * Publication bias 
   * <!-- Link to syllogisms: This conclusion is probably true, if there isn't lots of contrary evidence (that we're not seeing) and if they did their statistics right and if... -->
   * P-hacking
     * <!-- The following rule accurately matches the results of every US presidential election since 1932: the incumbent party will win the election if and only if the Washington Redskins won their last home game before the election – unless the incumbent is black or the challenger attended a Central European boarding school, in which case it will lose.” -->
   * Preregistration
-  * Expectancy effects  <!--slides 181 to 191-->
+  * Hawthorne and Expectancy effects  <!--slides 181 to 191-->
     * Experimenter
     * Participant
     * Addressing expectancy effects
