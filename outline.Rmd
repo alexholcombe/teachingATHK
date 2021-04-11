@@ -174,7 +174,7 @@ Weeks 12 and 13
   * Overwhelming exception
   * No True Scotsman
 * Slippery slope
-
+  
   * Hawthorne and Expectancy effects  <!--slides 181 to 191-->
     * Experimenter
     * Participant

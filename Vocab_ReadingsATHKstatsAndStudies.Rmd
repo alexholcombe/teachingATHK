@@ -4,7 +4,7 @@ date: "This document may be updated as the lectures proceed."
 output: html_document
 ---
 
-#### THE LINKS BELOW MIGHT NOT WORK UNTIL YOU CLICK ON "Vocab and readings" AT THE TOP OF THIS WINDOW, TO ESCAPE OUT OF THE CANVAS EMBEDDING
+#### THE LINKS BELOW MIGHT NOT WORK UNTIL YOU CLICK ON "Readings and vocab" AT THE TOP OF THIS WINDOW, TO ESCAPE OUT OF CANVAS
 
 ## Important Readings
 
@@ -40,10 +40,10 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
 
-# Vocabulary (partial list, see more terms on the outline)
+# Vocabulary (partial list, see more terms on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
 
 * Correlation, used in this class to refer only to linear correlation.
-* Observational study.
+* Observational study. Observational studies are sometimes referred to as correlational studies.
 <!-- Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups) -->
 * Quasi / natural experiment
 * Random assignment ([explainer](http://isps.yale.edu/node/16697))
