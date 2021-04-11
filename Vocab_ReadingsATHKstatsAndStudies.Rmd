@@ -4,8 +4,6 @@ date: "This document may be updated as the lectures proceed."
 output: html_document
 ---
 
-#### THE LINKS BELOW MIGHT NOT WORK UNTIL YOU CLICK ON "Readings and vocab" AT THE TOP OF THIS WINDOW, TO ESCAPE OUT OF CANVAS
-
 ## Important Readings
 
 * To find definitions of some of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKstatsAndStudies.Rmd) and you'll see some definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- definition text -->`. 
