@@ -208,7 +208,6 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +  xlim(as.Date(c(NA, endDate))) +
-  #scale_y_continuous(labels = scales::comma) + 
   scale_y_continuous(trans="log", labels = scales::comma, breaks = c(100,1000,10000,100000,1000000)) +  #comma stops scientific notation
   #                     function(x) format(x, big.mark = ",")) +
   annotate("text",x=as.Date("2020/3/13"),y=38, label="10% daily growth", color="darkgreen", size=3, angle=18) +
@@ -217,15 +216,19 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
 show(mm) 
 ```
 
-The above plot shows that with a logarithmic vertical axis, any particular daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope.
+The above plot shows that with a logarithmic vertical axis, any daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope. 
+
+Notice how for the highest growth rate of 30%, the disease infects over 100,000 people in just five weeks! we are lucky that NSW
 
 ##
 
-Plotting the actual data from NSW (black dots), thanks to the  blue dots comparison, we can see that it was growing exponentially at nearly 20% for some time. After 28 March, growth was slower. The data after 28 March no longer increase as steeply as the dots that indicate 20% growth.
+Plotting the actual data from NSW (black dots), thanks to the  blue dots comparison, we can see that it was growing exponentially at nearly 20% for some time. 
+
+After 28 March, growth was slower - the data after that date no longer increase as steeply as the blue 20% growth dots.
 
 ```{r, semilogboth, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + 
-    annotate("text",x=as.Date("2020/3/15"),y=240, label="20% daily growth", color="blue", size=3, angle=48) +
+    annotate("text",x=as.Date("2020/3/15"),y=250, label="20% daily growth", color="blue", size=3, angle=45) +
   geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) + xlim(as.Date(c(NA, endDate))) +
   #  geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
    # geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
@@ -235,7 +238,7 @@ show(h)
 
 ##
 
-Exponential growth is not always bad. Investments often yield exponential growth, because on average their value increases by some percentage each year. For example, the U.S. stock market increased on average 14% a year between 2000 and the end of 2019. If your parents had invested \$2000 for you in the year 2000, at the beginning of 2020 it would have been worth about \$27,000. 
+Exponential growth of a disease is bad, but such growth of certain other things is not. Financial investments can yield exponential growth, because the value of many increases by some percentage yearly. For example, the U.S. stock market increased on average 14% a year between 2000 and the end of 2019. If your parents had invested \$2000 for you in the year 2000, at the beginning of 2020 it would have been worth about \$27,000. 
 
 ```{r, compounding, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 stocks<-data.frame(
@@ -249,7 +252,7 @@ ss<-ggplot( data = stocks, aes( date, val )) + geom_point() + theme_bw() + ylab(
 show(ss)
 ```
 
-Another way to get an intuition for what a particular growth rate means is to realize that each growth rate corresponds to a doubling every time a particular number of days elapses. The 14% growth rate of the stock market during the first twenty years of the century, for example, meant a doubling approximately every five years. Here I've added the doubling times to the 10, 20, and 30 percent growths.
+One way to summarise what a particular growth rate means is to consider that each growth rate corresponds to a doubling every time a particular number of days elapses. The 14% growth rate of the stock market during the first twenty years of this century, for example, meant a doubling approximately every five years. Here I've labelled the 10, 20, and 30 percent growths with their doubling times.
 
 ```{r, doubleTimes, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 #1.20^(seq(1,8)) #Calculate doubling
@@ -259,14 +262,17 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
-  annotate("text",x=as.Date("2020/3/16"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=20) +annotate("text",x=as.Date("2020/3/19"),y=240, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=35) + xlim(as.Date(c(NA, endDate))) +
-  annotate("text",x=as.Date("2020/3/20"),y=920, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=46)
+  scale_y_continuous(trans="log", labels = scales::comma, breaks = c(100,1000,10000,100000,1000000)) +  #comma stops scientific notation
+  annotate("text",x=as.Date("2020/3/18"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=17) +annotate("text",x=as.Date("2020/3/21"),y=290, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=33) + xlim(as.Date(c(NA, endDate))) +
+  annotate("text",x=as.Date("2020/3/22"),y=1800, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=42)
 show(mm)
 ```
 
+Another way to think about a logarithmic axis is that going up a particular distance corresponds to multiplying by a particular factor.
+
 ## Population density and flu mortality
 
-[Hoffman & Cox](https://bioone.org/journals/Transactions-of-the-Kansas-Academy-of-Science/volume-122/issue-3-4/062.122.0301/The-1918-1920-H1N1-Influenza-a-Pandemic-in-Kansas-and/10.1660/062.122.0301.full?casa_token=TtDsr1exh58AAAAA%3apcP2D8e87Ap0vYATPNofQCiq8zgIp8b0MKMHjn_awr9KMYZ7Mc65AKRiwnFi6aZrro9m6xvGYQDG) plot data from the 1918 flu pandemic. Their plot, below, shows the mortality rate against the population density, with one data point for each county in Kansas and Missouri.
+[Hoffman & Cox](https://bioone.org/journals/Transactions-of-the-Kansas-Academy-of-Science/volume-122/issue-3-4/062.122.0301/The-1918-1920-H1N1-Influenza-a-Pandemic-in-Kansas-and/10.1660/062.122.0301.full?casa_token=TtDsr1exh58AAAAA%3apcP2D8e87Ap0vYATPNofQCiq8zgIp8b0MKMHjn_awr9KMYZ7Mc65AKRiwnFi6aZrro9m6xvGYQDG) collected data regarding the flu pandemic that swept the world in 1918. Their plot, below, shows the mortality rate against the population density, with one data point for each county in Kansas and Missouri.
 
 ```{r, echo=FALSE, out.width = "400px"}
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
@@ -285,12 +291,13 @@ question("From this plot, what do you think is the relationship between populati
 
 ### Causation
 
+From correlations, people often draw conclusions regarding causal relationships between the variables involved - in this case, between the population density and the mortality rate.
 
 ```{r KansasMissouriCausation}
-question("What causal statement might people suspect to be true from the data in this plot?",
-    answer("High population density causes flu mortality", correct=TRUE), 
-    answer("Low population density causes flu mortality"),
-    answer("Flu mortality prevents high population density"),
+question("What causal statement would people suspect to be true from the data in this plot?",
+    answer("A dense population causes higher flu mortality", correct=TRUE), 
+    answer("A sparse population causes higher flu mortality"),
+    answer("Flu mortality prevents dense populations"),
     allow_retry = TRUE
 )
 ```
@@ -301,13 +308,16 @@ question("What causal statement might people suspect to be true from the data in
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 ``` 
 
-When a correlation is evident from a scatterplot of Y against X, people tend to infer that X caused Y.
+The causal inference people tend to draw from a positive correlation of X with Y is that X causes Y.
+In this case, that would be that a dense population causes higher flu mortality.
 
-The correlation of Y with X and X with Y are by definition the same, so in principle a plot like that of the above is just as consistent with Y causing X as with X causing Y. However, in some cases a causal link is much more plausible in one direction than in another. For example, it is plausible that higher population density causes a higher rate of flu deaths. A more detailed causal model is that population density causes more frequent physical contact between people, which causes more flu transmission, which causes more deaths.
+The correlation of Y with X and X with Y are the same. This means there is no mathematical reason to conclude that X causes Y rather than that Y causes X.
+
+However, in cases such as this one, a causal link is more plausible in one direction than in another. For example, it is plausible that higher population density causes a higher rate of flu deaths. A more detailed causal model might be that population density causes more frequent physical contact between people, which causes flu transmission, which results in deaths.
 
 But could Y cause X? That is, could flu deaths cause higher population density? That's not very plausible, illustrating that with some pairs of variables, causation in only one of the directions is likely.
 
-There is also the possibility that a third variable, Z, causes X and Y.
+Don't forget that there is also the possibility that a third variable, Z, causes X and Y. For example, high-density places (cities) tend to grow up around natural transport hubs such as ports, rivers, or crossroads. If diseases tend to originate somewhere else, they will often start in a particular region with people arriving at an airport or train station, and have a greater chance to spread in the surrounding area before countermeasures are taken. Thus, the third variable of transport hubs may cause both the higher population density and the greater disease mortality.
 
 ## Many points means more evidence
 
@@ -315,11 +325,11 @@ There is also the possibility that a third variable, Z, causes X and Y.
 knitr::include_graphics("images/log1918MortalityKansasVsLogPopDensity.png")
 ``` 
 
-Ideally, a scatterplots will have lots of data points.  If those points form a fairly consistent pattern of Y increasing or decreasing with X, this provides a lot of evidence for a correlation, which is what one wants before making the further leap to imputing a causal relationship. 
+Ideally, a scatterplot will have lots of data points.  If those points show a consistent pattern of Y increasing or decreasing with X, this provides a lot of evidence for a correlation, rather than the pattern being a result of random chance. It is a good idea to assess how strong a correlation is before considering whether it may be driven by a causal relationship.
 
 ## A plot from the news media
 
-This graphic, a plot plus annotations, was produced by John Burn-Murdoch of the Financial Times.
+This plot was produced by John Burn-Murdoch of the Financial Times.
 
 ```{r, echo=FALSE, out.width = "750px"}
 knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the image directory for Shiny apps
@@ -329,10 +339,10 @@ knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the 
 #rate = 2^(1/doublingTime)
 ``` 
 
-The plot has a logarithmic vertical axis, so going up a particular distance corresponds to multiplying by a particular factor. One feature you haven't seen before, perhaps, is that the axis labels are *not* at equal multiplicative intervals. They have been positioned at round numbers.
+Notice that it has a logarithmic vertical axis, so going up a particular distance corresponds to multiplying by a particular factor. One feature you haven't seen before, perhaps, is that the axis labels are *not* at equal multiplicative intervals. They have been positioned at round numbers.
 
 ```{r us}
-question("Consider the U.S. data, shown in light purple. For the first fifteen days or so after its 100th case, how fast were the number of confirmed cases growing?",
+question("Consider the U.S. data (one of the upper curves). For the first fifteen days or so after its 100th case, how fast were the number of confirmed cases growing?",
     answer("Exponentially, doubling about every 2 days.", correct=TRUE),
     answer("Linearly, doubling about every 2 days."),
     answer("Linearly, increasing by the same number of cases each day, on average."),
@@ -350,7 +360,7 @@ knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the 
 USrate = round( (2^(1/2)  -1) * 100  )
 ``` 
 
-Doubling every two days, as U.S. cases were for the first two weeks here, corresponds to a `r USrate`% daily growth rate.
+A doubling of cases every two days, as occurred in the U.S. for the first two weeks here, corresponds to a `r USrate`% daily growth rate.
 
 ##
 
@@ -364,13 +374,14 @@ Here is another version of the graphic. Someone on twitter has scrawled somethin
 question("What theory do you think the person who scrawled on this image wished to encourage you to believe?",
     answer("COVID-19 cases encourage mask wearing."),
     answer("Wearing a mask slows the rate of infections.", correct = TRUE),
-    answer("Masks are an important dependent variable"),
     allow_retry = TRUE
 )
 #    answer("Masks prevent COVID-19 cases from growing exponentially.",message="No, because the lines in the Masks group are fairly linear on this semi-log plot, indicating that they are growing exponentially, just slower than the masks ones"),
 ```
 
 ## Causal inference
+
+Causal inference refers to using evidene to arrive at a conclusion about how things are causally related.
 
 ```{r, echo=FALSE, fig.cap="https://twitter.com/jperla/status/1243349875015553024", out.width = "750px"}
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
@@ -381,7 +392,6 @@ question("'Wearing a mask slows the rate of infection' is an example of:",
     answer("An inescapable conclusion."),
     answer("A correlational statement."),
     answer("A causal statement.", correct = TRUE),
-    answer("A very ambiguous statement.", message="I don't see anything particularly ambiguous about this."),
     answer("An independently variable statement.", message= "This sentence doesn't mean anything, as far as I know."),
     allow_retry = TRUE
 )
@@ -393,10 +403,10 @@ question("'Wearing a mask slows the rate of infection' is an example of:",
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
 ``` 
 
-The person who scrawled on this figure is encouraging people to make the causal inference that wearing a mask reduces the spread of COVID-19 infection.
+The person who scrawled on this figure is encouraging people to make the causal inference that wearing a mask reduces the spread of COVID-19 infection. Let's consider how good the evidence is for this causal inference.
 
 ```{r ideaimage2}
-question("'How many countries with a high rate of mask wearing is the causal inference based on?",
+question("How many countries with a high rate of mask wearing is the causal inference based on?",
     answer("1."),
     answer("2."),
     answer("3."),
@@ -406,14 +416,15 @@ question("'How many countries with a high rate of mask wearing is the causal inf
 )
 ```
 
-In order to be confident that a statistical correlation is present between two things,  many data points are usually needed, which are typically plotted on a scatterplot. After establishing a statistically significant correlation, one may make the further leap to a causal model, keeping in mind the pitfalls of inferring causation from correlation.
+In order to be confident that a statistical correlation is present between two things, many data points are usually needed. After establishing a statistically significant correlation, some people make the further leap to a causal model.
+
+But one should keep in mind the difficulties in inferring causation from correlation. In particular, any correlation between two variables X and Y could be a result of X causing Y, Y causing X, or a third factor causing both X and Y.
 
 ```{r ianotherFactor}
-question("What are two pitfalls of inferring that X causes Y from a correlation between an X and Y variable?",
+question("What are two problems with inferring that X causes Y from a correlation between an X and Y variable? (choose all options that are correct)",
     answer("A third factor may cause both of the variables that are correlated.",correct=TRUE),
-    answer("Correlations are subject to kurtotic doubling.",message="Kurtotic doubling is not a thing."),
     answer("Y may cause X.", correct=TRUE),
-    answer("X minus Y is often more likely.", message="This option makes no sense in this context."),
+    answer("It should never be done from observational data - an actual experiment must be conducted.", message="This option makes no sense in this context."),
     allow_retry = TRUE
 )
 ```
@@ -424,29 +435,28 @@ question("What are two pitfalls of inferring that X causes Y from a correlation 
 knitr::include_graphics("images/masksNoMasksExplainsIt.png") #You can't change the image directory
 ``` 
 
-The inference from this plot that masks cause less spreading of infection based on only four instances of mask-wearing countries. The fewer the number of instances, the more likely it is that a third variable could explain the difference between the two sets of countries.
+Here, the person who scrawled on the plot is suggesting that there is a correlation between whether people in a country wear masks and the number of COVID cases. Unfortunately, the person did not calculate the size of the correlation (e.g., **r**), but to be generous, let's assume that there is a sizable correlation that is statistically significant.
 
+The plot highlights that a difference betweeen the countries with lots of cases and those with fewer may be how much people there wear masks. It is critical, however to consider the other differences between these groups of countries. Countries differ in so many ways that there are bound to be such differences. 
 
-```{r notherFactor}
-question("Other factor(s) that might explain some of the difference between the blue-circled countries and the red ones:",
-    answer("Climate.",correct=TRUE),
-    answer("Handshaking customs.",correct=TRUE),
-    answer("Diligence in testing and tracing contacts of COVID-19 patients.", correct=TRUE),
-    answer("Responsiveness of population to government recommendations.", correct=TRUE),
-    answer("Quarantine policy.", correct=TRUE),
-    allow_retry = TRUE
-)
-```
+Any of the below factors are likely to differ somewhat between the two groups of countries, and contribute to a difference in COVID cases:
+
+* Climate
+* Handshaking customs
+* Amount of COVID testing and tracing of contacts
+* Responsiveness of population to government recommendations
+* Existence of and severity of quarantine
+
+Such factors are sometimes called "third variables" because they are in addition to the two variables (mask wearing and number of cases) that were focused on. Because third variables exist, it is highly premature to conclude from a plot like this that masks are the main cause of the difference between the two groups of countries.
 
 ## 
 
-Certain statistical techniques can help estimate the various roles of different variables that contribute to a correlation.
+Statistical techniques can help estimate the roles of different variables that might contribute to a correlation. Multivariate linear regression tells you what combination of a set of variables comes closest to duplicating the data. It assumes that each variable contributes additively, each with a different weighting. Multivariate linear regression is often referred to as "regression", although there are also other kinds of regression.
 
 ```{r multivariate}
-question("Which approach might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
+question("Which statistical technique might be used to try to estimate the effects of mask wearing and temperature on COVID-19 spread?",
     answer("Regression.",correct=TRUE),
     answer("Standard deviation."),
-    answer("Avoidance of the mean."),
     answer("Post hoc ergo propter hoc."),
     allow_retry = TRUE
 )
@@ -477,9 +487,9 @@ Someone else had a more creative explanation of the differences between the two 
 knitr::include_graphics("images/bubbleNotBubbleTea.jpg") #You can't change the image directory
 ```
 
-This graphic seems to suggest that ingestion of bubble tea inhibits the virus!
+This graphic seems to suggest that ingestion of bubble tea stops the virus!
 
-While that is unlikely, it makes the point that there are typically many differences between two groups of countries, only some of which you are likely to think of at first.
+That is unlikely. But the person's point is that there are typically many differences between two groups of countries, only some of which you are likely to think of at first.
 
 ##
 
@@ -495,7 +505,11 @@ Such suggestions highlight the fact that you should be skeptical of the claims o
 
 ##
 
-People tend to assume that numbers plotted on the same axis all mean the same thing. But can the count of cases from one country really be compared so directly to that of another country?
+```{r, echo=FALSE, out.width = "750px"}
+knitr::include_graphics("images/30MarCovid19CasesFT.png") #You can't change the image directory for Shiny apps
+```
+
+Another thing that people assume when they see a graph is that numbers plotted on the same axis all mean the same thing. But can the count of cases from one country really be compared so directly to that of another country?
 
 ##
 
@@ -514,8 +528,8 @@ A fourth response to the scrawled-on plot, below, does not argue with the claim.
 knitr::include_graphics("images/maskNoMasksMaskShouldHelpTweet.png") #You can't change the image directory
 ```
 
-Although the scrawled-on plot by itself provides only very weak evidence that masks are effective, reasons to believe a claim can also come from other places.
+Although the scrawled-on plot by itself provides only very weak evidence that masks are effective, reasons to believe a claim may also come from other places.
 
-During an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. Wearing masks is a  plausible cause of reduced transmission, so it may be a good policy to adopt even if empirical evidence for its effectiveness is weak.
+During an exponentially-growing pandemic, one doesn't have time to wait for strong evidence. Wearing masks is a  plausible cause of reduced transmission, so it may be a good policy to adopt even when empirical evidence for its effectiveness is weak.
 
 You have reached the end! Please follow the guidelines of the health authorities in your area.
