@@ -23,7 +23,7 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
   * Correlation of X with Y same as Y with X
   * Measurement and correlation
     * Correlation not affected by changes in units
-  * [When linear correlation is not appropriate: COVID-19](https://alexholcombe.github.io/teachingATHK/correlation_COVID19.html)
+  * When linear regression is not appropriate: [COVID-19 interactive](https://alexholcombe.shinyapps.io/COVID19questions/)
 
 * Three causal models
   * X causes Y, Y causes X, a third variable causes both

@@ -38,9 +38,27 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
 
-# Vocabulary (partial list, see more terms on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
+# Vocabulary (partial list, see more on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
 
 * Correlation, used in this class to refer only to linear correlation.
+* Linear growth (black) versus exponential growth (blue).
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=2.5, fig.width=2.5,  fig.cap = "" }
+start<-10; pctIncrease<-10
+xs<-seq(0,20)
+ys<-2*xs +start
+expo<-xs
+expo[1]<-start
+for(i in 2:length(xs)) {
+  expo[i] <- expo[i-1]*(1+pctIncrease/100)
+}
+library(tibble); library(plyr); library(ggplot2)
+ddd<-tibble(x=xs,y=ys,expo=expo)
+h<-ggplot( data = ddd, aes( x, y )) + geom_point() + theme_bw() + ylab("cases in Australia") + xlab('day') +
+          geom_point(aes(x = x, y = expo), color = "blue", alpha=.6) + scale_x_continuous(breaks = seq(0, 20, by = 4))
+show(h)
+```
+
 * Observational study. Observational studies are sometimes referred to as correlational studies.
 <!-- Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups) -->
 * Quasi / natural experiment

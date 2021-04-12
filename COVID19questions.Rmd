@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE)
 NSW<- readRDS(file="images/NSWcases.Rda")
 ```
 
-The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for each day during a period beginning the 4th of March.
+The following plot shows the number of confirmed cases of COVID-19 infection in the state of New South Wales in Australia, for each day during a period beginning the 4th of March, 2020.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 require(ggplot2)
@@ -33,7 +33,7 @@ show(g)
 
 ##
 
-Linear regression is often used to predict one variable based on another, but it assumes the data fall on close to a straight line, plus or minus some random variability. 
+Linear regression is often used to predict one variable based on another, but it assumes the overall shape of the data is a straight line (plus or minus some random variability). 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) +
@@ -42,7 +42,7 @@ g<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("C
 show(g)
 ```
 
-The line that best fits the data is shown above in dark red. The fit is not very good! The relationship between number of cases and days is nonlinear - they do not fall on a straight line. Here, linear regression is not very useful.
+The line that best fits the data is shown above in dark red. The fit is not good! The relationship between number of cases and days is **nonlinear** - they do not fall on a straight line. 
 
 
 ```{r slope1}
@@ -83,7 +83,7 @@ question("Between 9 March and 23 March, what was the pattern for the increase in
 
 ## <!--Exponential comparison-->
 
-Below, some blue dots have been added to the plot. Also, the vertical axis has been rescaled to accommodate how high the numbers go for the blue dots.
+Below, some blue dots have been added to the plot. Also, the vertical axis has been rescaled to accommodate how high the blue dots go.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 start<-22; pctIncrease<-20
@@ -91,13 +91,19 @@ NSW$exponential<-22
 for(i in 2:length(NSW$date)) {
   NSW$exponential[i] <- NSW$exponential[i-1]*(1+pctIncrease/100)
 }
-h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) + xlim(as.Date(c(NA, endDate))) +
-  geom_point(data = NSW, aes(x = date, y = exponential), color = "blue", alpha=.6) +
-  annotate("text",x=as.Date("2020/3/25"),y=2300, label="20% daily growth", color="blue", size=3.5, angle=47)
+h<-ggplot( data = NSW, aes( date, cases )) + geom_point() + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,15000) + xlim(as.Date(c(NA, endDate))) +
+  geom_point(data = NSW, aes(x = date, y = exponential+100), color = "blue", alpha=.6) +
+  annotate("text",x=as.Date("2020/4/01"),y=5200, label="20% daily growth", color="blue", size=3.5, angle=66)
 show(h)
 ```
 
-If the number of cases had increased by 20% each day, then the black dots (the real data) would fall exactly on top of the blue dots. In other words, the blue dots show the number of cases that would have occurred if there had been a 20% increase in cases each day. The raw numerical (not percentage) change in cases is greater for each day. This is because 20% of a larger number is greater than that of a smaller number. As a result, the graph becomes steeper and steeper as the number of cases grows.
+If the number of cases had increased by 20% each day, then the black dots (the real data) would fall exactly on top of the blue dots. In other words, the blue dots show the number of cases that would have occurred if there had been a 20% increase in cases each day.
+
+For the blue dots, the increase in cases is greater for successive days. This is because 20% of a larger number is greater than that of a smaller number. For example, when 10 people are infected, a 20% increase means there will be 2 more cases the next day, yielding 12 cases in total. The second day will yield approximately 2 more cases, yielding 14. After a few days, 20% growth will yield 3 more cases. But as the total grows, 20% will correspond to more and more new daily cases. For example, 20% of 50 is 10 more cases.
+
+As a result, the graph becomes steeper and steeper as the number of cases grows.
+
+This is the classic pandemic nightmare, where a steady percentage increase causes a disease to quickly get out of control.
 
 ```{r relativeToExponential}
 question("What does the 20% comparison (the blue dots) indicate about the real data?",
@@ -109,11 +115,17 @@ question("What does the 20% comparison (the blue dots) indicate about the real d
 )
 ```
 
-If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". Each person infected may pass the infection on to a certain number of others. Thus the change in cases reflects the number who are already infected, yielding a percentage increase each day rather than a constant increase in cases each day.
+If the number of cases does grow by the same percentage each day, this is referred to as "exponential growth". Each person infected may pass the infection on to a certain number of others.
+
+This means that the change in a day's cases reflects the number who are already infected, yielding a percentage increase each day rather than a constant increase in cases each day.
+
+Near the beginning when only a few people are infected (here, early March), the number of cases remains pretty low, because a 20% increase does not mean a lot more cases. 
 
 ## Exponential growth
 
-"Exponential growth" refers to when something increases by the same percentage over successive time points. Below, the data have been replotted with the vertical axis as percent increase over the previous day rather than total number of cases. 
+As was just described, "exponential growth" refers to when something increases by the same percentage over successive time points, such as a 20% increase per day.
+
+We will now replot the previous data with the vertical axis as a **percent increase** over the previous day rather than the total number of cases we were using before. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = ""}
 #Calculate proportional increase
@@ -133,13 +145,13 @@ j<-ggplot( data = excludeFirst, aes( date, 100*increase/cases )) + geom_point() 
 show(j)
 ```
 
-The blue dots now form a horizontal line, because they were created by calculating a 20% increase compared to the previous day.
+Because the blue data points were created by calculating a 20% increase compared to the previous day, they are constant on this plot that uses % increase as the vertical axis.
 <!-- The reason that virus infections can grow in this fashion is that each new person infected contributes an additional number of cases to the next day, by passing the virus on to others. Thus the new number of cases is some multiple (percentage added to) of the previous day's cases. -->
 
-For the real data (the black dots), this graph makes it obvious that after about 23 March (soon after flights from overseas were greatly reduced and social distancing began), no longer was there a similar percentage increase on each day. The percentage increase began to dwindle.
+For the real data (the black dots), this graph makes clear that after about 23 March 2020 (soon after flights from overseas were greatly reduced and social distancing began), no longer was there a similar percentage increase on each day. The percentage increase began to dwindle each day.
 
 ##
-The below plot shows, for each day, the percentage increase in confirmed cases from the previous day.
+The below plot shows again, for each day, the percentage increase in cases from the previous day.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 
@@ -160,9 +172,9 @@ question("If the number of cases grew exactly exponentially, where would the dat
 
 ## A logarithmic vertical axis
 
-While the % increase vertical axis is useful, it unfortunately does not show the cumulative number of cases, only the change since the previous day. As a result, from that graph one can't see how high the caseload has gotten. This is one reason that people often use a logarithmic vertical axis in situations of constant (or even approximate) percentage growth.
+While the % increase vertical axis is useful, it unfortunately does not show the total number of cases. Instead, it only shows the change since the previous day. That means we can't see how high the caseload has gotten. This is one reason that people often use a **logarithmic** vertical axis in situations of constant (or even approximate) percentage growth.
 
-On a non-logarithmic (linear) axis, a constant increase in *number* (not percentage) of cases results in a straight line. The greater the daily increase, the steeper the slope of the line. In other words, constant addition day-by-day results in a constant slope on a graph.
+For the non-logarithmic vertical axis you are used to, a constant increase in *number* (not percentage) of cases each day results in a straight line. The greater the daily increase, the steeper the slope of the line. In other words, a constant daily addition results in a constant slope on a graph.
 
 When growth is exponential, we are interested in knowing what the number of cases is being *multiplied by* each day, not how much is being added to it. In the case of 20% growth, for instance, on each day the number of cases is the previous number plus 20%, which can be calculated by multiplying the previous day's number of cases by 1.2.
 
@@ -170,7 +182,7 @@ Logarithms turn multiplication into addition, which means that on a logarithmic 
 
 ```{r, semilogTwenty, echo=FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=4,  fig.cap = "" }
 k<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue",alpha=.6) + theme_bw() + ylab("Confirmed cases in NSW") + scale_x_date(date_minor_breaks=("1 days")) + ylim(0,NA) +  theme(panel.grid.minor.y = element_blank()) + xlim(as.Date(c(NA, endDate))) +
-    annotate("text",x=as.Date("2020/3/15"),y=112, label="20% growth daily", color="blue", size=3, angle=46)
+    annotate("text",x=as.Date("2020/3/15"),y=112, label="20% growth daily", color="blue", size=3, angle=44)
 show(k + scale_y_log10() )
 ```
 
@@ -196,15 +208,16 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = thirty), color = "red", alpha=.6) + 
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +  xlim(as.Date(c(NA, endDate))) +
-  scale_y_continuous(labels = scales::comma) + #stop scientific notation
-  scale_y_log10() +
+  #scale_y_continuous(labels = scales::comma) + 
+  scale_y_continuous(trans="log", labels = scales::comma, breaks = c(100,1000,10000,100000,1000000)) +  #comma stops scientific notation
+  #                     function(x) format(x, big.mark = ",")) +
   annotate("text",x=as.Date("2020/3/13"),y=38, label="10% daily growth", color="darkgreen", size=3, angle=18) +
   annotate("text",x=as.Date("2020/3/15"),y=112, label="20% daily growth", color="blue", size=3, angle=32) +
   annotate("text",x=as.Date("2020/3/16"),y=370, label="30% daily growth", color="red", size=3, angle=42)
 show(mm) 
 ```
 
-The above plot shows that any particular daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope.
+The above plot shows that with a logarithmic vertical axis, any particular daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope.
 
 ##
 

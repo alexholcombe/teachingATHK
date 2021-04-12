@@ -16,7 +16,7 @@ Week 11 tutorial: Implicit premises, inductive arguments, identifying conclusion
 
 Week 12 tutorial: Coupling of beliefs and real-world arguments
 
-Week 13 tutorial: Fallacies and 
+Week 13 tutorial: Rhetoric and informal fallacies
 
 ## Important terminological note
 
@@ -91,17 +91,17 @@ Therefore, Socrates is mortal."
 
 * Casting an argument
 
-* Suppositionally inescapable (also known as "valid")
+* Suppositionally inescapable (known to philosophers as "valid")
 
-* Inescapable (also known as "sound")
+* Inescapable (known to philosophers as "sound")
 
 * Deduction
 
 * Induction
 
-* Suppositionally solid (also known as "strong")
+* Suppositionally solid (known to philosophers as "strong")
 
-* Solid (also known as "cogent")
+* Solid (known to philosophers as "cogent")
 
 * Circularity
 
@@ -112,6 +112,8 @@ Therefore, Socrates is mortal."
 * Confabulation
 
 * Dissensus and consensus
+
+* Slippery slope
 
 * Appeal to authority
 * Straw man

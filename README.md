@@ -1,6 +1,6 @@
 # teachingATHK
 
-to make readings etc. for Alex's lectures publicly available <!--using github pages-->
+to make readings etc. for Alex's lectures publicly available, via Github Pages
 
 [Outline](https://alexholcombe.github.io/teachingATHK/outline.html) of my lectures
 
