@@ -6,7 +6,7 @@ output: html_document
 
 ## Important Readings
 
-* To find definitions of some of the terms in this document, open [Vocab_ReadingsATHK2017statsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKstatsAndStudies.Rmd) and you'll see some definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- definition text -->`. 
+* To find definitions of some of the terms in this document, open [Vocab_ReadingsATHKstatsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKstatsAndStudies.Rmd) and you'll see some definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- definition text -->`. 
 Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * [Planet Money podcast](https://www.npr.org/transcripts/178635250) on causation and correlation. Study questions:
