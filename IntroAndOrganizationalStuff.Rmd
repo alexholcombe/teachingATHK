@@ -21,5 +21,3 @@ That's an outline of nearly all the topics of my lectures, with some links for *
 More readings are listed in the Vocab_Readings documents. There are two:
   * [Vocab_ReadingsATHKstatsAndStudies](https://alexholcombe.github.io/teachingATHK/Vocab_ReadingsATHKstatsAndStudies.html)
   * [Vocab_ReadingsATHKArgumentsThinking](https://alexholcombe.github.io/teachingATHK/Vocab_ReadingsATHKArgumentsThinking.html)
-  
-<!--This will not be the final word on organisation, we've never taught an online course before!-->

@@ -93,6 +93,7 @@ Also explained in https://alexholcombe.wordpress.com/2016/02/03/problems-with-co
 * Spurious correlation
 <!-- Correlation between X and Y that one might think is due to X causing Y, or Y causing X, but isn't -->
 * Causal model
+* The [third-cause fallacy](https://apologetics.fandom.com/wiki/Third-cause_fallacy)
 * Contingency table
 * Residual
 * Nonlinear model

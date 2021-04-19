@@ -27,6 +27,7 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 
 * Three causal models
   * X causes Y, Y causes X, a third variable causes both
+  * The [third-cause fallacy](https://apologetics.fandom.com/wiki/Third-cause_fallacy)
 * Causal model can be at any level of detail
 
 <!--Slide #45-->
@@ -75,8 +76,8 @@ Week 8 <!--statsAndStudies PPT-->
 knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
 ```    
 
-  * Recognizing correlational studies in the news
-  * Controlling for in regression and multicollinearity
+  * Recognizing observational studies in the news
+  * "Controlling for" in regression and multicollinearity
 
 * Epidemiology
   * Smoking has a big effect,
@@ -153,8 +154,13 @@ Weeks 12 and 13
 <!-- * Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions) -->
 
 * Analysing the Molly and Bea argument
-
+* Hawthorne and Expectancy effects  <!--slides 181 to 191-->
+    * Experimenter
+    * Participant
+    * Addressing expectancy effects
+    
 * Rhetoric, mere rhetoric, and informal fallacies
+* Boosters and hedgers
 * Post hoc ergo propter hoc, again
   * [Video](https://www.youtube.com/watch?v=5A7hSaoRv0g) combining this fallacy with deductive and inductive logic. Good way to bring previous bits of the class together!
 
@@ -164,6 +170,7 @@ Weeks 12 and 13
 <!--  * Questioning the motive , Gilbert tweet 
   * Hypocrite (including [whataboutism](https://en.wikipedia.org/wiki/Whataboutism))
   * You’re not entitled to speak on that -->
+  * Vaccilation
   * Appeal to authority
     * Appropriate versus inappropriate
 * Straw man
@@ -175,10 +182,7 @@ Weeks 12 and 13
   * No True Scotsman
 * Slippery slope
   
-  * Hawthorne and Expectancy effects  <!--slides 181 to 191-->
-    * Experimenter
-    * Participant
-    * Addressing expectancy effects
+
 ```{r, echo=FALSE, out.width = "160px"}
 knitr::include_graphics("imagesForRmd/blindingEffectFromPSYC1.png")
 ```     

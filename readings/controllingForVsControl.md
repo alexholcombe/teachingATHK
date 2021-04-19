@@ -4,15 +4,21 @@ The word "control"  means different things when it appears in different terms, s
 
 ## The independent variable of an experiment is *controlled* in the ordinary modern English sense
 
-In an experiment, the independent variable is literally controlled by the experimenter. That is, it is manipulated. This is the use of the word in science that makes the most sense to the average person. If there are two groups in the experiment, manipulating a variable often leads to what you can call an "experimental group" (e.g., with a drug being tested on people) and the "control group" (a comparison group of people who don't receive the drug).
+In an experiment, the independent variable is literally controlled by the experimenter. That is, it is manipulated. This is the use of the word in science that makes the most sense to a modern English speaker.
 
 ## Control groups
 
+If there are two groups in the experiment, manipulating a variable often leads to what you can call an "experimental group" (e.g., with a drug being tested on people) and the "control group" (a comparison group of people who don't receive the drug).
+
 A control group is the group in an experiment that does not receive treatment by the researchers and is then used as a benchmark to measure how the other tested subjects do.
 
-To many modern English speakers, this use of the word "control" is not intuitive. The terms “Control group” and "control condition" date from an old meaning of the word “control”, to check – still the predominant meaning for cognates in languages such as German.
+To modern English speakers, this use of the word "control" is not intuitive. The terms “Control group” and "control condition" date from an old meaning of the word “control”, to check – still the predominant meaning for cognates in languages such as German.
 
 That meaning of “control” [survived in modern English](https://forum.wordreference.com/threads/passport-control.2188162/) in the “Passport Control” lines at airports, where passports are checked, not controlled. So, when you hear “control group”, it may help to think “Passport Control”. The control group is a check that the factor you are interested in is responsible for the outcome in the experimental group.
+
+Already in 1954, an historian of science had to explain to people where the word "control group" came from (as well as "control experiment").
+
+![Excerpt from Boring (1954), "The nature and history of experimental control"](BoringOnControlGroupsAndControlExperiments.png)
 
 ## *Controlling for* in an observational study
 
