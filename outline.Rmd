@@ -12,8 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 
-<!-- Correlation and causation video -->
-<!-- Confound or nuisance variable? video -->
+<!-- video: Correlation and causation  -->
+<!-- video: Confound or nuisance variable? -->
 * Correlation and causation intro
   * Learning objectives:
     * Understand and apply three causal models to explaining correlations
@@ -97,8 +97,8 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
     * Sensitivity and specificity
   
 * Why does the news have lots of false positives? 
-  * Excess of statistical comparisons
-  * More reasons given later in the class, after logic and arguments
+  * Excess of statistical comparisons <!-- https://twitter.com/guido_meijer/status/1383834011793981441 single neurons in mice brain encode price of cryptocurrencies -->
+  * More reasons for errors in science given later in the class, after logic and arguments
 
 ### Arguments and logic, Weeks 9-10
 
@@ -157,7 +157,7 @@ Weeks 12 and 13
 * Hawthorne and Expectancy effects  <!--slides 181 to 191-->
     * Experimenter
     * Participant
-    * Addressing expectancy effects
+    * Addressing expectancy effects: blinding
     
 * Rhetoric, mere rhetoric, and informal fallacies
 * Boosters and hedgers
