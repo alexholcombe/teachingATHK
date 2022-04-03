@@ -6,7 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-(this document is updated as the weeks proceed)
+(this document will be updated some as the weeks proceed)
 
 * Also see guide to Alex Holcombe and his lectures, posted on Canvas
 
