@@ -8,12 +8,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 (this document is updated as the weeks proceed)
 
-* Intro `r statsStudies=5` video to Alex Holcombe, find it in Canvas
+* Also see guide to Alex Holcombe and his lectures, posted on Canvas
 
 Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 
-<!-- Correlation and causation video -->
-<!-- Confound or nuisance variable? video -->
+<!-- video: Correlation and causation  -->
+<!-- video: Confound or nuisance variable? -->
 * Correlation and causation intro
   * Learning objectives:
     * Understand and apply three causal models to explaining correlations
@@ -23,23 +23,23 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
   * Correlation of X with Y same as Y with X
   * Measurement and correlation
     * Correlation not affected by changes in units
-  * When linear regression is not appropriate: [COVID-19 interactive](https://alexholcombe.shinyapps.io/COVID19questions/)
+  * When linear regression is not appropriate: [COVID-19 interactive lesson](https://alexholcombe.shinyapps.io/COVID19questions/)
 
 * Three causal models
   * X causes Y, Y causes X, a third variable causes both
   * The [third-cause fallacy](https://apologetics.fandom.com/wiki/Third-cause_fallacy)
-* Causal model can be at any level of detail
+* A causal model can be at any level of detail
 
 <!--Slide #45-->
 * Explanatory, Outcome, and Nuisance variables
-  * Recall IV and DV. Bruce slide:
+  * IV (an explanatory variable in an experiment) and DV (an outcome variable in an experiment). Bruce slide:
 ```{r, echo=FALSE, out.width = "220px"}
 knitr::include_graphics("imagesForRmd/Bruce_IV_DV_slide.png")
 ```
   * [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
     * Is not different, on average, for the different levels of the variable we are interested in
   * [Confound](https://www.students4bestevidence.net/blog/2018/10/01/a-beginners-guide-to-confounding/) variables
-    * Different for the different levels of the variable we are interested in.
+    * Is different for the different levels of the variable we are interested in.
     * Bruce slide:
 ```{r, echo=FALSE, out.width = "220px"}
 knitr::include_graphics("imagesForRmd/BruceConfoundsSlide.png")
@@ -57,8 +57,8 @@ knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
 ```
 
 * Time as a third variable
-  * Relationship between pirates and high average temperature is confounded by time. 
-* Time: Post hoc ergo propter hoc (After this therefore because of this) fallacy
+  * Relationship between many observed variables, such as pirates and high average temperature, is confounded by time. 
+  * Time: Post hoc ergo propter hoc (After this therefore because of this) fallacy
 
 Week 8 <!--statsAndStudies PPT-->
 
@@ -97,8 +97,8 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
     * Sensitivity and specificity
   
 * Why does the news have lots of false positives? 
-  * Excess of statistical comparisons
-  * More reasons given later in the class, after logic and arguments
+  * Excess of statistical comparisons <!-- https://twitter.com/guido_meijer/status/1383834011793981441 single neurons in mice brain encode price of cryptocurrencies -->
+  * More reasons for errors in science given later in the class, after logic and arguments
 
 ### Arguments and logic, Weeks 9-10
 
@@ -157,7 +157,7 @@ Weeks 12 and 13
 * Hawthorne and Expectancy effects  <!--slides 181 to 191-->
     * Experimenter
     * Participant
-    * Addressing expectancy effects
+    * Addressing expectancy effects: blinding
     
 * Rhetoric, mere rhetoric, and informal fallacies
 * Boosters and hedgers
