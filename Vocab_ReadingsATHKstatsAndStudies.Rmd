@@ -28,13 +28,15 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 ## Not-so-important Readings
 
+* [Why is nutrition so hard to study?](https://www.medicalnewstoday.com/articles/why-is-nutrition-so-hard-to-study)
+
 * Chapter 4, Correlation, of *Naked Statistics* (already recommended by Bruce)
 
 * To understand how regression can "control for" an extraneous variable, read *Naked Statistics* Chapter 11 and the “Highly correlated explanatory variables” in Ch.12.
 
 * [r-squared](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)
 
-* https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this class.
+* https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this unit.
 
 * TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
 

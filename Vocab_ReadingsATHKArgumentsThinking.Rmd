@@ -18,7 +18,7 @@ Week 12 tutorial: Coupling of beliefs and real-world arguments
 
 Week 13 tutorial: Rhetoric and informal fallacies
 
-## Important terminological note
+## Terminological note
 
 Philosophers typically use "valid" and "sound" for describing deductive arguments, in this class we instead use the terms "suppositionally inescapable" and "inescapable" because they are easier to understand. On all assessments, you will only be tested on these terms.
 
@@ -44,15 +44,15 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * Common logic mistake associated with [denying the antecedent](https://www.logicallyfallacious.com/tools/lp/Bo/LogicalFallacies/77/Denying-the-Antecedent) 
 
-* *Think Critically* by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, available from the eReserve link at left of Canvas
+* *Think Critically* by Facione, Chapter 6: Evaluate the Credibility of Claims and Sources, available from the Reading List link at left of Canvas
 
 <!-- Critical Thinking, by Paul and Elder -->
-
-* [Arguments overview](https://github.com/alexholcombe/teachingATHK/blob/master/ArgumentsOverview.docx?raw=true)
 
 * [Galef on confirmation bias](http://ideas.ted.com/why-you-think-youre-right-even-when-youre-wrong/), which she refers to as **soldier mind**
 
 ## Not-as-important Readings
+
+* [Arguments overview](https://github.com/alexholcombe/teachingATHK/blob/master/ArgumentsOverview.docx?raw=true)
 
 * *The power of critical thinking* by Vaughn, Chapter 3. 
 
