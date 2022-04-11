@@ -4,10 +4,9 @@ date: "This document may be updated as the lectures proceed."
 output: html_document
 ---
 
-## Important Readings
+For some of the words on this page (those that are double-underlined), a short definition will pop up if you hover over the word with your mouse pointer. Here's an example:  <abbr title="Alex is a middle-aged man who is lecturing from weeks 7 to 13.">Alex</abbr>
 
-* To find definitions of some of the terms in this document, open [Vocab_ReadingsATHKstatsAndStudies.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKstatsAndStudies.Rmd) and you'll see some definitions in the comments, embedded in "\<!-- \-->", yielding something like `<!--- definition text -->`. 
-Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
+## Important Readings
 
 * [Planet Money podcast](https://www.npr.org/transcripts/178635250) on causation and correlation. Study questions:
   * Why did women take hormone replacement therapy?
@@ -40,7 +39,7 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 * TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
 
-# Vocabulary (partial list, see more on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
+# Vocabulary (partial list, see more terms on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
 
 * Correlation, used in this class to refer only to linear correlation.
 * Linear growth (black) versus exponential growth (blue).
@@ -61,8 +60,7 @@ h<-ggplot( data = ddd, aes( x, y )) + geom_point() + theme_bw() + ylab("cases in
 show(h)
 ```
 
-* Observational study. Observational studies are sometimes referred to as correlational studies.
-<!-- Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups) -->
+* <abbr title="Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups)">Observational study</abbr> Observational studies are sometimes referred to as correlational studies.
 * Quasi / natural experiment
 * Random assignment ([explainer](http://isps.yale.edu/node/16697))
 * r

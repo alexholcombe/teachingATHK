@@ -22,7 +22,7 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 * Understanding correlation more deeply
   * Correlation of X with Y same as Y with X
   * Measurement and correlation
-    * Correlation not affected by changes in units
+    * Correlation not affected by changes in units (as long as the unit conversion is linear: involves only multiplication and addition/subtraction)
   * When linear regression is not appropriate: [COVID-19 interactive lesson](https://alexholcombe.shinyapps.io/COVID19questions/)
 
 * Three causal models
