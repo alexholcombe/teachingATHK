@@ -4,9 +4,11 @@ date: "This will be updated as the lectures proceed."
 output: html_document
 ---
 
+For the words on this page that are underlined with tiny dots, a short definition will pop up if you hover over the word with your mouse pointer. Here's an example:  <abbr title="Alex is a middle-aged man who is lecturing from weeks 7 to 13.">Alex</abbr>. To study, first ask yourself on what the word means, and then check whether you're right by hovering over the word.
+
 ## Tutorial overview
 
-Week 8 tutorial: Confounds
+Week 8 tutorial: Causal models, scientific studies, and confounds
 
 Week 9 tutorial: Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity) and [by Carneades](https://www.youtube.com/watch?v=ibjL90iY1d0)
 
@@ -25,9 +27,6 @@ Philosophers typically use "valid" and "sound" for describing deductive argument
 Philosophers typically use "strong" and "cogent" for describing *inductive* arguments, but in this class we use the terms "suppositionally solid" and "solid" because they are easier to understand. On all assessments, you will only be tested on these terms.
 
 ## Important Readings
-
-* To find some definitions of the terms in the Vocabulary section, open   [Vocab_ReadingsATHK2017ArgumentsThinking.Rmd](https://raw.githubusercontent.com/alexholcombe/teachingATHK/master/Vocab_ReadingsATHKArgumentsThinking.Rmd) and search for "\<!--" - you'll see definitions of a few of the terms there. 
-Quiz yourself with this webpage that doesn't show the definition, and subsequently check the definition in the .Rmd version to see if you got it right.  
 
 * *The power of critical thinking* by Vaughn, Chapter 1, available from the eReserve link at left of Canvas
 (or Chapters 2 and 3 of Bassham et al.'s *Critical Thinking*)
@@ -68,20 +67,24 @@ Quiz yourself with this webpage that doesn't show the definition, and subsequent
 
 # Vocabulary
 
-* Confound, confounding factor, or confound variable <!-- Bruce: "Confounding factor is one that varies with both variables being considered and thus obscures their true relationship". Alex: In an experiment, a confound is something that is different for the different levels of the independent variable. Because it may affect the outcome variable, we don't know whether it is the confound or the independent variable causing any difference in the outcome variable. -->
+
+* <abbr title="Bruce:'Confounding factor is one that varies with both variables being considered and thus obscures their true relationship'. Alex: In an experiment, a confound is something that is different for the different levels of the independent variable. Because it may affect the outcome variable, we don't know whether it is the confound or the independent variable causing any difference in the outcome variable.'>Confound, confounding factor, or confound variable</abbr>.
     * Something that varies with the variable whose effect one is interested in and thus obscures their true relationship
 
-* Enthymeme  <!-- From Greek "in-mind", because the full argument in the mind is not stated. Usually a condensed syllogism where one premise is not explicitly stated.
+* <abbr title="Usually a condensed syllogism where one premise is not explicitly stated. From Greek "in-mind", because the argument being thought of is not fully stated. ">Enthymeme</abbr>
+
+<!--  
 E.g., "Socrates is mortal because he's human." instead of the usual 
 "All humans are mortal. 
 Socrates is human. 
 Therefore, Socrates is mortal."
 -->
-* Casting arguments  <!-- Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text -->
 
-* Necessary versus sufficient <!-- If A is necessary for B, every time you have B you have A. If A is sufficient for B, every time you have A you have B -->
+* <abbr title="Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text. ">Casting arguments</abbr>
 
-* Syllogism <!-- A simple argument comprised of a conclusion drawn from two given premises. -->
+* <abbr title="If A is necessary for B, every time you have B you have A. If A is sufficient for B, every time you have A you have B">Necessary versus sufficient</abbr>
+
+* <abbr title="A simple argument comprised of two premises and a conclusion">Syllogism</abbr>
 
 * Syllogism form
 
