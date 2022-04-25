@@ -68,10 +68,10 @@ Philosophers typically use "strong" and "cogent" for describing *inductive* argu
 # Vocabulary
 
 
-* <abbr title="Bruce:'Confounding factor is one that varies with both variables being considered and thus obscures their true relationship'. Alex: In an experiment, a confound is something that is different for the different levels of the independent variable. Because it may affect the outcome variable, we don't know whether it is the confound or the independent variable causing any difference in the outcome variable.'>Confound, confounding factor, or confound variable</abbr>.
+* <abbr title="Bruce:'Confounding factor is one that varies with both variables being considered and thus obscures their true relationship'. Alex: In an experiment, a confound is something that is different for the different levels of the independent variable. Because it may affect the outcome variable, we don't know whether it is the confound or the independent variable causing any difference in the outcome variable.">Confound, confounding factor, or confound variable</abbr>.
     * Something that varies with the variable whose effect one is interested in and thus obscures their true relationship
 
-* <abbr title="Usually a condensed syllogism where one premise is not explicitly stated. From Greek "in-mind", because the argument being thought of is not fully stated. ">Enthymeme</abbr>
+* <abbr title="Usually a condensed syllogism where one premise is not explicitly stated. From Greek 'in-mind', because the argument being thought of is not fully stated.">Enthymeme</abbr>
 
 <!--  
 E.g., "Socrates is mortal because he's human." instead of the usual 
@@ -80,7 +80,7 @@ Socrates is human.
 Therefore, Socrates is mortal."
 -->
 
-* <abbr title="Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text. ">Casting arguments</abbr>
+* <abbr title="Finding and isolating or diagramming the conclusion, premises and logical structure of an argument, usually from natural text.">Casting arguments</abbr>
 
 * <abbr title="If A is necessary for B, every time you have B you have A. If A is sufficient for B, every time you have A you have B">Necessary versus sufficient</abbr>
 
