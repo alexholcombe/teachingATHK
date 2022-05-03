@@ -227,7 +227,7 @@ show(mm)
 
 The above plot shows that with a logarithmic vertical axis, any daily growth rate (multiplication by a particular factor) results in a straight line of corresponding slope. 
 
-Notice how for the highest growth rate of 30%, the disease infects over 100,000 people in just five weeks! we are lucky that NSW
+Notice how for the highest growth rate of 30%, the disease infects over 100,000 people in just five weeks! Australia did well to keep growth down below that. Still, even 20% or 10% growth eventually overwhelms a country's hospitals.
 
 ##
 
@@ -273,8 +273,8 @@ mm<-ggplot( data = NSW, aes( date, exponential )) + geom_point(color="blue") + t
   geom_point(aes(x = date, y = ten), color = "darkgreen", alpha=.6) + 
   theme(panel.grid.minor.y = element_blank()) +scale_y_log10() +
   scale_y_continuous(trans="log", labels = scales::comma, breaks = c(100,1000,10000,100000,1000000)) +  #comma stops scientific notation
-  annotate("text",x=as.Date("2020/3/18"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=17) +annotate("text",x=as.Date("2020/3/21"),y=290, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=33) + 
-  annotate("text",x=as.Date("2020/3/22"),y=1800, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=42)
+  annotate("text",x=as.Date("2020/3/18"),y=50, label="10% daily growth, doubling about every 8 days", color="darkgreen", size=3, angle=19) +annotate("text",x=as.Date("2020/3/21"),y=290, label="20% daily growth, doubling about every 4 days", color="blue", size=3, angle=35) + 
+  annotate("text",x=as.Date("2020/3/22"),y=1800, label="30% daily growth, doubling about every 3 days", color="red", size=3, angle=44)
 show(mm)
 ```
 
