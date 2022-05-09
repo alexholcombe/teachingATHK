@@ -61,6 +61,7 @@ show(h)
 ```
 
 * <abbr title="Study that is NOT an experiment (no experimenter manipulation of critical variable, or random assignment of people to one of e.g. two groups)">Observational study</abbr> Observational studies are sometimes referred to as correlational studies.
+* <abbr title="A study where the researcher manipulates the critical variable that they want to know the effect of (might not be true for 'Quasi-' or 'natural' experiments, which are different)">Experiment</abbr> 
 * Quasi / natural experiment
 * Random assignment ([explainer](http://isps.yale.edu/node/16697))
 * r
