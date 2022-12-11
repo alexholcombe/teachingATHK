@@ -106,6 +106,8 @@ Therefore, Socrates is mortal."
 
 * Solid (known to philosophers as "cogent")
 
+* <abbr title="Difficulty evaluating the logic of an argument separate from its content">Coupling</abbr>
+
 * Circularity
 
 * dogmatism
