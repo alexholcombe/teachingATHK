@@ -122,6 +122,9 @@ Therefore, Socrates is mortal."
 * Slippery slope
 
 * Appeal to authority
+
+* <abbr title="Stating what lots of other people think as a reason to believe something">Ad populum</abbr>
+
 * Straw man
     * ![Straw man](imagesForRmd/strawMan.jpg)
 * Fallacy of the single cause. 
