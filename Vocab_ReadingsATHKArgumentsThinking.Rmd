@@ -4,7 +4,7 @@ date: "This may be updated as the weeks proceed."
 output: html_document
 ---
 
-For the words on this page underlined with tiny dots, a short definition will pop up if you hover over the word with your mouse pointer. Here's an example:  <abbr title="Alex is a middle-aged man who is lecturing from weeks 7 to 13.">Alex</abbr>. To study, first ask yourself on what the word means, and then check whether you're right by hovering over the word.
+For the words on this page underlined with tiny dots, a short definition will pop up if you hover over the word with your mouse pointer. Here's an example:  <abbr title="Alex is a middle-aged man who lectures in weeks 7 to 13.">Alex</abbr>. To study, first ask yourself on what the word means, and then check whether you're right by hovering over the word.
 
 ## Tutorial overview
 
@@ -50,6 +50,8 @@ Philosophers typically use "strong" and "cogent" for describing *inductive* argu
 * [Galef on confirmation bias](http://ideas.ted.com/why-you-think-youre-right-even-when-youre-wrong/), which she refers to as **soldier mind**
 
 ## Not-as-important Readings
+
+* ["The most controversial ethics paper"](https://www.youtube.com/watch?v=KVl5kMXz1vA) Youtube video. Great example of using logic to come to a surprising conclusion. The meat of the argument starts at [11min20s](https://www.youtube.com/watch?v=KVl5kMXz1vA&t=680)s.
 
 * [Arguments overview](https://github.com/alexholcombe/teachingATHK/blob/master/ArgumentsOverview.docx?raw=true)
 
@@ -133,9 +135,10 @@ Therefore, Socrates is mortal."
 * [No true Scotsman](https://en.wikipedia.org/wiki/No_true_Scotsman)
 <!-- No true Scotsman. An "ad hoc rescue" of a refuted generalization attempt-->
 * [Overwhelming exception](https://en.wikipedia.org/wiki/Overwhelming_exception) Patrick Stewart [example](https://www.youtube.com/watch?v=ptfmAY6M6aA)
-* Confirmation bias
-* Soldier mind 
-* My-side bias
+* The following terms are all closely related
+  * <abbr title="the tendency to search for, interpret, favor, and recall information in a way that confirms or supports one's prior beliefs or values.">Confirmation bias</abbr>
+  * <abbr title="We focus on fortifying our case and shooting down the other party’s points. Changing your mind feels like surrendering or being defeated.">Soldier mind</abbr>
+  * My-side bias
 <!-- Confirmation bias, soldier mind, and my-side bias are practically synonyms -->
-* [Motivated cognition](https://alexholcombe.github.io/teachingATHK/readings/motivatedCognition.html)
+  * [Motivated cognition](https://alexholcombe.github.io/teachingATHK/readings/motivatedCognition.html)
 
