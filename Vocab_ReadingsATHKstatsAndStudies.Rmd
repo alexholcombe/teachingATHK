@@ -71,8 +71,7 @@ show(h)
 
 ### Variables
 * <abbr title="Independent variable. A variable manipulated in an experiment.">IV</abbr>, <abbr title="Dependent variable. A measured (not manipulated variable)">DV</abbr>
-
-<!-- Independent variable, dependent variable. -->
+* "the intervention" refers to the independent variable
 * Explanatory variable
 * <abbr title="Refers to a variable that was not included in an analysis but might be important.">Extraneous variable</abbr> 
 <!-- When one compares two groups, one is seeking to determine the effect of an explanatory variable or variables. But extraneous variables are variables that also differ between the two groups. They may be confounds. -->
@@ -83,7 +82,7 @@ http://www.statisticshowto.com/design-of-experiments/confounding-variable/
 * [Nuisance variable](https://dictionary.apa.org/nuisance-variable) or noise variable versus confound
 * <abbr title="Used in the context of observational studies, Bruce used it to refer to a problematic variable that in an experimental study would be referred to as a 'confound'">Omitted variable</abbr>
 
-* <abbr title="Using statistics to try to 'subtract out' the effect of an extraneous variable or confound, to reveal the causal relationship between IV and DV without contamination by the confound">"Controlling for" a variable</abbr>. Explained [here](Also explained in https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/), in more detail than you need to know.
+* <abbr title="Using statistics to try to 'subtract out' the effect of an extraneous variable or confound, to reveal the causal relationship between IV and DV without contamination by the confound">"Controlling for" a variable</abbr>. Explained [here](https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/), in more detail than you need to know.
 <!--This was in Bruce and Alex's lectures and means a confound that you try to compensate for using statistics, to reveal the causal relationship between IV and DV without contamination by the confound. Usually happens in observational studies but can sometimes happen in experiments.
 -->
 

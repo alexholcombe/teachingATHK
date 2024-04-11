@@ -135,10 +135,11 @@ Therefore, Socrates is mortal."
 * [No true Scotsman](https://en.wikipedia.org/wiki/No_true_Scotsman)
 <!-- No true Scotsman. An "ad hoc rescue" of a refuted generalization attempt-->
 * [Overwhelming exception](https://en.wikipedia.org/wiki/Overwhelming_exception) Patrick Stewart [example](https://www.youtube.com/watch?v=ptfmAY6M6aA)
-* The following terms are all closely related
+* These terms are all closely related to each other:
   * <abbr title="the tendency to search for, interpret, favor, and recall information in a way that confirms or supports one's prior beliefs or values.">Confirmation bias</abbr>
   * <abbr title="We focus on fortifying our case and shooting down the other party’s points. Changing your mind feels like surrendering or being defeated.">Soldier mind</abbr>
   * My-side bias
 <!-- Confirmation bias, soldier mind, and my-side bias are practically synonyms -->
   * [Motivated cognition](https://alexholcombe.github.io/teachingATHK/readings/motivatedCognition.html)
+* Principle of charity
 
