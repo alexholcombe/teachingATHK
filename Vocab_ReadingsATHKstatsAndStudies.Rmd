@@ -42,6 +42,8 @@ For the words on this page that are underlined with tiny dots, a short definitio
 # Vocabulary (partial list, see more terms on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
 
 * Correlation, used in this class to refer only to linear correlation.
+* <abbr title= "After that, therefore because of it. Reasoning pattern, for example in the cartoon of the child seeing it become bumpy after the seat-belt sign turned on">Post hoc ergo propter hoc</abbr>
+  * Social media usage exploded, then teenagers became more depressed. [Post hoc ergo propter hoc?](https://www.theguardian.com/books/2024/apr/27/anxious-generation-jonathan-haidt)
 * Linear growth (black) versus exponential growth (blue).
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=2.5, fig.width=2.5,  fig.cap = "" }
@@ -72,6 +74,7 @@ show(h)
 ### Variables
 * <abbr title="Independent variable. A variable manipulated in an experiment.">IV</abbr>, <abbr title="Dependent variable. A measured (not manipulated variable)">DV</abbr>
 * "the intervention" refers to the independent variable
+* "outcome variable" is another term for dependent variable
 * Explanatory variable
 * <abbr title="Refers to a variable that was not included in an analysis but might be important.">Extraneous variable</abbr> 
 <!-- When one compares two groups, one is seeking to determine the effect of an explanatory variable or variables. But extraneous variables are variables that also differ between the two groups. They may be confounds. -->
