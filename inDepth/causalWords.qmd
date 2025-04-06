@@ -1,0 +1,29 @@
+---
+title: "Causal words"
+format: html
+editor: visual
+---
+
+
+| Word       | Example phrase where the word implies causation                                   |
+|------------|------------------------------------------------------------|
+| Cause      | Aging causes hair loss                                     |
+| Prevent    | Weight-bearing exercise prevents bone loss                 |
+| Affect     | Pressure affects density                                   |
+| Protect    | Vitamin C protects against scurvy                          |
+| Influence  | Alcohol influences sleep quality                           |
+| Improve    | Reading improves vocabulary                                |
+| Increase   | Swimming increases risk of bacterial infection             |
+| Impacts    | Excercise impacts heart health                             |
+| Leads to   | Drinking alcohol leads to liver failure                    |
+| Due        | His jaundice is due to malnutrition                        |
+| Attribute  | His unhappiness can be attributed to his loss of his money |
+| Result     | The result of the scandal was that she had to resign       |
+| Reduce     | Coaching reduces anxiety                                   |
+| Determines | Strength determines amount of weight you can lift          |
+| Benefit    | Caffeine has a benefit of alertness                        |
+| Alter      | Probiotics alter the gut biome                             |
+| Decrease   | Tolls decrease road use                                    |
+| Enhance    | Lacquer enhances appearance                                |
+| Elevate    | Financial rewards elevate motivation                       |
+| Change     | Punishments change cooperativity                           |

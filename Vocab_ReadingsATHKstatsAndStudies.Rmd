@@ -25,22 +25,9 @@ For the words on this page that are underlined with tiny dots, a short definitio
 
 <!-- Critical Thinking, by Paul and Elder -->
 
-## Not-so-important Readings
-
-* [Why is nutrition so hard to study?](https://www.medicalnewstoday.com/articles/why-is-nutrition-so-hard-to-study)
-
-* Chapter 4, Correlation, of *Naked Statistics* (already recommended by Bruce)
-
-* To understand how regression can "control for" an extraneous variable, read *Naked Statistics* Chapter 11 and the “Highly correlated explanatory variables” in Ch.12.
-
-* [r-squared](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)
-
-* https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this unit.
-
-* TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
-
 # Vocabulary (partial list, see more terms on the [Lectures outline](https://alexholcombe.github.io/teachingATHK/outline.html))
 
+* Causation. Know [common words in English that are used to indicate causation](inDepth/causalWords.html).
 * Correlation, used in this class to refer only to linear correlation.
 * <abbr title= "After that, therefore because of it. Reasoning pattern, for example in the cartoon of the child seeing it become bumpy after the seat-belt sign turned on">Post hoc ergo propter hoc</abbr>
   * Social media usage exploded, then teenagers became more depressed. [Post hoc ergo propter hoc?](https://www.theguardian.com/books/2024/apr/27/anxious-generation-jonathan-haidt)
@@ -102,3 +89,16 @@ http://www.statisticshowto.com/design-of-experiments/confounding-variable/
 * False positive, true positive, false negative, true negative
 * <abbr title="Of those without what's being tested for, the proportion that correctly get a NEGATIVE test result. High specificity means low false positive rate" >Specificity</abbr> and <abbr title="How often a test correctly generates a positive result for cases that have what's being tested for (also known as the 'true positive' rate)">sensitivity</abbr>
 
+## Not-so-important Readings
+
+* [Why is nutrition so hard to study?](https://www.medicalnewstoday.com/articles/why-is-nutrition-so-hard-to-study)
+
+* Chapter 4, Correlation, of *Naked Statistics* (already recommended by Bruce)
+
+* To understand how regression can "control for" an extraneous variable, read *Naked Statistics* Chapter 11 and the “Highly correlated explanatory variables” in Ch.12.
+
+* [r-squared](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)
+
+* https://alexholcombe.wordpress.com/2016/02/03/problems-with-controlling-for-variables-quick-notes/ The first few paragraphs are helpful for explaining "controlling for", but then it quickly becomes more complex and more advanced than is needed for this unit.
+
+* TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
