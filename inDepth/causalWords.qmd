@@ -4,6 +4,7 @@ format: html
 editor: visual
 ---
 
+Below is a list of some common words that are used to communicate causation. 
 
 | Word       | Example phrase where the word implies causation                                   |
 |------------|------------------------------------------------------------|
@@ -27,3 +28,7 @@ editor: visual
 | Enhance    | Lacquer enhances appearance                                |
 | Elevate    | Financial rewards elevate motivation                       |
 | Change     | Punishments change cooperativity                           |
+
+<BR><BR><BR>
+
+There are more words used to communicate causation, but the above are the most common ones (see e.g. ["Causal and Associational Language in Observational Health Research: A Systematic Evaluation"](https://pubmed.ncbi.nlm.nih.gov/35925053/) )
