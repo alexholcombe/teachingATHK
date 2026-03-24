@@ -26,8 +26,8 @@ Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
   * When linear regression is not appropriate: [COVID-19 interactive lesson](https://alexholcombe.shinyapps.io/COVID19questions/)
 
 * Three causal models
-  * X causes Y, Y causes X, a third variable causes both
-  * The [third-cause fallacy](https://apologetics.fandom.com/wiki/Third-cause_fallacy)
+  * X causes Y; Y causes X; A third variable causes both
+  * The [third-cause fallacy](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation#Third_factor_C_(the_common-causal_variable)_causes_both_A_and_B)
 * A causal model can be at any level of detail
 
 <!--Slide #45-->
