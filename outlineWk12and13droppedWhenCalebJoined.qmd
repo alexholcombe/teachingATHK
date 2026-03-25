@@ -1,0 +1,32 @@
+---
+title: "outlineWk12and13droppedWhenCalebJoined"
+format: html
+editor: visual
+---
+
+* Rhetoric, mere rhetoric, and informal fallacies
+* Boosters and hedgers
+* Post hoc ergo propter hoc, again
+  * [Video](https://www.youtube.com/watch?v=5A7hSaoRv0g) combining this fallacy with deductive and inductive logic. Good way to bring previous bits of the class together!
+
+Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
+
+* Ad populum
+* Ad hominem "To the person": 
+  * Puerile name-calling 
+<!--  * Questioning the motive , Gilbert tweet 
+  * Hypocrite (including [whataboutism](https://en.wikipedia.org/wiki/Whataboutism))
+  * You’re not entitled to speak on that -->
+  * Vaccilation
+  * Appeal to authority
+    * Appropriate versus inappropriate
+* Straw man
+  * Relation to principle of charity
+* Fallacy of the single cause <!-- Relation to affirming the consequent -->
+* Circularity
+* Minimising evidence against
+  * Overwhelming exception
+  * No True Scotsman
+* Slippery slope
+  
+

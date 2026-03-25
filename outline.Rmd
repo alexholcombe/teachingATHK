@@ -1,5 +1,5 @@
 ---
-title: "Outline of weeks 7-13"
+title: "Outline of weeks 6-11"
 output: html_document
 ---
 
@@ -8,12 +8,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 (this document will be updated some as the weeks proceed)
 
-* Also see guide to Alex Holcombe and his lectures, posted on Canvas
+* Also see guide to Alex Holcombe and his lectures, posted [on Canvas](https://canvas.sydney.edu.au/courses/72032/pages/guide-to-weeks-7-13)
 
-Week 7: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
+Week 6: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 
-<!-- video: Correlation and causation  -->
-<!-- video: Confound or nuisance variable? -->
 * Correlation and causation intro
   * Learning objectives:
     * Understand and apply three causal models to explaining correlations
@@ -60,7 +58,7 @@ knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
   * Relationship between many observed variables, such as pirates and high average temperature, is confounded by time. 
   * Time: Post hoc ergo propter hoc (After this therefore because of this) fallacy
 
-Week 8 <!--statsAndStudies PPT-->
+Week 7 <!--statsAndStudies PPT-->
 
 * Dichotomous correlation
   * dichotomous variables and correlation
@@ -70,7 +68,7 @@ Week 8 <!--statsAndStudies PPT-->
 * 4 kinds of control
   * Statistical adjustment - [controlling for](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) confounds
   * A controlled variable - matching
-* Causal phrases verus correlational phrases, see "Distinguish correlational and causal.." video on Canvas
+* Causal phrases versus correlational phrases ("Distinguish correlational and causal.." video on Canvas)
 
 ```{r, echo=FALSE, out.width = "160px"}
 knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
@@ -79,15 +77,15 @@ knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
   * Recognizing observational studies in the news
   * "Controlling for" in regression and multicollinearity
 
-* Epidemiology
+* Epidemiology ("Epidemiology and nutrition" video on Canvas)
   * Smoking has a big effect,
   * Nutrition effects are small
   * Many false positives, which we'll explain later
 
-Week 9 
+Week 8
 
 * Hypothesis testing review and extension
-  * Review of hypothesis testing (recall tutorial week 5 and Bruce's 18 March lecture)
+  * Review of hypothesis testing (recall tutorial week 4 and Bruce's associated lecture)
   * Bruce slide:
 ```{r, echo=FALSE, out.width = "220px"}
 knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
@@ -96,11 +94,11 @@ knitr::include_graphics("imagesForRmd/BruceSignificPvalueDefintn.png")
   * Hypothesis testing and medical testing
     * Sensitivity and specificity
   
-* Why does the news have lots of false positives? 
-  * Excess of statistical comparisons <!-- https://twitter.com/guido_meijer/status/1383834011793981441 single neurons in mice brain encode price of cryptocurrencies -->
+* Why does the news have lots of false positives? ("Hypothesis testing review +" Canvas video)
+  * Excess of statistical comparisons ("False positives and jelly beans" Canvas video) <!-- https://twitter.com/guido_meijer/status/1383834011793981441 single neurons in mice brain encode price of cryptocurrencies -->
   * More reasons for errors in science given later in the class, after logic and arguments
 
-### Arguments and logic, Weeks 9-10
+### Arguments and logic, Weeks 8-9
 
 We're going to go back and forth between bare-bones examples and arguments from the wild, giving you more and more tools to deal with the real-world ones.
 
@@ -121,11 +119,9 @@ A 9 min [intro video on youtube](https://www.youtube.com/watch?v=NKEhdsnKKHs), b
 * Redundant premises
 * Implicit premises
 
-### Arguments and reasoning in the wild, Weeks 11-13
+### Arguments and reasoning in the wild, Weeks 10-11
 
-Week 11
-
-* Poly-syllogism
+* Polysyllogism
 * Casting an argument
 
 * Mindset for real-world (4 slides)
@@ -133,8 +129,6 @@ Week 11
   * Most arguments are people just trying to win - to get what they want. Persuasion.
   * But ideally you don't just want to win, you actually want to learn and find things out.
   
-Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
-
 * Loose language in the wild
   * hyperbole
   * principle of charity (related to steel man, discussed later)
@@ -145,11 +139,12 @@ Fallacies. <!-- "8_9_10_Fallacies" folder with Keynote file -->
   * Process of elimination, Sherlock Holmes
   * Abduction
 
-Weeks 12 and 13
+Week 11
 
 * Deduction and induction in science
   * [reading](https://www.livescience.com/21569-deduction-vs-induction.html)
 * Analysing scientific abstracts
+* Summary of problems with causal claims from studies
 
 <!-- * Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions) -->
 
@@ -158,32 +153,11 @@ Weeks 12 and 13
     * Experimenter
     * Participant
     * Addressing expectancy effects: blinding
-    
-* Rhetoric, mere rhetoric, and informal fallacies
-* Boosters and hedgers
-* Post hoc ergo propter hoc, again
-  * [Video](https://www.youtube.com/watch?v=5A7hSaoRv0g) combining this fallacy with deductive and inductive logic. Good way to bring previous bits of the class together!
 
-* Ad populum
-* Ad hominem "To the person": 
-  * Puerile name-calling <!--Include a Gilbert tweet -->
-<!--  * Questioning the motive , Gilbert tweet 
-  * Hypocrite (including [whataboutism](https://en.wikipedia.org/wiki/Whataboutism))
-  * You’re not entitled to speak on that -->
-  * Vaccilation
-  * Appeal to authority
-    * Appropriate versus inappropriate
-* Straw man
-  * Relation to principle of charity
-* Fallacy of the single cause <!-- Relation to affirming the consequent -->
-* Circularity
-* Minimising evidence against
-  * Overwhelming exception
-  * No True Scotsman
-* Slippery slope
-  
+<!-- EVERYTHING AFTER THIS WAS DROPPED WHEN CALEB JOINED, see outlineWk12and13droppedWhenCalebJoined -->
 
-```{r, echo=FALSE, out.width = "160px"}
+
+```{r, echo=FALSE, out.width = "300px"}
 knitr::include_graphics("imagesForRmd/blindingEffectFromPSYC1.png")
 ```     
 
