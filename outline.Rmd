@@ -135,10 +135,10 @@ A 9 min [intro video on youtube](https://www.youtube.com/watch?v=NKEhdsnKKHs), b
 * Redundant premises
 * Implicit premises
 
-### Arguments and reasoning in the wild, Weeks 10-11
+### Arguments and reasoning in the wild, Week 10 <!-- -11 -->
 
 * Polysyllogism
-* Casting an argument
+* Casting an argument - the we must bomb Iran argument
 
 * Mindset for real-world (4 slides)
   * I will happily change, for I seek the truth - Aurelius.
@@ -149,31 +149,10 @@ A 9 min [intro video on youtube](https://www.youtube.com/watch?v=NKEhdsnKKHs), b
   * hyperbole
   * principle of charity (related to steel man, discussed later)
 
-* Casting the we must bomb Iran argument
-
 * Induction and deduction <!-- https://rintintin.colorado.edu/~vancecd/phil1440/induction.pdf -->
   * Process of elimination, Sherlock Holmes
   * Abduction
 
-Week 11
-
-* Deduction and induction in science
-  * [reading](https://www.livescience.com/21569-deduction-vs-induction.html)
-* Analysing scientific abstracts
-* Summary of problems with causal claims from studies
-
-<!-- * Mindset again - System 1 vs. System 2 [reading](https://www.apa.org/monitor/2012/02/conclusions) -->
-
-* Analysing the Molly and Bea argument
-* Hawthorne and Expectancy effects  <!--slides 181 to 191-->
-    * Experimenter
-    * Participant
-    * Addressing expectancy effects: blinding
-
 <!-- EVERYTHING AFTER THIS WAS DROPPED WHEN CALEB JOINED, see outlineWk12and13droppedWhenCalebJoined -->
 
-
-```{r, echo=FALSE, out.width = "300px"}
-knitr::include_graphics("imagesForRmd/blindingEffectFromPSYC1.png")
-```     
 
