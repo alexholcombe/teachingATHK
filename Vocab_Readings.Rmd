@@ -1,5 +1,5 @@
 ---
-title: "ATHK Weeks 6 to 11 vocabulary and readings"
+title: "ATHK Weeks 6 to 10 vocabulary and readings"
 date: "This document may be updated as the lectures proceed."
 output: html_document
 ---
@@ -105,7 +105,7 @@ http://www.statisticshowto.com/design-of-experiments/confounding-variable/
 
 * TEDxDHFastStream - Dr Ben Goldacre talking about [randomised controlled trials for public policy](https://www.youtube.com/watch?v=RzRs7cPrrfE)
 
-# Logic and arguments: Weeks 9, 10, and 11
+# Logic and arguments: Weeks 9 and 10
 
 ## Terminological note
 
