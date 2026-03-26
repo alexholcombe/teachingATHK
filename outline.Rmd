@@ -1,14 +1,14 @@
 ---
-title: "Outline of weeks 6-11"
+title: "Outline of weeks 6-10"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-(this document will be updated some as the weeks proceed)
+(this document may be updated some as the weeks proceed)
 
-* Also see guide to Alex Holcombe and his lectures, posted [on Canvas](https://canvas.sydney.edu.au/courses/72032/pages/guide-to-weeks-7-13)
+* Also see [guide to Alex Holcombe and his lectures](https://canvas.sydney.edu.au/courses/72032/pages/guide-to-weeks-7-13)
 
 ## Tutorials
 
@@ -20,7 +20,7 @@ Week 9 tutorial: Deductive and inductive arguments, suppositionally inescapable,
 
 Week 10 tutorial: Implicit premises, inductive arguments, identifying conclusions in real-world arguments
 
-Week 11 tutorial: The effect of prior beliefs on argument evaluation
+<!-- Week 11 tutorial: The effect of prior beliefs on argument evaluation -->
 
 <!-- Week 13 tutorial: Rhetoric and informal fallacies -->
 
