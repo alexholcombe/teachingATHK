@@ -10,6 +10,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * Also see guide to Alex Holcombe and his lectures, posted [on Canvas](https://canvas.sydney.edu.au/courses/72032/pages/guide-to-weeks-7-13)
 
+## Tutorials
+
+Week 7 tutorial: Causal models, scientific studies, and confounds
+
+Week 8 tutorial: Necessary and sufficient, if-then, and only-if [explained by Khan academy](https://www.khanacademy.org/test-prep/lsat/lsat-lessons/logic-toolbox-new/a/logic-toolbox--article--if-x-then-y--sufficiency-and-necessity) and [by Carneades](https://www.youtube.com/watch?v=ibjL90iY1d0)
+
+Week 9 tutorial: Deductive and inductive arguments, suppositionally inescapable, inescapable, suppositionally strong, and strong.
+
+Week 10 tutorial: Implicit premises, inductive arguments, identifying conclusions in real-world arguments
+
+Week 11 tutorial: The effect of prior beliefs on argument evaluation
+
+<!-- Week 13 tutorial: Rhetoric and informal fallacies -->
+
+## Topics each week
+
 Week 6: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 
 * Correlation and causation intro
