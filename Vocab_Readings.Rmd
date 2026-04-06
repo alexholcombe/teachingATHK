@@ -188,9 +188,7 @@ Therefore, Socrates is mortal."
 
 * Inescapable (known to philosophers as "sound")
 
-* Deduction
-
-* Induction
+* Deduction, induction, abduction
 
 * Suppositionally solid (known to philosophers as "strong")
 
