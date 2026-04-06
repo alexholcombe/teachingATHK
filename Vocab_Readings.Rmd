@@ -63,8 +63,8 @@ show(h)
 ### Variables
 * <abbr title="Independent variable. A variable manipulated in an experiment.">IV</abbr>, <abbr title="Dependent variable. A measured (not manipulated variable)">DV</abbr>
 * "the intervention" refers to the independent variable
-* "outcome variable" is another term for dependent variable
-* Explanatory variable
+* "Outcome variable" is another term for dependent variable in an experiment, or variable one is interested in explaining in an observational study
+* "Explanatory variable" is another term for the independent variable in an experiment, or the variable one is hoping explains another in an observational study
 * <abbr title="Refers to a variable that was not included in an analysis but might be important.">Extraneous variable</abbr> 
 <!-- When one compares two groups, one is seeking to determine the effect of an explanatory variable or variables. But extraneous variables are variables that also differ between the two groups. They may be confounds. -->
 * <abbr title="When one compares two groups, ideally only one thing (the independent variable, if an experiment) differs. A confound is something else that differs which might be the cause of the difference.">Confound or confounding variables</abbr> 
