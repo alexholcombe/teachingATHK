@@ -83,7 +83,9 @@ Week 7 <!--statsAndStudies PPT-->
 
 * 4 kinds of control
   * Statistical adjustment - [controlling for](https://alexholcombe.github.io/teachingATHK/readings/controllingForVsControl.html) confounds
+  <!-- * "Controlling for" in regression and multicollinearity -->
   * A controlled variable - matching
+
 * Causal phrases versus correlational phrases ("Distinguish correlational and causal.." video on Canvas)
 
 ```{r, echo=FALSE, out.width = "160px"}
@@ -91,7 +93,6 @@ knitr::include_graphics("imagesForRmd/correlationVsCausalVerbs.png")
 ```    
 
   * Recognizing observational studies in the news
-  * "Controlling for" in regression and multicollinearity
 
 * Epidemiology ("Epidemiology and nutrition" video on Canvas)
   * Smoking has a big effect,

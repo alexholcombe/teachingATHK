@@ -152,7 +152,7 @@ Philosophers typically use "strong" and "cogent" for describing *inductive* argu
 
 * [John Oliver video starting at 1:46](https://youtu.be/0Rnq1NpHdmw?t=105) on p-hacking
 
-* [Comic book](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis" 
+* [Comic](https://thenib.com/repeat-after-me/) about p-hacking and publication bias and the "replication crisis" 
 
 # Vocabulary
 
