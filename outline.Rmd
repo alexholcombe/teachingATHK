@@ -60,12 +60,12 @@ knitr::include_graphics("imagesForRmd/BruceConfoundsSlide.png")
 ```
   * Can you distinguish between confounds and nuisance variables?
   * Random assignment
-    * Bruce slide:
+    * Bruce said:
 ```{r, echo=FALSE, out.width = "220px"}
-knitr::include_graphics("imagesForRmd/BruceRandomizedControlledExperiments.png")
+knitr::include_graphics("imagesForRmd/BruceRandomizedControlledExperimentsWithoutRegression.png")
 ```
 * Randomisation and control group
-  * Bruce slide
+  * Bruce said
 ```{r, echo=FALSE, out.width = "200px"}
 knitr::include_graphics("imagesForRmd/bruceSlide147randomAssignment.png")
 ```
