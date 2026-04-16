@@ -51,7 +51,7 @@ Week 6: Stats and studies: Correlation and causation <!--statsAndStudies PPT-->
 knitr::include_graphics("imagesForRmd/Bruce_IV_DV_slide.png")
 ```
   * [Nuisance variable](https://dictionary.apa.org/nuisance-variable)
-    * Is not different, on average, for the different levels of the variable we are interested in
+    * Is not different, on average, for the different levels of the variable we are interested in (BE CAREFUL, some sources online give a different definition)
   * [Confound](https://www.students4bestevidence.net/blog/2018/10/01/a-beginners-guide-to-confounding/) variables
     * Is different for the different levels of the variable we are interested in.
     * Bruce slide:
